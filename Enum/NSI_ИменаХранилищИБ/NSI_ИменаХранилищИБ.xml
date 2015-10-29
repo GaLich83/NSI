@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Enum uuid="2564a108-9289-469c-88ad-143c19c580f6">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.NSI_ИменаХранилищИБ" category="Ref">
+				<xr:TypeId>38c3d2b2-f7ce-4dca-aede-597e7bf064f7</xr:TypeId>
+				<xr:ValueId>ddcf9090-15ec-4178-ab98-a032d7581bf4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.NSI_ИменаХранилищИБ" category="Manager">
+				<xr:TypeId>6c9a2e86-ea9a-4c51-af05-4f6e97b2670d</xr:TypeId>
+				<xr:ValueId>c6d78ec9-c98f-4877-9923-6503ae63bbda</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.NSI_ИменаХранилищИБ" category="List">
+				<xr:TypeId>e80781c4-a7b8-4b42-a2a6-c4b706c615f0</xr:TypeId>
+				<xr:ValueId>20725076-f009-472c-8d43-32a0a07621ad</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>NSI_ИменаХранилищИБ</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имена хранилищ ИБ</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="9da4a6c1-11a9-4df0-adcb-cc0172377653">
+				<Properties>
+					<Name>Консолидация</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Консолидация</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="ced7d118-39e9-4793-9414-e191e3e4b75d">
+				<Properties>
+					<Name>TNKDB</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>TNKDB</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="c7908c4e-23d1-4b68-ba52-5bb9c0d7d395">
+				<Properties>
+					<Name>GATEWAYTOUFIDA</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>GATEWAYTOUFIDA</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="55549cb1-cddd-4d7b-b5ff-608f5746f486">
+				<Properties>
+					<Name>СпортмастерЦО</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Спортмастер ЦО</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="cf92b9e9-87d5-493d-9c80-d021f96d4502">
+				<Properties>
+					<Name>СпортмастерЮФ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Спортмастер ЮФ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="0068bdd4-1427-4b4f-9a53-a8dba5e3509e">
+				<Properties>
+					<Name>СпортмастерСФ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Спортмастер СФ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="070ce54e-4e24-44b7-a812-518aed5e715a">
+				<Properties>
+					<Name>СпортмастерСЗФ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Спортмастер СЗФ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="3ac84ec1-9b82-4ddb-82c7-c08d62c8155f">
+				<Properties>
+					<Name>СпортмастерПФ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Спортмастер ПФ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="103faad1-acfc-4e5d-9510-fa5bf71011ca">
+				<Properties>
+					<Name>СпортмастерДВФ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Спортмастер ДВФ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="3ca5212f-c24f-4a02-a32e-008f3fe52ea5">
+				<Properties>
+					<Name>СпортмастерУФ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Спортмастер УФ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="321a169f-7ab5-4e50-bff9-08db3afd41fc">
+				<Properties>
+					<Name>ОстинЦО</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Остин ЦО</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="53dfe464-fcd1-49d9-b22b-a29795ed174e">
+				<Properties>
+					<Name>ОстинЮФ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Остин ЮФ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="9390fff4-335b-4c75-b364-9b7a83be3173">
+				<Properties>
+					<Name>ОстинСФ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Остин СФ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="e9e74de2-c7fd-4f7a-b3f6-ead83231b3ad">
+				<Properties>
+					<Name>ОстинСЗФ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Остин СЗФ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="42f61db6-e833-491b-a6a6-c359f8435981">
+				<Properties>
+					<Name>ОстинПФ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Остин ПФ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="abce6a71-52e9-42f1-a8b3-f1938a4c0b8f">
+				<Properties>
+					<Name>ОстинДВФ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Остин ДВФ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="a651b7c5-49a1-4862-9989-b90179ea92a6">
+				<Properties>
+					<Name>ОстинУФ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Остин УФ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="eed3ce58-0dc1-49cd-8257-52531d6dcb1b">
+				<Properties>
+					<Name>DVK</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DVK</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="c9bd6e8a-e866-4d00-8640-38e0f6a7a35c">
+				<Properties>
+					<Name>СпортмастерЦО_20</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Спортмастер ЦО 20</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="d58cde26-99ff-425b-8c85-2571f69dd478">
+				<Properties>
+					<Name>СпортмастерЮФ_20</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Спортмастер ЮФ 20</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="7c0b1e7d-b4f1-40d9-9bf5-5ddbafc16170">
+				<Properties>
+					<Name>СпортмастерСФ_20</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Спортмастер СФ 20</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b0ca90af-003b-4a56-81cd-842df0914e1b">
+				<Properties>
+					<Name>СпортмастерСЗФ_20</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Спортмастер СЗФ 20</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="09134c14-eeb0-40f3-91c3-193713d8bd00">
+				<Properties>
+					<Name>СпортмастерПФ_20</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Спортмастер ПФ 20</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="02a2aaf9-7d6e-47d5-8a09-2d0681dc648c">
+				<Properties>
+					<Name>СпортмастерДВФ_20</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Спортмастер ДВФ 20</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="53136ebf-848a-40f7-8017-5be97fb37b2f">
+				<Properties>
+					<Name>СпортмастерУФ_20</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Спортмастер УФ 20</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="22b5fe08-048d-471e-b013-a9c7fbecb29e">
+				<Properties>
+					<Name>ОстинЦО_20</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Остин ЦО 20</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="38b038b0-7241-4ebf-a647-e1160d01e01e">
+				<Properties>
+					<Name>ОстинЮФ_20</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Остин ЮФ 20</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="1291f723-15d7-4641-9201-8edf361bf5ec">
+				<Properties>
+					<Name>ОстинСФ_20</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Остин СФ 20</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="36146488-af23-4f99-8ec8-e1dac33116ec">
+				<Properties>
+					<Name>ОстинСЗФ_20</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Остин СЗФ 20</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="25961512-1841-4541-9933-62fbfbbc1ed5">
+				<Properties>
+					<Name>ОстинПФ_20</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Остин ПФ 20</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="0a03b0f1-f2d3-419a-831c-c0e5da11f667">
+				<Properties>
+					<Name>ОстинДВФ_20</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Остин ДВФ 20</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="8cf9f063-fdde-4f2f-9bee-c7b437d2b2ce">
+				<Properties>
+					<Name>ОстинУФ_20</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Остин УФ 20</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="aa2a3431-cd92-4146-8901-c788671594de">
+				<Properties>
+					<Name>УАТ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>УАТ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="1a2ef749-2d83-4284-985e-84b210a94de6">
+				<Properties>
+					<Name>ТиповаяБухгалтерия20</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Типовая бухгалтерия 20</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="a590c6e9-bfbd-4a2b-9458-ef7715f3c18d">
+				<Properties>
+					<Name>УТ_ЦО</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>УТ ЦО</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="f8cecfec-7d0d-45e1-aa7c-2698d166033b">
+				<Properties>
+					<Name>УТ_Беларусь</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>УТ беларусь</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="1a5cd185-8ece-4c11-972f-23f6f565b6e6">
+				<Properties>
+					<Name>КОРТ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>КОРТ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

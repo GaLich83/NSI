@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="" id="-1"/>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="ИмяРоли" id="7">
+			<DataPath>Объект.ИмяРоли</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ИмяРолиКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ИмяРолиРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="База" id="10">
+			<DataPath>1/0:6111368e-ca02-42c3-bee2-8212552531b4</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="БазаКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="БазаРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="Описание" id="13">
+			<DataPath>Объект.Описание</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ОписаниеКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="ДатаПоследнегоИзменения" id="16">
+			<DataPath>Объект.ДатаПоследнегоИзменения</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаПоследнегоИзмененияКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ДатаПоследнегоИзмененияРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="RoleID" id="19">
+			<DataPath>Объект.RoleID</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="RoleIDКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="RoleIDРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<Table name="РолиВИБ" id="22">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.РолиВИБ</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="РолиВИБКонтекстноеМеню" id="23"/>
+			<AutoCommandBar name="РолиВИБКоманднаяПанель" id="24"/>
+			<ExtendedTooltip name="РолиВИБРасширеннаяПодсказка" id="25"/>
+			<SearchStringAddition name="РолиВИБСтрокаПоиска" id="26">
+				<Source>
+					<lf:elementId>22</lf:elementId>
+					<lf:additionId>0</lf:additionId>
+				</Source>
+				<ContextMenu name="РолиВИБСтрокаПоискаКонтекстноеМеню" id="29"/>
+				<ExtendedTooltip name="РолиВИБСтрокаПоискаРасширеннаяПодсказка" id="30"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="РолиВИБСостояниеПросмотра" id="31">
+				<Source>
+					<lf:elementId>22</lf:elementId>
+					<lf:additionId>1</lf:additionId>
+				</Source>
+				<ContextMenu name="РолиВИБСостояниеПросмотраКонтекстноеМеню" id="34"/>
+				<ExtendedTooltip name="РолиВИБСостояниеПросмотраРасширеннаяПодсказка" id="35"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="РолиВИБУправлениеПоиском" id="36">
+				<Source>
+					<lf:elementId>22</lf:elementId>
+					<lf:additionId>2</lf:additionId>
+				</Source>
+				<ContextMenu name="РолиВИБУправлениеПоискомКонтекстноеМеню" id="39"/>
+				<ExtendedTooltip name="РолиВИБУправлениеПоискомРасширеннаяПодсказка" id="40"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="РолиВИБНомерСтроки" id="41">
+					<DataPath>Объект.РолиВИБ.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="РолиВИБНомерСтрокиКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="РолиВИБНомерСтрокиРасширеннаяПодсказка" id="43"/>
+				</LabelField>
+				<InputField name="РолиВИБРольВИБ" id="44">
+					<DataPath>Объект.РолиВИБ.РольВИБ</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="РолиВИБРольВИБКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="РолиВИБРольВИБРасширеннаяПодсказка" id="46"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.NSI_РолиIDM</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

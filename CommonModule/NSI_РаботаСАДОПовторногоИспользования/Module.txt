@@ -1,0 +1,22 @@
+﻿Функция ПолучитьСоединение(СтрокаСоединения="",СтрокаОшибок="",ОткрыватьТранзакцию = Ложь) Экспорт
+	Попытка
+		OraSession = Новый COMОбъект("ADODB.Connection");
+		//пСтрокаСоединения = ?(СтрокаСоединения="","Provider=OraOLEDB.Oracle;Data Source="+ИмяБД+";User ID="+Юзер+";PASSWORD="+Пароль,СтрокаСоединения);
+		OraSession.ConnectionString=СтрокаСоединения;
+		OraSession.Open();
+		Если ОткрыватьТранзакцию Тогда
+			OraSession.BeginTrans();
+		КонецЕсли;
+		OraSession.CommandTimeOut = 1000;
+		OraSession.CursorLocation = 3;
+		OraDatabase=Новый COMОбъект("ADODB.Command"); 
+		OraDatabase.CommandType =1;
+		OraDatabase.ActiveConnection=OraSession;
+		OraDatabase.NamedParameters=Истина;
+		OraDatabase.CommandTimeOut = OraSession.CommandTimeOut;
+		Возврат OraDatabase;
+	Исключение
+		NSI_ОбщиеПроцедурыКлиентСервер.ДобавитьСообщениеВСтрокуОшибок(СтрокаОшибок, "ОШИБКА - не удалось установить связь с БД Oracle: "+ОписаниеОшибки());
+		Возврат Неопределено;
+	КонецПопытки;   ///
+КонецФункции

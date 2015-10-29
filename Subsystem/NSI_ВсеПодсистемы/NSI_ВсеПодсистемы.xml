@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Subsystem uuid="7ee47d4d-7d6b-4ab2-b3e7-eb0dc2a719a9">
+		<Properties>
+			<Name>NSI_ВсеПодсистемы</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>NSI Все подсистемы</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.NSI_ОбщиеПроцедуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.NSI_ОбщиеПроцедурыКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.NSI_МодульПовторногоИспользования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.NSI_МодульПовторногоИспользованияКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.NSI_РаботаСОповещениями</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.NSI_РаботаСПереводом</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.NSI_РаботаСАДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.NSI_РаботаСАДОПовторногоИспользования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.NSI_РаботаСXML</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">WebService.NSI</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">WebService.IDM</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">XDTOPackage.NSI</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">XDTOPackage.IDM</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.NSI_ЗапросыИМаппинг</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.NSI_События</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.NSI_Элементы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.NSI_IDM</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.NSI_ЖурналИзменений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.NSI_Перевод</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.NSI_ЗапросыДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.NSI_ПакетыПравилАсинхроннойРаботы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.NSI_ПравилаМаппинга</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.NSI_РучныеНастройкиМаппинга</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.NSI_СобытияКОтправке</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.NSI_СобытияОповещений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.NSI_СписокВИБ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.NSI_ТикетыАсинхроннойПередачи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.NSI_ИзмененияОбъектовВнешнихБаз</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.NSI_НастройкиПочтовыхРассылокПоИзменениям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.NSI_ШаблоныОповещений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.NSI_ЛогированиеФормированияОтчетов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.NSI_РолиIDM</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.NSI_РолиВИБ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.NSI_УЗIDM</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.NSI_УЗВИБ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.NSI_ГруппыПользователейВИБ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.NSI_ГруппыДоступаВИБ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.NSI_ПрофилиГруппДоступаВИБ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.NSI_ИменаХранилищИБ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.NSI_СтатусыСобытийОповещений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.NSI_ВидРолиВИБ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.NSI_СтатусыУЗ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.NSI_ВидыБД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.NSI_ПредопределенныеФункцииOracle</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.NSI_ОтправкаПочтовыхСообщений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.NSI_РегистрацияОповещений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.NSI_РаботаСВебСервисом</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.NSI_ПроверкаВебСервисаIDM</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.NSI_РедакторHTML</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.NSI_РаботаСПользователями</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.NSI_ОбщиеПроцедурыКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.NSI_Контрагенты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.NSI_ДоговорыКонтрагентов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.NSI_ДоговорыКонтрагентовПрисоединенныеФайлы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.NSI_Банки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.NSI_БанковскиеСчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.NSI_ПрефиксДоменнойАвторизации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.NSI_ОбработкиДляВнешнихБаз</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.NSI_ОбработкиДляВнешнихБазПрисоединенныеФайлы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.NSI_ВидыДоговоровКонтрагентов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.NSI_ЮридическоеФизическоеЛицо</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.NSI_АвтоматическийМаппингОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.NSI_Глоссарий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.NSI_РегистрацияСобытийОповещения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.NSI_ИндексИзмененийВнешнихБаз</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.NSI_ОповещенияКОтправке</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.NSI_ПодпискиНаСобытия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.NSI_РучнойМаппингОбъектов</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

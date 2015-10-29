@@ -1,0 +1,12 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="nsi">
+	<objectType name="TranslateString">
+		<property name="LanguageSource" type="xs:string"/>
+		<property name="LanguageTarget" type="xs:string"/>
+		<property name="StringSource" type="xs:string" lowerBound="1"/>
+		<property name="StringTranslate" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="UsedOnlineTranslater" type="xs:boolean" default="false"/>
+	</objectType>
+	<objectType name="TranslateTable">
+		<property xmlns:d3p1="nsi" name="Strings" type="d3p1:TranslateString" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+</package>

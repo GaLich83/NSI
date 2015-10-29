@@ -1,0 +1,43 @@
+﻿
+&НаКлиенте
+Процедура ПолучитьПоФИОДанныеИзСМП(Команда)
+	ПолучитьПоФИОДанныеИзСМПНаСервере();
+КонецПроцедуры
+
+&НаСервереБезКонтекста
+Процедура ПолучитьПоФИОДанныеИзСМПНаСервере()
+	УЗ = Справочники.NSI_УЗIDM.Выбрать();
+	Пока УЗ.Следующий() Цикл
+		ТекстЗапроса = "select
+		|		un.ID
+		|	, un.LASTNAME+' '+un.FIRSTNAME+' '+un.MIDDLENAME as ФИО
+		|	,ad.ADUNIQUENAME
+		|	,un.LASTNAME
+		|	,un.FIRSTNAME
+		|	,un.MIDDLENAME
+		|	,un.POST_NAME
+		|	,un.DIVISION_NAME
+		|	,div.HIERARNAME		
+		|		from  dbo.view_units un
+		|			left join dbo.VIEW_DIVISIONS div on un.DIVISION_ID=div.ID
+		|			left join dbo.VIEW_UNIT_AD ad on un.uid=ad.UID
+		|			where (un.DATE_END is null or un.DATE_END>GetDate()) and un.LASTNAME+' '+un.FIRSTNAME+' '+un.MIDDLENAME = '"+СокрЛП(УЗ.Наименование)+"'
+		|					and un.UNIT_IN_DECRET = 0";
+		Таблица = NSI_РаботаСАДО.ВыполнитьЗапрос("Provider=SQLOLEDB; Data Source=172.16.5.221; Initial Catalog=SMP_PUBLISHER2; User ID=IdmDeveloper; Password=@!DevIdm34",ТекстЗапроса,,,Истина);
+		Если Таблица.Количество()>1 Тогда
+			Сообщить(СокрЛП(УЗ.Наименование)+". Есть полные однофамильцы");
+		ИначеЕсли Таблица.Количество()>0 Тогда
+			Объект = УЗ.ПолучитьОбъект();
+			Объект.Фамилия = Таблица[0].LASTNAME;
+			Объект.Имя = Таблица[0].FIRSTNAME;
+			Объект.Отчество = Таблица[0].MIDDLENAME;
+			Объект.Должность = Таблица[0].POST_NAME;
+			Объект.Подразделение = Таблица[0].DIVISION_NAME;
+			Объект.ID_SMP = Таблица[0].ID;
+			Объект.LoginAD = Таблица[0].ADUNIQUENAME;
+			Объект.Записать();
+		Иначе
+			Сообщить("Учетная запись "+СокрЛП(УЗ.Наименование)+" в базе СМП не найдена");
+		КонецЕсли;	
+	КонецЦикла;
+КонецПроцедуры

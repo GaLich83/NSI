@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаПолучитьПоФИОДанныеИзСМП" id="86">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПолучитьПоФИОДанныеИзСМП</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ФормаПолучитьПоФИОДанныеИзСМПРасширеннаяПодсказка" id="87"/>
+			</Button>
+			<Button name="ФормаПолучитьДанныеПоLoginAD" id="88">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПолучитьДанныеПоLoginAD</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ФормаПолучитьДанныеПоLoginADРасширеннаяПодсказка" id="89"/>
+			</Button>
+			<Button name="ФормаОбновитьРолиВИБ" id="118">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОбновитьРолиВИБ</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ФормаОбновитьРолиВИБРасширеннаяПодсказка" id="119"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа3" id="69">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="70"/>
+			<ChildItems>
+				<InputField name="Наименование" id="4">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<CheckBoxField name="Проверен" id="37">
+					<DataPath>Объект.Проверен</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПроверенКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="ПроверенРасширеннаяПодсказка" id="39"/>
+				</CheckBoxField>
+				<CheckBoxField name="Техническая" id="90">
+					<DataPath>Объект.Техническая</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТехническаяКонтекстноеМеню" id="91"/>
+					<ExtendedTooltip name="ТехническаяРасширеннаяПодсказка" id="92"/>
+				</CheckBoxField>
+				<RadioButtonField name="Статус" id="28">
+					<DataPath>Объект.Статус</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<RadioButtonType>Auto</RadioButtonType>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xr:DesignTimeRef">Enum.NSI_СтатусыУЗ.EnumValue.Активна</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xr:DesignTimeRef">Enum.NSI_СтатусыУЗ.EnumValue.Неактивна</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="СтатусКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="СтатусРасширеннаяПодсказка" id="30"/>
+				</RadioButtonField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа2" id="71">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="72"/>
+			<ChildItems>
+				<InputField name="Фамилия" id="10">
+					<DataPath>Объект.Фамилия</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ФамилияКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ФамилияРасширеннаяПодсказка" id="12"/>
+				</InputField>
+				<InputField name="Имя" id="13">
+					<DataPath>Объект.Имя</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ИмяКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ИмяРасширеннаяПодсказка" id="15"/>
+				</InputField>
+				<InputField name="Отчество" id="16">
+					<DataPath>Объект.Отчество</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОтчествоКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ОтчествоРасширеннаяПодсказка" id="18"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа5" id="77">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ChildItemsWidth>Equal</ChildItemsWidth>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="78"/>
+			<ChildItems>
+				<Table name="УЗВИБ" id="40">
+					<Representation>List</Representation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.УЗВИБ</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="УЗВИБКонтекстноеМеню" id="41"/>
+					<AutoCommandBar name="УЗВИБКоманднаяПанель" id="42">
+						<ChildItems>
+							<Button name="УЗВИБСоздатьПользователяВИБ" id="120">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.СоздатьПользователяВИБ</CommandName>
+								<Parameter xsi:nil="true"/>
+								<ExtendedTooltip name="УЗВИБСоздатьПользователяВИБРасширеннаяПодсказка" id="121"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="УЗВИБРасширеннаяПодсказка" id="43"/>
+					<SearchStringAddition name="УЗВИБСтрокаПоиска" id="44">
+						<Source>
+							<lf:elementId>40</lf:elementId>
+							<lf:additionId>0</lf:additionId>
+						</Source>
+						<ContextMenu name="УЗВИБСтрокаПоискаКонтекстноеМеню" id="47"/>
+						<ExtendedTooltip name="УЗВИБСтрокаПоискаРасширеннаяПодсказка" id="48"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="УЗВИБСостояниеПросмотра" id="49">
+						<Source>
+							<lf:elementId>40</lf:elementId>
+							<lf:additionId>1</lf:additionId>
+						</Source>
+						<ContextMenu name="УЗВИБСостояниеПросмотраКонтекстноеМеню" id="52"/>
+						<ExtendedTooltip name="УЗВИБСостояниеПросмотраРасширеннаяПодсказка" id="53"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="УЗВИБУправлениеПоиском" id="54">
+						<Source>
+							<lf:elementId>40</lf:elementId>
+							<lf:additionId>2</lf:additionId>
+						</Source>
+						<ContextMenu name="УЗВИБУправлениеПоискомКонтекстноеМеню" id="57"/>
+						<ExtendedTooltip name="УЗВИБУправлениеПоискомРасширеннаяПодсказка" id="58"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="УЗВИБУЗВИБ" id="62">
+							<DataPath>Объект.УЗВИБ.УЗВИБ</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="УЗВИБУЗВИБКонтекстноеМеню" id="63"/>
+							<ExtendedTooltip name="УЗВИБУЗВИБРасширеннаяПодсказка" id="64"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<UsualGroup name="Группа6" id="79">
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="80"/>
+					<ChildItems>
+						<UsualGroup name="Группа1" id="73">
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="74"/>
+							<ChildItems>
+								<InputField name="Должность" id="19">
+									<DataPath>Объект.Должность</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДолжностьКонтекстноеМеню" id="20"/>
+									<ExtendedTooltip name="ДолжностьРасширеннаяПодсказка" id="21"/>
+								</InputField>
+								<InputField name="Подразделение" id="22">
+									<DataPath>Объект.Подразделение</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПодразделениеКонтекстноеМеню" id="23"/>
+									<ExtendedTooltip name="ПодразделениеРасширеннаяПодсказка" id="24"/>
+								</InputField>
+								<UsualGroup name="Группа7" id="84">
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="85"/>
+									<ChildItems>
+										<InputField name="ДатаПоследнегоИзменения" id="25">
+											<DataPath>Объект.ДатаПоследнегоИзменения</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ДатаПоследнегоИзмененияКонтекстноеМеню" id="26"/>
+											<ExtendedTooltip name="ДатаПоследнегоИзмененияРасширеннаяПодсказка" id="27"/>
+										</InputField>
+										<InputField name="UserID" id="7">
+											<DataPath>Объект.UserID</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="UserIDКонтекстноеМеню" id="8"/>
+											<ExtendedTooltip name="UserIDРасширеннаяПодсказка" id="9"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа4" id="75">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="76"/>
+							<ChildItems>
+								<InputField name="ID_SMP" id="31">
+									<DataPath>Объект.ID_SMP</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ID_SMPКонтекстноеМеню" id="32"/>
+									<ExtendedTooltip name="ID_SMPРасширеннаяПодсказка" id="33"/>
+								</InputField>
+								<InputField name="LoginAD" id="34">
+									<DataPath>Объект.LoginAD</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="LoginADКонтекстноеМеню" id="35"/>
+									<ExtendedTooltip name="LoginADРасширеннаяПодсказка" id="36"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="РолиIDM" id="93">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.РолиIDM</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="РолиIDMКонтекстноеМеню" id="94"/>
+							<AutoCommandBar name="РолиIDMКоманднаяПанель" id="95">
+								<ChildItems>
+									<Button name="РолиIDMПолучитьРолиIDM" id="122">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПолучитьРолиIDM</CommandName>
+										<Parameter xsi:nil="true"/>
+										<ExtendedTooltip name="РолиIDMПолучитьРолиIDMРасширеннаяПодсказка" id="123"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="РолиIDMРасширеннаяПодсказка" id="96"/>
+							<SearchStringAddition name="РолиIDMСтрокаПоиска" id="97">
+								<Source>
+									<lf:elementId>93</lf:elementId>
+									<lf:additionId>0</lf:additionId>
+								</Source>
+								<ContextMenu name="РолиIDMСтрокаПоискаКонтекстноеМеню" id="100"/>
+								<ExtendedTooltip name="РолиIDMСтрокаПоискаРасширеннаяПодсказка" id="101"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="РолиIDMСостояниеПросмотра" id="102">
+								<Source>
+									<lf:elementId>93</lf:elementId>
+									<lf:additionId>1</lf:additionId>
+								</Source>
+								<ContextMenu name="РолиIDMСостояниеПросмотраКонтекстноеМеню" id="105"/>
+								<ExtendedTooltip name="РолиIDMСостояниеПросмотраРасширеннаяПодсказка" id="106"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="РолиIDMУправлениеПоиском" id="107">
+								<Source>
+									<lf:elementId>93</lf:elementId>
+									<lf:additionId>2</lf:additionId>
+								</Source>
+								<ContextMenu name="РолиIDMУправлениеПоискомКонтекстноеМеню" id="110"/>
+								<ExtendedTooltip name="РолиIDMУправлениеПоискомРасширеннаяПодсказка" id="111"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="РолиIDMНомерСтроки" id="112">
+									<DataPath>Объект.РолиIDM.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="РолиIDMНомерСтрокиКонтекстноеМеню" id="113"/>
+									<ExtendedTooltip name="РолиIDMНомерСтрокиРасширеннаяПодсказка" id="114"/>
+								</LabelField>
+								<InputField name="РолиIDMРольIDM" id="115">
+									<DataPath>Объект.РолиIDM.РольIDM</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="РолиIDMРольIDMКонтекстноеМеню" id="116"/>
+									<ExtendedTooltip name="РолиIDMРольIDMРасширеннаяПодсказка" id="117"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.NSI_УЗIDM</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПолучитьПоФИОДанныеИзСМП" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить по ФИО данные из СМП</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить по ФИОДанные из СМП</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьПоФИОДанныеИзСМП</Action>
+		</Command>
+		<Command name="ПолучитьДанныеПоLoginAD" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить данные по login AD</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить данные по login AD</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьДанныеПоLoginAD</Action>
+		</Command>
+		<Command name="ОбновитьРолиВИБ" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить роли ВИБ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить роли ВИБ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьРолиВИБ</Action>
+		</Command>
+		<Command name="СоздатьПользователяВИБ" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать пользователя ВИБ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать пользователя ВИБ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьПользователяВИБ</Action>
+		</Command>
+		<Command name="ПолучитьРолиIDM" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить роли IDM</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить роли IDM</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьРолиIDM</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,536 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Наименование" id="3">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="53"/>
+		</InputField>
+		<LabelDecoration name="ДекорацияДляШаблонаОповещенияОДняхРожденияКонтактов" id="51">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это шаблон оповещения о днях рождения контактов. Все реквизиты могут быть пустыми. 
+Как переопределить стандартные значения, можно посмотреть по ссылке "Справка по использованию" </v8:content>
+				</v8:item>
+			</Title>
+			<TitleHeight>2</TitleHeight>
+			<ContextMenu name="ДекорацияДляШаблонаОповещенияОДняхРожденияКонтактовКонтекстноеМеню" id="52"/>
+			<ExtendedTooltip name="ДекорацияДляШаблонаОповещенияОДняхРожденияКонтактовРасширеннаяПодсказка" id="54"/>
+		</LabelDecoration>
+		<LabelDecoration name="ДекорацияПодсказка" id="22">
+			<Visible>false</Visible>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>В алгоритмах возвращаемое значение должно писаться в переменную Результат,
+параметры указываем ИмяПараметра, если нужно разыменование - 
+указываем ИмяПараметра.Наименование
+В алгоритмах в результат можно передавать массив</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ДекорацияПодсказкаКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ДекорацияПодсказкаРасширеннаяПодсказка" id="55"/>
+		</LabelDecoration>
+		<LabelDecoration name="ДекорацияСправка" id="48">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Справка по использованию</v8:content>
+				</v8:item>
+			</Title>
+			<Hyperlink>true</Hyperlink>
+			<ContextMenu name="ДекорацияСправкаКонтекстноеМеню" id="49"/>
+			<ExtendedTooltip name="ДекорацияСправкаРасширеннаяПодсказка" id="56"/>
+			<Events>
+				<Event name="Click">ДекорацияСправкаНажатие</Event>
+			</Events>
+		</LabelDecoration>
+		<Pages name="СтраницыАлгоритмы" id="44">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы алгоритмы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы алгоритмы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="СтраницыАлгоритмыРасширеннаяПодсказка" id="57"/>
+			<ChildItems>
+				<Page name="СтраницаТемаИТелоСообщения" id="47">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тема и тело сообщения</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница тема и тело сообщения</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаТемаИТелоСообщенияРасширеннаяПодсказка" id="58"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаТема" id="40">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа тема</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа тема</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаТемаРасширеннаяПодсказка" id="59"/>
+							<ChildItems>
+								<TextDocumentField name="ТемаСообщения" id="7">
+									<DataPath>Объект.ТемаСообщения</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Height>4</Height>
+									<ContextMenu name="ТемаСообщенияКонтекстноеМеню" id="8"/>
+									<ExtendedTooltip name="ТемаСообщенияРасширеннаяПодсказка" id="60"/>
+								</TextDocumentField>
+								<Button name="ПроверитьТемаСообщения" id="41">
+									<Type>UsualButton</Type>
+									<Width>12</Width>
+									<Height>1</Height>
+									<CommandName>Form.Command.ПроверитьТемаСообщения</CommandName>
+									<Parameter xsi:nil="true"/>
+									<ExtendedTooltip name="ПроверитьТемаСообщенияРасширеннаяПодсказка" id="61"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаТело" id="42">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа тело</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа тело</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаТелоРасширеннаяПодсказка" id="62"/>
+							<ChildItems>
+								<TextDocumentField name="ТелоСообщения" id="9">
+									<DataPath>Объект.ТелоСообщения</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Height>6</Height>
+									<ContextMenu name="ТелоСообщенияКонтекстноеМеню" id="10"/>
+									<ExtendedTooltip name="ТелоСообщенияРасширеннаяПодсказка" id="63"/>
+								</TextDocumentField>
+								<Button name="ПроверитьТелоСообщения" id="43">
+									<Type>UsualButton</Type>
+									<Width>12</Width>
+									<Height>1</Height>
+									<CommandName>Form.Command.ПроверитьТелоСообщения</CommandName>
+									<Parameter xsi:nil="true"/>
+									<ExtendedTooltip name="ПроверитьТелоСообщенияРасширеннаяПодсказка" id="64"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаАдресаты" id="45">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Адресаты</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница адресаты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаАдресатыРасширеннаяПодсказка" id="65"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаАдресаты" id="24">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа адресаты</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа адресаты</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаАдресатыРасширеннаяПодсказка" id="66"/>
+							<ChildItems>
+								<TextDocumentField name="АлгоритмВычисленияАдресата" id="5">
+									<DataPath>Объект.АлгоритмВычисленияАдресата</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Height>12</Height>
+									<ContextMenu name="АлгоритмВычисленияАдресатаКонтекстноеМеню" id="6"/>
+									<ExtendedTooltip name="АлгоритмВычисленияАдресатаРасширеннаяПодсказка" id="67"/>
+								</TextDocumentField>
+								<Button name="ПроверитьАлгоритмВычисленияАдресата" id="25">
+									<Type>UsualButton</Type>
+									<Width>12</Width>
+									<Height>1</Height>
+									<CommandName>Form.Command.ПроверитьАлгоритмВычисленияАдресата</CommandName>
+									<Parameter xsi:nil="true"/>
+									<ExtendedTooltip name="ПроверитьАлгоритмВычисленияАдресатаРасширеннаяПодсказка" id="68"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаВложения" id="46">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вложения</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница вложения</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаВложенияРасширеннаяПодсказка" id="69"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаВложения" id="31">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа вложения</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа вложения</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВложенияРасширеннаяПодсказка" id="70"/>
+							<ChildItems>
+								<TextDocumentField name="АлгоритмФормированияВложений" id="32">
+									<DataPath>Объект.АлгоритмФормированияВложений</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Height>12</Height>
+									<ContextMenu name="АлгоритмФормированияВложенийКонтекстноеМеню" id="33"/>
+									<ExtendedTooltip name="АлгоритмФормированияВложенийРасширеннаяПодсказка" id="71"/>
+								</TextDocumentField>
+								<Button name="ПроверитьАлгоритмФормированияВложений" id="37">
+									<Type>UsualButton</Type>
+									<Width>12</Width>
+									<CommandName>Form.Command.ПроверитьАлгоритмФормированияВложений</CommandName>
+									<Parameter xsi:nil="true"/>
+									<ExtendedTooltip name="ПроверитьАлгоритмФормированияВложенийРасширеннаяПодсказка" id="72"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<Table name="СписокПараметров" id="13">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>СписокПараметров</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СписокПараметровКонтекстноеМеню" id="14"/>
+			<AutoCommandBar name="СписокПараметровКоманднаяПанель" id="15"/>
+			<ExtendedTooltip name="СписокПараметровРасширеннаяПодсказка" id="73"/>
+			<SearchStringAddition name="СписокПараметровСтрокаПоиска" id="74">
+				<Source>
+					<lf:elementId>13</lf:elementId>
+					<lf:additionId>0</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокПараметровСтрокаПоискаКонтекстноеМеню" id="75"/>
+				<ExtendedTooltip name="СписокПараметровСтрокаПоискаРасширеннаяПодсказка" id="76"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокПараметровСостояниеПросмотра" id="77">
+				<Source>
+					<lf:elementId>13</lf:elementId>
+					<lf:additionId>1</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокПараметровСостояниеПросмотраКонтекстноеМеню" id="78"/>
+				<ExtendedTooltip name="СписокПараметровСостояниеПросмотраРасширеннаяПодсказка" id="79"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокПараметровУправлениеПоиском" id="80">
+				<Source>
+					<lf:elementId>13</lf:elementId>
+					<lf:additionId>2</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокПараметровУправлениеПоискомКонтекстноеМеню" id="81"/>
+				<ExtendedTooltip name="СписокПараметровУправлениеПоискомРасширеннаяПодсказка" id="82"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="СписокПараметровПараметр" id="16">
+					<DataPath>СписокПараметров.Параметр</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокПараметровПараметрКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="СписокПараметровПараметрРасширеннаяПодсказка" id="83"/>
+				</InputField>
+				<InputField name="СписокПараметровТипПараметра" id="18">
+					<DataPath>СписокПараметров.ТипПараметра</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AvailableTypes>
+						<v8:Type>v8:ValueListType</v8:Type>
+						<v8:Type>xs:boolean</v8:Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:TypeSet>cfg:DocumentRef</v8:TypeSet>
+						<v8:TypeSet>cfg:EnumRef</v8:TypeSet>
+						<v8:TypeSet>cfg:CatalogRef</v8:TypeSet>
+						<v8:NumberQualifiers>
+							<v8:Digits>0</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</AvailableTypes>
+					<ContextMenu name="СписокПараметровТипПараметраКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="СписокПараметровТипПараметраРасширеннаяПодсказка" id="84"/>
+				</InputField>
+				<InputField name="СписокПараметровЗначениеДляПроверки" id="20">
+					<DataPath>СписокПараметров.ЗначениеДляПроверки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ChoiceButton>true</ChoiceButton>
+					<TypeLink>
+						<xr:DataPath>Items.СписокПараметров.CurrentData.ТипПараметра</xr:DataPath>
+						<xr:LinkItem>0</xr:LinkItem>
+					</TypeLink>
+					<ContextMenu name="СписокПараметровЗначениеДляПроверкиКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="СписокПараметровЗначениеДляПроверкиРасширеннаяПодсказка" id="85"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.NSI_ШаблоныОповещений</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<Columns>
+				<AdditionalColumns table="Объект.ИспользуемыеПараметры"/>
+			</Columns>
+		</Attribute>
+		<Attribute name="СписокПараметров" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список параметров</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Параметр" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметр</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТипПараметра" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип параметра</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:TypeDescription</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЗначениеДляПроверки" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значение для проверки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:ValueListType</v8:Type>
+						<v8:Type>xs:boolean</v8:Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:TypeSet>cfg:DocumentRef</v8:TypeSet>
+						<v8:TypeSet>cfg:EnumRef</v8:TypeSet>
+						<v8:TypeSet>cfg:CatalogRef</v8:TypeSet>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ЭтоШаблонОповещенияОДняхРожденияКонтактов" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это шаблон оповещения о днях рождения контактов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПроверитьАлгоритмВычисленияАдресата" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить алгоритм вычисления адресата</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьАлгоритм</Action>
+		</Command>
+		<Command name="ПроверитьАлгоритмФормированияВложений" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить алгоритм вычисления адресата</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьАлгоритм</Action>
+		</Command>
+		<Command name="ПроверитьТемаСообщения" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить алгоритм вычисления адресата</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьАлгоритм</Action>
+		</Command>
+		<Command name="ПроверитьТелоСообщения" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить алгоритм вычисления адресата</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьАлгоритм</Action>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>0</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<Index>2</Index>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>0</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<Index>1</Index>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>0</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

@@ -1,0 +1,43 @@
+﻿
+&НаКлиенте
+Процедура ВызватьМетод(Команда)
+	ВыполнитьМетодНаСервере();
+КонецПроцедуры
+
+&НаСервере
+Процедура ВыполнитьМетодНаСервере()
+	Определение = Новый WSОпределения("http://1cmsfo/nsi/ws/IDM.1cws?wsdl");
+	Прокси = Новый WSПрокси(Определение, "idm", "IDM", "IDMSoap");
+	Прокси.Пользователь = "Администратор";
+	Прокси.Пароль = "msu2000";
+	Ответ = Неопределено;
+	Если Найти("CreateAccount", ИмяМетода)>0 Тогда
+		Account = Прокси.ФабрикаXDTO.Создать(Прокси.ФабрикаXDTO.Тип("idm", "Account"));
+		ЗаполнитьЗначенияСвойств(Account, ЭтаФорма);
+		Выполнить("Ответ = Прокси."+ИмяМетода+"(Account)");
+	ИначеЕсли Найти("EditAccount", ИмяМетода)>0 Тогда
+		//contractor_info = Прокси.ФабрикаXDTO.Создать(Прокси.ФабрикаXDTO.Тип("http://dvk.sportmaster.ru", "contractor_info"));
+		//ЗаполнитьЗначенияСвойств(contractor_info, ЭтаФорма);
+		//Выполнить("Ответ = Прокси."+ИмяМетода+"(ID, id_shop, contractor_info, language)");
+	ИначеЕсли Найти("GetListOfBases", ИмяМетода)>0 Тогда
+		//Выполнить("Ответ = Прокси."+ИмяМетода+"(INN, KPP, id_shop, language, id_passport)");
+	ИначеЕсли Найти("GetListOfRoles", ИмяМетода)>0 Тогда
+		//contractor_info = Прокси.ФабрикаXDTO.Создать(Прокси.ФабрикаXDTO.Тип("http://dvk.sportmaster.ru", "contractor_info"));
+		//ЗаполнитьЗначенияСвойств(contractor_info, ЭтаФорма);
+		//Выполнить("Ответ = Прокси."+ИмяМетода+"(ID, id_shop, contractor_info, language)");
+	ИначеЕсли Найти("AddTasks", ИмяМетода)>0 Тогда
+		//contractor_info = Прокси.ФабрикаXDTO.Создать(Прокси.ФабрикаXDTO.Тип("http://dvk.sportmaster.ru", "contractor_info"));
+		//ЗаполнитьЗначенияСвойств(contractor_info, ЭтаФорма);
+		//Выполнить("Ответ = Прокси."+ИмяМетода+"(ID, id_shop, contractor_info, language)");		
+	ИначеЕсли Найти("GetTasksStatus", ИмяМетода)>0 Тогда
+		//contractor_info = Прокси.ФабрикаXDTO.Создать(Прокси.ФабрикаXDTO.Тип("http://dvk.sportmaster.ru", "contractor_info"));
+		//ЗаполнитьЗначенияСвойств(contractor_info, ЭтаФорма);
+		//Выполнить("Ответ = Прокси."+ИмяМетода+"(ID, id_shop, contractor_info, language)");		
+	Иначе		
+		//basket_info = Прокси.ФабрикаXDTO.Создать(Прокси.ФабрикаXDTO.Тип("http://dvk.sportmaster.ru", "basket_info"));
+		//ЗаполнитьЗначенияСвойств(basket_info, ЭтаФорма);
+		//Выполнить("Ответ = Прокси."+ИмяМетода+"(basket_info, language)");
+	КонецЕсли;
+	//Сообщить("return_data = "+Ответ.return_data+", cтатус = "+Ответ.Status+". Данные ошибки = num: "+Ответ.error_data.code+". Описание: "+Ответ.error_data.desc);
+КонецПроцедуры
+

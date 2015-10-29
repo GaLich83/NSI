@@ -1,0 +1,98 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="idm">
+	<valueType name="TypeOfTask" base="xs:string" itemType="xs:string">
+		<enumeration xsi:type="xs:string">AddAccount</enumeration>
+		<enumeration xsi:type="xs:string">BlockAccount</enumeration>
+		<enumeration xsi:type="xs:string">EditAccount</enumeration>
+		<enumeration xsi:type="xs:string">DeleteAccount</enumeration>
+		<enumeration xsi:type="xs:string">AddRole</enumeration>
+		<enumeration xsi:type="xs:string">DeleteRole</enumeration>
+		<enumeration xsi:type="xs:string">Other</enumeration>
+	</valueType>
+	<valueType name="StatusAccount" base="xs:string" itemType="xs:string">
+		<enumeration xsi:type="xs:string">Active</enumeration>
+		<enumeration xsi:type="xs:string">Inactive</enumeration>
+	</valueType>
+	<valueType name="TaskStatus" base="xs:string" variety="List" itemType="xs:string">
+		<enumeration xsi:type="xs:string">Active</enumeration>
+		<enumeration xsi:type="xs:string">Canceled</enumeration>
+		<enumeration xsi:type="xs:string">Success</enumeration>
+	</valueType>
+	<valueType name="EditType" base="xs:string" variety="List" itemType="xs:string">
+		<enumeration xsi:type="xs:string">Add</enumeration>
+		<enumeration xsi:type="xs:string">Remove</enumeration>
+	</valueType>
+	<objectType name="Account" open="true">
+		<property name="UserID" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Family" type="xs:string"/>
+		<property name="Name" type="xs:string"/>
+		<property name="Otchestvo" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Position" type="xs:string" lowerBound="0" upperBound="1" nillable="true"/>
+		<property name="Division" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="DateOfChange" type="xs:dateTime" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="idm" name="Status" type="d3p1:StatusAccount" lowerBound="0" nillable="true"/>
+		<property name="ID_SMP" type="xs:string"/>
+		<property name="LoginAD"/>
+		<property name="Technical" type="xs:boolean"/>
+	</objectType>
+	<objectType name="Role">
+		<property name="RoleID"/>
+		<property name="Name" type="xs:string"/>
+		<property name="BaseID" type="xs:string"/>
+		<property name="Description" type="xs:string"/>
+	</objectType>
+	<objectType name="RolesByAccount">
+		<property name="ID_User" type="xs:string"/>
+		<property xmlns:d3p1="idm" name="ListOfRoles" type="d3p1:ListOfRoles" nillable="true"/>
+	</objectType>
+	<objectType name="ListOfAccounts">
+		<property xmlns:d3p1="idm" name="Account" type="d3p1:Account" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="Task">
+		<property name="ID_Task" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="idm" name="TypeTask" type="d3p1:TypeOfTask" nillable="true"/>
+		<property name="Description" type="xs:string" nillable="true"/>
+		<property name="Parameters" nillable="true"/>
+		<property name="Status" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="Response">
+		<property name="Tasks" lowerBound="0" upperBound="-1" nillable="true"/>
+		<property xmlns:d3p1="idm" name="Errors" type="d3p1:Error" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="Error">
+		<property name="Code" type="xs:string"/>
+		<property name="Description" type="xs:string"/>
+	</objectType>
+	<objectType name="ListOfRoles">
+		<property xmlns:d3p1="idm" name="Roles" type="d3p1:Role" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="Base">
+		<property name="BaseID" type="xs:string"/>
+		<property name="Description" type="xs:string"/>
+	</objectType>
+	<objectType name="ListOfBases">
+		<property xmlns:d3p1="idm" name="Bases" type="d3p1:Base" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="ListOfTasks">
+		<property xmlns:d3p1="idm" name="Tasks" type="d3p1:Task" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="ListOfErrors">
+		<property xmlns:d3p1="idm" name="Error" type="d3p1:Error" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="ListOfRolesByAccounts">
+		<property xmlns:d3p1="idm" name="RolesByAccounts" type="d3p1:RolesByAccount" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="UsersID">
+		<property name="UserID" type="xs:string" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="ListOfChangeRolesAccounts">
+		<property xmlns:d3p1="idm" name="ListOfChangeRolesByAccount" type="d3p1:ListOfChangeRolesByAccount" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="ListOfChangeRolesByAccount">
+		<property name="ID_User" type="xs:string"/>
+		<property xmlns:d3p1="idm" name="ListOfChangeRoles" type="d3p1:ListOfChangeRoles" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="ListOfChangeRoles">
+		<property name="RoleID" type="xs:string"/>
+		<property xmlns:d3p1="idm" name="EditType" type="d3p1:EditType"/>
+	</objectType>
+</package>

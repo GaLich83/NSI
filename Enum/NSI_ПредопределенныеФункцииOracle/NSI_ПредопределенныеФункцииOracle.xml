@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Enum uuid="231843fe-f89f-462f-b46c-de9827515078">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.NSI_ПредопределенныеФункцииOracle" category="Ref">
+				<xr:TypeId>fc71da31-d25c-483e-8520-76502e84d20a</xr:TypeId>
+				<xr:ValueId>a42ade4d-0710-40c2-9b94-197fc7285df2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.NSI_ПредопределенныеФункцииOracle" category="Manager">
+				<xr:TypeId>9f5fa2c3-5e24-4875-961d-087777d5cfef</xr:TypeId>
+				<xr:ValueId>2cf339e8-1ac1-4c5c-b488-30ddf3efd0dd</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.NSI_ПредопределенныеФункцииOracle" category="List">
+				<xr:TypeId>f5b21192-ac2d-40ec-a493-315a579a6a6f</xr:TypeId>
+				<xr:ValueId>3e8ac0b8-f5ad-4830-908e-930ec0646d37</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>NSI_ПредопределенныеФункцииOracle</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предопределенные функции Oracle</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="33701ba7-a874-41a1-ab36-75ede71a482c">
+				<Properties>
+					<Name>ПолучитьСписокОбъектов</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Получить список объектов</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Возвращает таблицу OBJECT_NAME, OBJECT_TYPE для типов объектов VIEW, TABLE, PACKAGE</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="d1f240f7-2102-4e4a-9519-b1c6f11c6938">
+				<Properties>
+					<Name>ПолучитьСписокПолейТаблицы</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Получить список полей таблицы</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Возвращает поля COLUMN_NAME, DATA_TYPE, COLUMN_ID для TABLE или VIEW по имени таблицы</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="4672c228-9198-46c2-9a86-7d31df556c16">
+				<Properties>
+					<Name>ПолучитьСписокПроцедур</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Получить список процедур</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Возвращает procedure_name, object_name по имени PACKAGE</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="207563d1-bef9-452a-b041-46b431b10cce">
+				<Properties>
+					<Name>ПолучитьСписокПараметровПроцедуры</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Получить список параметров процедуры</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Возвращает список ARGUMENT_NAME, DATA_TYPE, SEQUENCE, IN_OUT по имени PACKAGE и имени процедуры</Comment>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

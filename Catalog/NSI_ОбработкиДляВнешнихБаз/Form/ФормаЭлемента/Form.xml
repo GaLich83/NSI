@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnWriteAtServer">ПриЗаписиНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="ИмяХранилищаИБ" id="7">
+			<DataPath>Объект.ИмяХранилищаИБ</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ИмяХранилищаИБКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ИмяХранилищаИБРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<UsualGroup name="Группа1" id="60">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="61"/>
+			<ChildItems>
+				<Table name="ТолькоДляХранилищ" id="35">
+					<TitleLocation>Top</TitleLocation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.ТолькоДляХранилищ</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ТолькоДляХранилищКонтекстноеМеню" id="36"/>
+					<AutoCommandBar name="ТолькоДляХранилищКоманднаяПанель" id="37"/>
+					<ExtendedTooltip name="ТолькоДляХранилищРасширеннаяПодсказка" id="38"/>
+					<SearchStringAddition name="ТолькоДляХранилищСтрокаПоиска" id="39">
+						<Source>
+							<lf:elementId>35</lf:elementId>
+							<lf:additionId>0</lf:additionId>
+						</Source>
+						<ContextMenu name="ТолькоДляХранилищСтрокаПоискаКонтекстноеМеню" id="42"/>
+						<ExtendedTooltip name="ТолькоДляХранилищСтрокаПоискаРасширеннаяПодсказка" id="43"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ТолькоДляХранилищСостояниеПросмотра" id="44">
+						<Source>
+							<lf:elementId>35</lf:elementId>
+							<lf:additionId>1</lf:additionId>
+						</Source>
+						<ContextMenu name="ТолькоДляХранилищСостояниеПросмотраКонтекстноеМеню" id="47"/>
+						<ExtendedTooltip name="ТолькоДляХранилищСостояниеПросмотраРасширеннаяПодсказка" id="48"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ТолькоДляХранилищУправлениеПоиском" id="49">
+						<Source>
+							<lf:elementId>35</lf:elementId>
+							<lf:additionId>2</lf:additionId>
+						</Source>
+						<ContextMenu name="ТолькоДляХранилищУправлениеПоискомКонтекстноеМеню" id="52"/>
+						<ExtendedTooltip name="ТолькоДляХранилищУправлениеПоискомРасширеннаяПодсказка" id="53"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="ТолькоДляХранилищНомерСтроки" id="54">
+							<DataPath>Объект.ТолькоДляХранилищ.LineNumber</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ТолькоДляХранилищНомерСтрокиКонтекстноеМеню" id="55"/>
+							<ExtendedTooltip name="ТолькоДляХранилищНомерСтрокиРасширеннаяПодсказка" id="56"/>
+						</LabelField>
+						<InputField name="ТолькоДляХранилищИмяХранилищаИБ" id="57">
+							<DataPath>Объект.ТолькоДляХранилищ.ИмяХранилищаИБ</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ТолькоДляХранилищИмяХранилищаИБКонтекстноеМеню" id="58"/>
+							<ExtendedTooltip name="ТолькоДляХранилищИмяХранилищаИБРасширеннаяПодсказка" id="59"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<Table name="ТолькоДляБаз" id="10">
+					<Representation>List</Representation>
+					<TitleLocation>Top</TitleLocation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.ТолькоДляБаз</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ТолькоДляБазКонтекстноеМеню" id="11"/>
+					<AutoCommandBar name="ТолькоДляБазКоманднаяПанель" id="12"/>
+					<ExtendedTooltip name="ТолькоДляБазРасширеннаяПодсказка" id="13"/>
+					<SearchStringAddition name="ТолькоДляБазСтрокаПоиска" id="14">
+						<Source>
+							<lf:elementId>10</lf:elementId>
+							<lf:additionId>0</lf:additionId>
+						</Source>
+						<ContextMenu name="ТолькоДляБазСтрокаПоискаКонтекстноеМеню" id="17"/>
+						<ExtendedTooltip name="ТолькоДляБазСтрокаПоискаРасширеннаяПодсказка" id="18"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ТолькоДляБазСостояниеПросмотра" id="19">
+						<Source>
+							<lf:elementId>10</lf:elementId>
+							<lf:additionId>1</lf:additionId>
+						</Source>
+						<ContextMenu name="ТолькоДляБазСостояниеПросмотраКонтекстноеМеню" id="22"/>
+						<ExtendedTooltip name="ТолькоДляБазСостояниеПросмотраРасширеннаяПодсказка" id="23"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ТолькоДляБазУправлениеПоиском" id="24">
+						<Source>
+							<lf:elementId>10</lf:elementId>
+							<lf:additionId>2</lf:additionId>
+						</Source>
+						<ContextMenu name="ТолькоДляБазУправлениеПоискомКонтекстноеМеню" id="27"/>
+						<ExtendedTooltip name="ТолькоДляБазУправлениеПоискомРасширеннаяПодсказка" id="28"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="ТолькоДляБазНомерСтроки" id="29">
+							<DataPath>Объект.ТолькоДляБаз.LineNumber</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ТолькоДляБазНомерСтрокиКонтекстноеМеню" id="30"/>
+							<ExtendedTooltip name="ТолькоДляБазНомерСтрокиРасширеннаяПодсказка" id="31"/>
+						</LabelField>
+						<InputField name="ТолькоДляБазБаза" id="32">
+							<DataPath>Объект.ТолькоДляБаз.База</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ТолькоДляБазБазаКонтекстноеМеню" id="33"/>
+							<ExtendedTooltip name="ТолькоДляБазБазаРасширеннаяПодсказка" id="34"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа2" id="62">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="63"/>
+			<ChildItems>
+				<Table name="ТолькоДляРолей" id="64">
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.ТолькоДляРолей</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ТолькоДляРолейКонтекстноеМеню" id="65"/>
+					<AutoCommandBar name="ТолькоДляРолейКоманднаяПанель" id="66"/>
+					<ExtendedTooltip name="ТолькоДляРолейРасширеннаяПодсказка" id="67"/>
+					<SearchStringAddition name="ТолькоДляРолейСтрокаПоиска" id="68">
+						<Source>
+							<lf:elementId>64</lf:elementId>
+							<lf:additionId>0</lf:additionId>
+						</Source>
+						<ContextMenu name="ТолькоДляРолейСтрокаПоискаКонтекстноеМеню" id="71"/>
+						<ExtendedTooltip name="ТолькоДляРолейСтрокаПоискаРасширеннаяПодсказка" id="72"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ТолькоДляРолейСостояниеПросмотра" id="73">
+						<Source>
+							<lf:elementId>64</lf:elementId>
+							<lf:additionId>1</lf:additionId>
+						</Source>
+						<ContextMenu name="ТолькоДляРолейСостояниеПросмотраКонтекстноеМеню" id="76"/>
+						<ExtendedTooltip name="ТолькоДляРолейСостояниеПросмотраРасширеннаяПодсказка" id="77"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ТолькоДляРолейУправлениеПоиском" id="78">
+						<Source>
+							<lf:elementId>64</lf:elementId>
+							<lf:additionId>2</lf:additionId>
+						</Source>
+						<ContextMenu name="ТолькоДляРолейУправлениеПоискомКонтекстноеМеню" id="81"/>
+						<ExtendedTooltip name="ТолькоДляРолейУправлениеПоискомРасширеннаяПодсказка" id="82"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="ТолькоДляРолейНомерСтроки" id="83">
+							<DataPath>Объект.ТолькоДляРолей.LineNumber</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ТолькоДляРолейНомерСтрокиКонтекстноеМеню" id="84"/>
+							<ExtendedTooltip name="ТолькоДляРолейНомерСтрокиРасширеннаяПодсказка" id="85"/>
+						</LabelField>
+						<InputField name="ТолькоДляРолейРоль" id="86">
+							<DataPath>Объект.ТолькоДляРолей.Роль</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ТолькоДляРолейРольКонтекстноеМеню" id="87"/>
+							<ExtendedTooltip name="ТолькоДляРолейРольРасширеннаяПодсказка" id="88"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<Table name="ТолькоДляПользователей" id="89">
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.ТолькоДляПользователей</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ТолькоДляПользователейКонтекстноеМеню" id="90"/>
+					<AutoCommandBar name="ТолькоДляПользователейКоманднаяПанель" id="91"/>
+					<ExtendedTooltip name="ТолькоДляПользователейРасширеннаяПодсказка" id="92"/>
+					<SearchStringAddition name="ТолькоДляПользователейСтрокаПоиска" id="93">
+						<Source>
+							<lf:elementId>89</lf:elementId>
+							<lf:additionId>0</lf:additionId>
+						</Source>
+						<ContextMenu name="ТолькоДляПользователейСтрокаПоискаКонтекстноеМеню" id="96"/>
+						<ExtendedTooltip name="ТолькоДляПользователейСтрокаПоискаРасширеннаяПодсказка" id="97"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ТолькоДляПользователейСостояниеПросмотра" id="98">
+						<Source>
+							<lf:elementId>89</lf:elementId>
+							<lf:additionId>1</lf:additionId>
+						</Source>
+						<ContextMenu name="ТолькоДляПользователейСостояниеПросмотраКонтекстноеМеню" id="101"/>
+						<ExtendedTooltip name="ТолькоДляПользователейСостояниеПросмотраРасширеннаяПодсказка" id="102"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ТолькоДляПользователейУправлениеПоиском" id="103">
+						<Source>
+							<lf:elementId>89</lf:elementId>
+							<lf:additionId>2</lf:additionId>
+						</Source>
+						<ContextMenu name="ТолькоДляПользователейУправлениеПоискомКонтекстноеМеню" id="106"/>
+						<ExtendedTooltip name="ТолькоДляПользователейУправлениеПоискомРасширеннаяПодсказка" id="107"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="ТолькоДляПользователейНомерСтроки" id="108">
+							<DataPath>Объект.ТолькоДляПользователей.LineNumber</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ТолькоДляПользователейНомерСтрокиКонтекстноеМеню" id="109"/>
+							<ExtendedTooltip name="ТолькоДляПользователейНомерСтрокиРасширеннаяПодсказка" id="110"/>
+						</LabelField>
+						<InputField name="ТолькоДляПользователейПользователь" id="111">
+							<DataPath>Объект.ТолькоДляПользователей.Пользователь</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ТолькоДляПользователейПользовательКонтекстноеМеню" id="112"/>
+							<ExtendedTooltip name="ТолькоДляПользователейПользовательРасширеннаяПодсказка" id="113"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.NSI_ОбработкиДляВнешнихБаз</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Parameters>
+		<Parameter name="ЗначениеКопирования">
+			<Type>
+				<v8:Type>cfg:CatalogRef.NSI_ОбработкиДляВнешнихБаз</v8:Type>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+	</Parameters>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>InformationRegister.ПрисоединенныеФайлы.StandardCommand.OpenByValue.ПрисоединенныйФайл</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

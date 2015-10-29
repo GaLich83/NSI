@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="25"/>
+		</InputField>
+		<InputField name="Наименование" id="3">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="26"/>
+		</InputField>
+		<Table name="СписокПараметров" id="18">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>СписокПараметров</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СписокПараметровКонтекстноеМеню" id="19"/>
+			<AutoCommandBar name="СписокПараметровКоманднаяПанель" id="20"/>
+			<ExtendedTooltip name="СписокПараметровРасширеннаяПодсказка" id="27"/>
+			<SearchStringAddition name="СписокПараметровСтрокаПоиска" id="28">
+				<Source>
+					<lf:elementId>18</lf:elementId>
+					<lf:additionId>0</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокПараметровСтрокаПоискаКонтекстноеМеню" id="29"/>
+				<ExtendedTooltip name="СписокПараметровСтрокаПоискаРасширеннаяПодсказка" id="30"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокПараметровСостояниеПросмотра" id="31">
+				<Source>
+					<lf:elementId>18</lf:elementId>
+					<lf:additionId>1</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокПараметровСостояниеПросмотраКонтекстноеМеню" id="32"/>
+				<ExtendedTooltip name="СписокПараметровСостояниеПросмотраРасширеннаяПодсказка" id="33"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокПараметровУправлениеПоиском" id="34">
+				<Source>
+					<lf:elementId>18</lf:elementId>
+					<lf:additionId>2</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокПараметровУправлениеПоискомКонтекстноеМеню" id="35"/>
+				<ExtendedTooltip name="СписокПараметровУправлениеПоискомРасширеннаяПодсказка" id="36"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="СписокПараметровИмяРеквизита" id="21">
+					<DataPath>СписокПараметров.ИмяРеквизита</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокПараметровИмяРеквизитаКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="СписокПараметровИмяРеквизитаРасширеннаяПодсказка" id="37"/>
+				</InputField>
+				<InputField name="СписокПараметровТипПараметра" id="23">
+					<DataPath>СписокПараметров.ТипПараметра</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокПараметровТипПараметраКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="СписокПараметровТипПараметраРасширеннаяПодсказка" id="38"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<Table name="Правила" id="5">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Правила</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ПравилаКонтекстноеМеню" id="6"/>
+			<AutoCommandBar name="ПравилаКоманднаяПанель" id="7"/>
+			<ExtendedTooltip name="ПравилаРасширеннаяПодсказка" id="39"/>
+			<SearchStringAddition name="ПравилаСтрокаПоиска" id="40">
+				<Source>
+					<lf:elementId>5</lf:elementId>
+					<lf:additionId>0</lf:additionId>
+				</Source>
+				<ContextMenu name="ПравилаСтрокаПоискаКонтекстноеМеню" id="41"/>
+				<ExtendedTooltip name="ПравилаСтрокаПоискаРасширеннаяПодсказка" id="42"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ПравилаСостояниеПросмотра" id="43">
+				<Source>
+					<lf:elementId>5</lf:elementId>
+					<lf:additionId>1</lf:additionId>
+				</Source>
+				<ContextMenu name="ПравилаСостояниеПросмотраКонтекстноеМеню" id="44"/>
+				<ExtendedTooltip name="ПравилаСостояниеПросмотраРасширеннаяПодсказка" id="45"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ПравилаУправлениеПоиском" id="46">
+				<Source>
+					<lf:elementId>5</lf:elementId>
+					<lf:additionId>2</lf:additionId>
+				</Source>
+				<ContextMenu name="ПравилаУправлениеПоискомКонтекстноеМеню" id="47"/>
+				<ExtendedTooltip name="ПравилаУправлениеПоискомРасширеннаяПодсказка" id="48"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ПравилаНомерСтроки" id="8">
+					<DataPath>Объект.Правила.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПравилаНомерСтрокиКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="ПравилаНомерСтрокиРасширеннаяПодсказка" id="49"/>
+				</LabelField>
+				<InputField name="ПравилаПравило" id="10">
+					<DataPath>Объект.Правила.Правило</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПравилаПравилоКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ПравилаПравилоРасширеннаяПодсказка" id="50"/>
+				</InputField>
+				<InputField name="ПравилаПорядок" id="12">
+					<DataPath>Объект.Правила.Порядок</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПравилаПорядокКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="ПравилаПорядокРасширеннаяПодсказка" id="51"/>
+				</InputField>
+				<CheckBoxField name="ПравилаВозвращаетЗначение" id="14">
+					<DataPath>Объект.Правила.ВозвращаетЗначение</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПравилаВозвращаетЗначениеКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ПравилаВозвращаетЗначениеРасширеннаяПодсказка" id="52"/>
+				</CheckBoxField>
+				<InputField name="ПравилаОписание" id="16">
+					<DataPath>Объект.Правила.Описание</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<MultiLine>true</MultiLine>
+					<ContextMenu name="ПравилаОписаниеКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ПравилаОписаниеРасширеннаяПодсказка" id="53"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.NSI_ПакетыПравилАсинхроннойРаботы</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="СписокПараметров" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список параметров</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИмяРеквизита" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя реквизита</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТипПараметра" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип параметра</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:TypeDescription</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+</Form>
