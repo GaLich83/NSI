@@ -564,6 +564,7 @@
 			<CommonModule>NSI_РаботаСОповещениями</CommonModule>
 			<CommonModule>NSI_РаботаСПереводом</CommonModule>
 			<CommonModule>NSI_РаботаСПользователями</CommonModule>
+			<CommonModule>NSI_РаботаСЭлектроннымАрхивом</CommonModule>
 			<CommonModule>АдминистрированиеКластераCOMКлиентСервер</CommonModule>
 			<CommonModule>АдминистрированиеКластераRASКлиентСервер</CommonModule>
 			<CommonModule>АдминистрированиеКластераКлиентСервер</CommonModule>

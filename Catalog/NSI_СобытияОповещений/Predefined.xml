@@ -6,4 +6,10 @@
 		<Description>Ответ от тикета</Description>
 		<IsFolder>false</IsFolder>
 	</Item>
+	<Item id="00166aea-7e6e-42ec-8280-65878fd5a439">
+		<Name>СобытиеОтЭлектронногоАрхива</Name>
+		<Code>100000001</Code>
+		<Description>Событие от электронного архива</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
 </PredefinedData>

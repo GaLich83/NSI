@@ -31,7 +31,23 @@
 					<ProcedureName>AddDocEvent</ProcedureName>
 					<DataLockControlMode>Managed</DataLockControlMode>
 				</Properties>
-				<ChildObjects/>
+				<ChildObjects>
+					<Parameter uuid="56bc8a74-1842-4467-9b5e-f63a1890f1ab">
+						<Properties>
+							<Name>SysRowID</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Sys row ID</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
 			</Operation>
 		</ChildObjects>
 	</WebService>
