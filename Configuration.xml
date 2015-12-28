@@ -1392,11 +1392,14 @@
 			<CommonForm>ФормаНастроекОтчета</CommonForm>
 			<CommonForm>ФормаОтчета</CommonForm>
 			<CommonForm>ЭлектроннаяПодпись</CommonForm>
+			<Catalog>NSI_ВидыМД</Catalog>
 			<Catalog>NSI_ГруппыДоступаВИБ</Catalog>
 			<Catalog>NSI_ГруппыПользователейВИБ</Catalog>
 			<Catalog>NSI_ЗапросыДанных</Catalog>
 			<Catalog>NSI_ИзмененияОбъектовВнешнихБаз</Catalog>
+			<Catalog>NSI_ИсточникиЗапросовМД</Catalog>
 			<Catalog>NSI_ЛогированиеФормированияОтчетов</Catalog>
+			<Catalog>NSI_МастерДанные</Catalog>
 			<Catalog>NSI_НастройкиПочтовыхРассылокПоИзменениям</Catalog>
 			<Catalog>NSI_ОбработкиДляВнешнихБаз</Catalog>
 			<Catalog>NSI_ОбработкиДляВнешнихБазПрисоединенныеФайлы</Catalog>
@@ -1466,9 +1469,6 @@
 			<Catalog>ШаблоныЗаданийОчереди</Catalog>
 			<Catalog>ЭлектронноеПисьмоВходящееПрисоединенныеФайлы</Catalog>
 			<Catalog>ЭлектронноеПисьмоИсходящееПрисоединенныеФайлы</Catalog>
-			<Catalog>NSI_ВидыМД</Catalog>
-			<Catalog>NSI_МастерДанные</Catalog>
-			<Catalog>NSI_ИсточникиЗапросовМД</Catalog>
 			<Document>Анкета</Document>
 			<Document>Встреча</Document>
 			<Document>ЗапланированноеВзаимодействие</Document>
