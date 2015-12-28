@@ -107,7 +107,7 @@
 			<ObjectAutonumerationMode>NotAutoFree</ObjectAutonumerationMode>
 			<ModalityUseMode>DontUse</ModalityUseMode>
 			<SynchronousExtensionAndAddInCallUseMode>DontUse</SynchronousExtensionAndAddInCallUseMode>
-			<InterfaceCompatibilityMode>Version8_2EnableTaxi</InterfaceCompatibilityMode>
+			<InterfaceCompatibilityMode>TaxiEnableVersion8_2</InterfaceCompatibilityMode>
 			<CompatibilityMode>DontUse</CompatibilityMode>
 			<DefaultConstantsForm/>
 		</Properties>
@@ -118,9 +118,9 @@
 			<Subsystem>NSI_ВсеПодсистемы</Subsystem>
 			<Subsystem>NSI_БазыИОбщиеМеханизмы</Subsystem>
 			<Subsystem>NSI_ЖурналИзменений</Subsystem>
+			<Subsystem>NSI_MDM</Subsystem>
 			<Subsystem>NSI_IDM</Subsystem>
 			<Subsystem>NSI_ЗапросыКБазамИМаппинг</Subsystem>
-			<Subsystem>NSI_МастерДанные</Subsystem>
 			<Subsystem>NSI_Перевод</Subsystem>
 			<Subsystem>NSI_МенеджерЗаданий</Subsystem>
 			<Subsystem>NSI_События</Subsystem>
@@ -454,6 +454,8 @@
 			<CommonPicture>ЭлектронноеПисьмо</CommonPicture>
 			<CommonPicture>ЭлектронноеПисьмоВходящее</CommonPicture>
 			<CommonPicture>ЭлектронноеПисьмоИсходящее</CommonPicture>
+			<CommonPicture>NSI_ПериодическийРеквизит</CommonPicture>
+			<CommonPicture>NSI_КлючевойРеквизит</CommonPicture>
 			<SessionParameter>АвторизованныйПользователь</SessionParameter>
 			<SessionParameter>ВидыДоступаБезГруппДляЗначенияДоступа</SessionParameter>
 			<SessionParameter>ВидыДоступаСОднойГруппойДляЗначенияДоступа</SessionParameter>
@@ -936,6 +938,12 @@
 			<CommonModule>ЭлектроннаяПодписьСлужебныйКлиент</CommonModule>
 			<CommonModule>ЭлектроннаяПодписьСлужебныйКлиентСервер</CommonModule>
 			<CommonModule>ЭлектроннаяПодписьСлужебныйПовтИсп</CommonModule>
+			<CommonModule>NSI_РаботаСМастерДаннымиСервер</CommonModule>
+			<CommonModule>NSI_РаботаСМастерДаннымиСерверПовторноеИспользование</CommonModule>
+			<CommonModule>NSI_РаботаСМастерДаннымиПоиск</CommonModule>
+			<CommonModule>NSI_РаботаСМастерДаннымиРаботаСВнешнимиСистемами</CommonModule>
+			<CommonModule>NSI_БазовыеФункции</CommonModule>
+			<CommonModule>NSI_РаботаСМастерДаннымиСерверПереопределяемый</CommonModule>
 			<CommonAttribute>ОбластьДанныхВспомогательныеДанные</CommonAttribute>
 			<CommonAttribute>ОбластьДанныхОсновныеДанные</CommonAttribute>
 			<ExchangePlan>ОбменСообщениями</ExchangePlan>
@@ -969,6 +977,7 @@
 			<XDTOPackage>УправлениеПриложениями</XDTOPackage>
 			<XDTOPackage>УправлениеРезервнымКопированиемОбластейДанных_1_0_2_1</XDTOPackage>
 			<XDTOPackage>УправлениеРезервнымКопированиемОбластейДанных_1_0_3_1</XDTOPackage>
+			<XDTOPackage>MDM</XDTOPackage>
 			<WebService>NSI</WebService>
 			<WebService>IDM</WebService>
 			<WebService>Saperion</WebService>
@@ -978,6 +987,7 @@
 			<WebService>InterfaceVersion</WebService>
 			<WebService>MessageExchange</WebService>
 			<WebService>MessageExchange_2_0_1_6</WebService>
+			<WebService>MDM</WebService>
 			<EventSubscription>ВариантыОтветовАнкетЗаполнитьЗначениеРеквизитаУпорядочивания</EventSubscription>
 			<EventSubscription>ВариантыОтветовАнкетСброситьЗначениеРеквизитаУпорядочивания</EventSubscription>
 			<EventSubscription>ВариантыОтчетовПередУдалениемИдентификатораОбъектаМетаданных</EventSubscription>
@@ -1382,15 +1392,10 @@
 			<CommonForm>ФормаНастроекОтчета</CommonForm>
 			<CommonForm>ФормаОтчета</CommonForm>
 			<CommonForm>ЭлектроннаяПодпись</CommonForm>
-			<Catalog>NSI_Банки</Catalog>
-			<Catalog>NSI_БанковскиеСчета</Catalog>
 			<Catalog>NSI_ГруппыДоступаВИБ</Catalog>
 			<Catalog>NSI_ГруппыПользователейВИБ</Catalog>
-			<Catalog>NSI_ДоговорыКонтрагентов</Catalog>
-			<Catalog>NSI_ДоговорыКонтрагентовПрисоединенныеФайлы</Catalog>
 			<Catalog>NSI_ЗапросыДанных</Catalog>
 			<Catalog>NSI_ИзмененияОбъектовВнешнихБаз</Catalog>
-			<Catalog>NSI_Контрагенты</Catalog>
 			<Catalog>NSI_ЛогированиеФормированияОтчетов</Catalog>
 			<Catalog>NSI_НастройкиПочтовыхРассылокПоИзменениям</Catalog>
 			<Catalog>NSI_ОбработкиДляВнешнихБаз</Catalog>
@@ -1461,6 +1466,9 @@
 			<Catalog>ШаблоныЗаданийОчереди</Catalog>
 			<Catalog>ЭлектронноеПисьмоВходящееПрисоединенныеФайлы</Catalog>
 			<Catalog>ЭлектронноеПисьмоИсходящееПрисоединенныеФайлы</Catalog>
+			<Catalog>NSI_ВидыМД</Catalog>
+			<Catalog>NSI_МастерДанные</Catalog>
+			<Catalog>NSI_ИсточникиЗапросовМД</Catalog>
 			<Document>Анкета</Document>
 			<Document>Встреча</Document>
 			<Document>ЗапланированноеВзаимодействие</Document>
@@ -1474,6 +1482,7 @@
 			<Enum>NSI_ВидыБД</Enum>
 			<Enum>NSI_ВидыДоговоровКонтрагентов</Enum>
 			<Enum>NSI_ИменаХранилищИБ</Enum>
+			<Enum>NSI_ИспользованиеПоляМД</Enum>
 			<Enum>NSI_ПредопределенныеФункцииOracle</Enum>
 			<Enum>NSI_СостоянияЗаданий</Enum>
 			<Enum>NSI_СтатусыСобытийОповещений</Enum>
@@ -1725,6 +1734,9 @@
 			<InformationRegister>УровниСокращенийАдресныхСведений</InformationRegister>
 			<InformationRegister>ФайлыВРабочемКаталоге</InformationRegister>
 			<InformationRegister>ХранимыеФайлыВерсий</InformationRegister>
+			<InformationRegister>NSI_НепериодическиеПоляМД</InformationRegister>
+			<InformationRegister>NSI_ПериодическиеПоляМД</InformationRegister>
+			<InformationRegister>NSI_ХэшиКлючейМастерДанных</InformationRegister>
 			<ChartOfCharacteristicTypes>ВопросыДляАнкетирования</ChartOfCharacteristicTypes>
 			<ChartOfCharacteristicTypes>ДополнительныеРеквизитыИСведения</ChartOfCharacteristicTypes>
 			<ChartOfCharacteristicTypes>ОбъектыАдресацииЗадач</ChartOfCharacteristicTypes>

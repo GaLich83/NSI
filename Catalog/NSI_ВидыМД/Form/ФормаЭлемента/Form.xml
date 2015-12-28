@@ -1,0 +1,708 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<Pages name="ГруппаСтраницы" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="8"/>
+			<Events>
+				<Event name="OnCurrentPageChange">ГруппаСтраницыПриСменеСтраницы</Event>
+			</Events>
+			<ChildItems>
+				<Page name="СтраницаОписанияПолей" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание полей</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница описания полей</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаОписанияПолейРасширеннаяПодсказка" id="10"/>
+					<ChildItems>
+						<Table name="ОписаниеПолей" id="84">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ОписаниеПолей</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ОписаниеПолейКонтекстноеМеню" id="85"/>
+							<AutoCommandBar name="ОписаниеПолейКоманднаяПанель" id="86"/>
+							<ExtendedTooltip name="ОписаниеПолейРасширеннаяПодсказка" id="87"/>
+							<SearchStringAddition name="ОписаниеПолейСтрокаПоиска" id="88">
+								<Source>
+									<lf:elementId>84</lf:elementId>
+									<lf:additionId>0</lf:additionId>
+								</Source>
+								<ContextMenu name="ОписаниеПолейСтрокаПоискаКонтекстноеМеню" id="91"/>
+								<ExtendedTooltip name="ОписаниеПолейСтрокаПоискаРасширеннаяПодсказка" id="92"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ОписаниеПолейСостояниеПросмотра" id="93">
+								<Source>
+									<lf:elementId>84</lf:elementId>
+									<lf:additionId>1</lf:additionId>
+								</Source>
+								<ContextMenu name="ОписаниеПолейСостояниеПросмотраКонтекстноеМеню" id="96"/>
+								<ExtendedTooltip name="ОписаниеПолейСостояниеПросмотраРасширеннаяПодсказка" id="97"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ОписаниеПолейУправлениеПоиском" id="98">
+								<Source>
+									<lf:elementId>84</lf:elementId>
+									<lf:additionId>2</lf:additionId>
+								</Source>
+								<ContextMenu name="ОписаниеПолейУправлениеПоискомКонтекстноеМеню" id="101"/>
+								<ExtendedTooltip name="ОписаниеПолейУправлениеПоискомРасширеннаяПодсказка" id="102"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ОписаниеПолейИмяПоля" id="103">
+									<DataPath>ОписаниеПолей.ИмяПоля</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОписаниеПолейИмяПоляКонтекстноеМеню" id="104"/>
+									<ExtendedTooltip name="ОписаниеПолейИмяПоляРасширеннаяПодсказка" id="105"/>
+									<Events>
+										<Event name="OnChange">ОписаниеПолейИмяПоляПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="ОписаниеПолейСинонимПоля" id="106">
+									<DataPath>ОписаниеПолей.СинонимПоля</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОписаниеПолейСинонимПоляКонтекстноеМеню" id="107"/>
+									<ExtendedTooltip name="ОписаниеПолейСинонимПоляРасширеннаяПодсказка" id="108"/>
+								</InputField>
+								<InputField name="ОписаниеПолейТипПоля" id="118">
+									<DataPath>ОписаниеПолей.ТипПоля</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ChooseType>false</ChooseType>
+									<AvailableTypes>
+										<v8:Type>xs:boolean</v8:Type>
+										<v8:Type>cfg:CatalogRef.NSI_СписокВИБ</v8:Type>
+										<v8:Type>xs:string</v8:Type>
+										<v8:Type>xs:dateTime</v8:Type>
+										<v8:Type>xs:decimal</v8:Type>
+										<v8:Type>cfg:CatalogRef.NSI_МастерДанные</v8:Type>
+										<v8:NumberQualifiers>
+											<v8:Digits>0</v8:Digits>
+											<v8:FractionDigits>0</v8:FractionDigits>
+											<v8:AllowedSign>Any</v8:AllowedSign>
+										</v8:NumberQualifiers>
+										<v8:StringQualifiers>
+											<v8:Length>0</v8:Length>
+											<v8:AllowedLength>Variable</v8:AllowedLength>
+										</v8:StringQualifiers>
+										<v8:DateQualifiers>
+											<v8:DateFractions>DateTime</v8:DateFractions>
+										</v8:DateQualifiers>
+									</AvailableTypes>
+									<ContextMenu name="ОписаниеПолейТипПоляКонтекстноеМеню" id="119"/>
+									<ExtendedTooltip name="ОписаниеПолейТипПоляРасширеннаяПодсказка" id="120"/>
+								</InputField>
+								<InputField name="ОписаниеПолейИспользованиеПоля" id="109">
+									<DataPath>ОписаниеПолей.ИспользованиеПоля</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОписаниеПолейИспользованиеПоляКонтекстноеМеню" id="110"/>
+									<ExtendedTooltip name="ОписаниеПолейИспользованиеПоляРасширеннаяПодсказка" id="111"/>
+								</InputField>
+								<CheckBoxField name="ОписаниеПолейКлючевое" id="112">
+									<DataPath>ОписаниеПолей.Ключевое</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ОписаниеПолейКлючевоеКонтекстноеМеню" id="113"/>
+									<ExtendedTooltip name="ОписаниеПолейКлючевоеРасширеннаяПодсказка" id="114"/>
+								</CheckBoxField>
+								<CheckBoxField name="ОписаниеПолейПериодическое" id="115">
+									<DataPath>ОписаниеПолей.Периодическое</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ОписаниеПолейПериодическоеКонтекстноеМеню" id="116"/>
+									<ExtendedTooltip name="ОписаниеПолейПериодическоеРасширеннаяПодсказка" id="117"/>
+								</CheckBoxField>
+								<InputField name="ОписаниеПолейНастройкиПоля" id="121">
+									<DataPath>ОписаниеПолей.НастройкиПоля</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОписаниеПолейНастройкиПоляКонтекстноеМеню" id="122"/>
+									<ExtendedTooltip name="ОписаниеПолейНастройкиПоляРасширеннаяПодсказка" id="123"/>
+								</InputField>
+								<InputField name="ОписаниеПолейОграниченияПоля" id="124">
+									<DataPath>ОписаниеПолей.ОграниченияПоля</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОписаниеПолейОграниченияПоляКонтекстноеМеню" id="125"/>
+									<ExtendedTooltip name="ОписаниеПолейОграниченияПоляРасширеннаяПодсказка" id="126"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаРасположениеЭлемент" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расположение реквизитов на форме элемента</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница расположение элемент</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаРасположениеЭлементРасширеннаяПодсказка" id="12"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаРасположенияЭлемент" id="13">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа расположения элемент</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа расположения элемент</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаРасположенияЭлементРасширеннаяПодсказка" id="14"/>
+							<ChildItems>
+								<Table name="СписокПолейЭлемента" id="18">
+									<Representation>List</Representation>
+									<TitleLocation>Top</TitleLocation>
+									<ChangeRowSet>false</ChangeRowSet>
+									<ChangeRowOrder>false</ChangeRowOrder>
+									<Header>false</Header>
+									<HorizontalLines>false</HorizontalLines>
+									<VerticalLines>false</VerticalLines>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<DataPath>СписокПолейЭлемента</DataPath>
+									<RowPictureDataPath>СписокПолейЭлемента.Picture</RowPictureDataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Список доступных полей мастер-данных элемента</v8:content>
+										</v8:item>
+									</Title>
+									<CommandSet>
+										<ExcludedCommand>Copy</ExcludedCommand>
+										<ExcludedCommand>CheckAll</ExcludedCommand>
+										<ExcludedCommand>SortListAsc</ExcludedCommand>
+										<ExcludedCommand>MoveUp</ExcludedCommand>
+										<ExcludedCommand>UncheckAll</ExcludedCommand>
+										<ExcludedCommand>SelectAll</ExcludedCommand>
+										<ExcludedCommand>SortListDesc</ExcludedCommand>
+										<ExcludedCommand>Pickup</ExcludedCommand>
+										<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+										<ExcludedCommand>Delete</ExcludedCommand>
+										<ExcludedCommand>EndEdit</ExcludedCommand>
+										<ExcludedCommand>Add</ExcludedCommand>
+										<ExcludedCommand>Change</ExcludedCommand>
+										<ExcludedCommand>MoveDown</ExcludedCommand>
+									</CommandSet>
+									<ContextMenu name="СписокПолейЭлементаКонтекстноеМеню" id="19"/>
+									<AutoCommandBar name="СписокПолейЭлементаКоманднаяПанель" id="20"/>
+									<ExtendedTooltip name="СписокПолейЭлементаРасширеннаяПодсказка" id="21"/>
+									<SearchStringAddition name="СписокПолейЭлементаСтрокаПоиска" id="22">
+										<Source>
+											<lf:elementId>18</lf:elementId>
+											<lf:additionId>0</lf:additionId>
+										</Source>
+										<ContextMenu name="СписокПолейЭлементаСтрокаПоискаКонтекстноеМеню" id="25"/>
+										<ExtendedTooltip name="СписокПолейЭлементаСтрокаПоискаРасширеннаяПодсказка" id="26"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="СписокПолейЭлементаСостояниеПросмотра" id="27">
+										<Source>
+											<lf:elementId>18</lf:elementId>
+											<lf:additionId>1</lf:additionId>
+										</Source>
+										<ContextMenu name="СписокПолейЭлементаСостояниеПросмотраКонтекстноеМеню" id="30"/>
+										<ExtendedTooltip name="СписокПолейЭлементаСостояниеПросмотраРасширеннаяПодсказка" id="31"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="СписокПолейЭлементаУправлениеПоиском" id="32">
+										<Source>
+											<lf:elementId>18</lf:elementId>
+											<lf:additionId>2</lf:additionId>
+										</Source>
+										<ContextMenu name="СписокПолейЭлементаУправлениеПоискомКонтекстноеМеню" id="35"/>
+										<ExtendedTooltip name="СписокПолейЭлементаУправлениеПоискомРасширеннаяПодсказка" id="36"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="DragStart">СписокПолейНачалоПеретаскивания</Event>
+									</Events>
+									<ChildItems>
+										<InputField name="СписокПолейЗначение" id="37">
+											<DataPath>СписокПолейЭлемента.Value</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="СписокПолейЗначениеКонтекстноеМеню" id="38"/>
+											<ExtendedTooltip name="СписокПолейЗначениеРасширеннаяПодсказка" id="39"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+								<UsualGroup name="Группа1" id="42">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Макет расположения данных на форме</v8:content>
+										</v8:item>
+									</Title>
+									<Representation>StrongSeparation</Representation>
+									<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="43"/>
+									<ChildItems>
+										<CommandBar name="Группа2" id="44">
+											<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="45"/>
+											<ChildItems>
+												<Button name="ПроверитьМакет" id="40">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ПроверитьМакетЭлемента</CommandName>
+													<Parameter xsi:nil="true"/>
+													<ExtendedTooltip name="ПроверитьМакетРасширеннаяПодсказка" id="41"/>
+												</Button>
+											</ChildItems>
+										</CommandBar>
+										<SpreadSheetDocumentField name="МакетРасположенияЭлемента" id="15">
+											<DataPath>МакетРасположенияЭлемента</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ShowGrid>true</ShowGrid>
+											<ShowHeaders>true</ShowHeaders>
+											<SelectionShowMode>WhenActive</SelectionShowMode>
+											<Edit>true</Edit>
+											<ShowGroups>false</ShowGroups>
+											<ContextMenu name="МакетРасположенияЭлементаКонтекстноеМеню" id="16"/>
+											<ExtendedTooltip name="МакетРасположенияЭлементаРасширеннаяПодсказка" id="17"/>
+											<Events>
+												<Event name="DragCheck">МакетРасположенияПроверкаПеретаскивания</Event>
+											</Events>
+										</SpreadSheetDocumentField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаРасположениеГруппа" id="46">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расположение реквизитов на форме группы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница расположение</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаРасположениеГруппаРасширеннаяПодсказка" id="47"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаРасположенияГруппа" id="48">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа расположения</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа расположения</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаРасположенияГруппаРасширеннаяПодсказка" id="49"/>
+							<ChildItems>
+								<Table name="СписокПолейГруппы" id="50">
+									<Representation>List</Representation>
+									<TitleLocation>Top</TitleLocation>
+									<ChangeRowSet>false</ChangeRowSet>
+									<ChangeRowOrder>false</ChangeRowOrder>
+									<Header>false</Header>
+									<HorizontalLines>false</HorizontalLines>
+									<VerticalLines>false</VerticalLines>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<DataPath>СписокПолейГруппы</DataPath>
+									<RowPictureDataPath>СписокПолейГруппы.Picture</RowPictureDataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Список доступных полей мастер-данных группы</v8:content>
+										</v8:item>
+									</Title>
+									<CommandSet>
+										<ExcludedCommand>Copy</ExcludedCommand>
+										<ExcludedCommand>CheckAll</ExcludedCommand>
+										<ExcludedCommand>SortListAsc</ExcludedCommand>
+										<ExcludedCommand>MoveUp</ExcludedCommand>
+										<ExcludedCommand>UncheckAll</ExcludedCommand>
+										<ExcludedCommand>SelectAll</ExcludedCommand>
+										<ExcludedCommand>SortListDesc</ExcludedCommand>
+										<ExcludedCommand>Pickup</ExcludedCommand>
+										<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+										<ExcludedCommand>Delete</ExcludedCommand>
+										<ExcludedCommand>EndEdit</ExcludedCommand>
+										<ExcludedCommand>Add</ExcludedCommand>
+										<ExcludedCommand>Change</ExcludedCommand>
+										<ExcludedCommand>MoveDown</ExcludedCommand>
+									</CommandSet>
+									<ContextMenu name="СписокПолейГруппыКонтекстноеМеню" id="51"/>
+									<AutoCommandBar name="СписокПолейГруппыКоманднаяПанель" id="52"/>
+									<ExtendedTooltip name="СписокПолейГруппыРасширеннаяПодсказка" id="53"/>
+									<SearchStringAddition name="СписокПолейГруппыСтрокаПоиска" id="54">
+										<Source>
+											<lf:elementId>50</lf:elementId>
+											<lf:additionId>0</lf:additionId>
+										</Source>
+										<ContextMenu name="СписокПолейГруппыСтрокаПоискаКонтекстноеМеню" id="57"/>
+										<ExtendedTooltip name="СписокПолейГруппыСтрокаПоискаРасширеннаяПодсказка" id="58"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="СписокПолейГруппыСостояниеПросмотра" id="59">
+										<Source>
+											<lf:elementId>50</lf:elementId>
+											<lf:additionId>1</lf:additionId>
+										</Source>
+										<ContextMenu name="СписокПолейГруппыСостояниеПросмотраКонтекстноеМеню" id="62"/>
+										<ExtendedTooltip name="СписокПолейГруппыСостояниеПросмотраРасширеннаяПодсказка" id="63"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="СписокПолейГруппыУправлениеПоиском" id="64">
+										<Source>
+											<lf:elementId>50</lf:elementId>
+											<lf:additionId>2</lf:additionId>
+										</Source>
+										<ContextMenu name="СписокПолейГруппыУправлениеПоискомКонтекстноеМеню" id="67"/>
+										<ExtendedTooltip name="СписокПолейГруппыУправлениеПоискомРасширеннаяПодсказка" id="68"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="DragStart">СписокПолейНачалоПеретаскивания</Event>
+									</Events>
+									<ChildItems>
+										<InputField name="СписокПолейГруппыЗначение" id="81">
+											<DataPath>СписокПолейГруппы.Value</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="СписокПолейГруппыЗначениеКонтекстноеМеню" id="82"/>
+											<ExtendedTooltip name="СписокПолейГруппыЗначениеРасширеннаяПодсказка" id="83"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+								<UsualGroup name="Группа3" id="72">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Макет расположения данных на форме</v8:content>
+										</v8:item>
+									</Title>
+									<Representation>StrongSeparation</Representation>
+									<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="73"/>
+									<ChildItems>
+										<CommandBar name="Группа4" id="74">
+											<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="75"/>
+											<ChildItems>
+												<Button name="ПроверитьМакетГруппы" id="76">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ПроверитьМакетГруппы</CommandName>
+													<Parameter xsi:nil="true"/>
+													<ExtendedTooltip name="ПроверитьМакетГруппыРасширеннаяПодсказка" id="77"/>
+												</Button>
+											</ChildItems>
+										</CommandBar>
+										<SpreadSheetDocumentField name="МакетРасположенияГруппы" id="78">
+											<DataPath>МакетРасположенияГруппы</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ShowGrid>true</ShowGrid>
+											<ShowHeaders>true</ShowHeaders>
+											<Edit>true</Edit>
+											<ContextMenu name="МакетРасположенияГруппыКонтекстноеМеню" id="79"/>
+											<ExtendedTooltip name="МакетРасположенияГруппыРасширеннаяПодсказка" id="80"/>
+											<Events>
+												<Event name="DragCheck">МакетРасположенияПроверкаПеретаскивания</Event>
+											</Events>
+										</SpreadSheetDocumentField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.NSI_ВидыМД</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="МакетРасположенияЭлемента" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Макет расположения элемента</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокПолейЭлемента" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список полей элемента</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокПолейГруппы" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список полей группы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="МакетРасположенияГруппы" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Макет расположения группы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИзмененоОписаниеПолей" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменено описание полей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ХэшДанныхОписанияПолей" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Хэш данных описания полей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>28</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОписаниеПолей" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание полей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИмяПоля" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя поля</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СинонимПоля" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Синоним поля</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИспользованиеПоля" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Использование поля</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.NSI_ИспользованиеПоляМД</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Ключевое" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ключевое</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Периодическое" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Периодическое</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ТипПоля" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип поля</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:TypeDescription</v8:Type>
+					</Type>
+				</Column>
+				<Column name="НастройкиПоля" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки поля</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОграниченияПоля" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ограничения поля</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПроверитьМакетЭлемента" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить макет элемента</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить макет элемента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьМакет</Action>
+		</Command>
+		<Command name="ПроверитьМакетГруппы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить макет группы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить макет элемента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьМакет</Action>
+		</Command>
+		<Command name="КомандаЗаписатьИЗакрыть" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать и закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда записать и закрыть</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаЗаписатьИЗакрыть</Action>
+		</Command>
+	</Commands>
+</Form>

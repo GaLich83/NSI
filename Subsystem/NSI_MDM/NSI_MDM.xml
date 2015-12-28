@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Subsystem uuid="e6feb0a9-7e50-44d6-8a7d-fc81f0a6ed00">
+		<Properties>
+			<Name>NSI_MDM</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>MDM</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture>
+				<xr:Ref>CommonPicture.NSI_МастерДанные</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.NSI_ВидыМД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.NSI_МастерДанные</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.NSI_НепериодическиеПоляМД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.NSI_ПериодическиеПоляМД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.NSI_РаботаСМастерДаннымиСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.NSI_ХэшиКлючейМастерДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.NSI_РаботаСМастерДаннымиСерверПовторноеИспользование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.NSI_ПериодическийРеквизит</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.NSI_КлючевойРеквизит</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.NSI_МастерДанные</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.NSI_РаботаСМастерДаннымиПоиск</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">XDTOPackage.MDM</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.NSI_РаботаСМастерДаннымиРаботаСВнешнимиСистемами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.NSI_ИсточникиЗапросовМД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.NSI_ИспользованиеПоляМД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">WebService.MDM</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.NSI_РаботаСМастерДаннымиСерверПереопределяемый</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

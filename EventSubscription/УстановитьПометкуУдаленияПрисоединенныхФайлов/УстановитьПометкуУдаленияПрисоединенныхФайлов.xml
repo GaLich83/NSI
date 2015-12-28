@@ -12,7 +12,6 @@
 			<Comment/>
 			<Source>
 				<v8:Type>cfg:CatalogObject.NSI_ОбработкиДляВнешнихБаз</v8:Type>
-				<v8:Type>cfg:CatalogObject.NSI_ДоговорыКонтрагентов</v8:Type>
 			</Source>
 			<Event>BeforeWrite</Event>
 			<Handler>CommonModule.ПрисоединенныеФайлы.УстановитьПометкуУдаленияПрисоединенныхФайлов</Handler>

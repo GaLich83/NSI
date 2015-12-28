@@ -1,0 +1,72 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="mdm">
+	<valueType name="ConditionGroups" base="xs:string" variety="Atomic">
+		<enumeration xsi:type="xs:string">AND</enumeration>
+		<enumeration xsi:type="xs:string">OR</enumeration>
+		<enumeration xsi:type="xs:string">NOT</enumeration>
+	</valueType>
+	<valueType name="TypesOfCondition" base="xs:string" variety="Atomic">
+		<enumeration xsi:type="xs:string">EQUAL</enumeration>
+		<enumeration xsi:type="xs:string">NOTEQUAL</enumeration>
+		<enumeration xsi:type="xs:string">LIKE</enumeration>
+		<enumeration xsi:type="xs:string">INLIST</enumeration>
+		<enumeration xsi:type="xs:string">MORE</enumeration>
+		<enumeration xsi:type="xs:string">LESS</enumeration>
+		<enumeration xsi:type="xs:string">MOREOREQUAL</enumeration>
+		<enumeration xsi:type="xs:string">LESSOREQUAL</enumeration>
+		<enumeration xsi:type="xs:string">INGROUP</enumeration>
+	</valueType>
+	<valueType name="SearchValuesTypes">
+		<typeDef base="xs:string"/>
+		<typeDef base="xs:double"/>
+		<typeDef base="xs:boolean"/>
+		<typeDef base="xs:dateTime"/>
+	</valueType>
+	<valueType name="CodeErrors" base="xs:string" variety="Atomic">
+		<enumeration xsi:type="xs:string">DataNotFound</enumeration>
+		<enumeration xsi:type="xs:string">UnspecifiedError</enumeration>
+		<enumeration xsi:type="xs:string">UnknownSourceSystem</enumeration>
+		<enumeration xsi:type="xs:string">UnknownMethod</enumeration>
+		<enumeration xsi:type="xs:string">QueryError</enumeration>
+	</valueType>
+	<objectType name="SearchCondition">
+		<property name="Field" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="mdm" name="Condition" type="d3p1:TypesOfCondition" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="mdm" name="SearchValues" type="d3p1:SearchValuesTypes" lowerBound="0" upperBound="-1" nillable="true"/>
+		<property xmlns:d3p1="mdm" name="GroupOfCondition" type="d3p1:ConditionGroups" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="mdm" name="ConditionStrings" type="d3p1:SearchCondition" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="FindStructure">
+		<property name="DateOfFind" type="xs:dateTime"/>
+		<property xmlns:d3p1="mdm" name="ConditionsOfSearch" type="d3p1:SearchCondition" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="ArrayOfMasterData">
+		<property xmlns:d3p1="mdm" name="MasterData" type="d3p1:MasterData" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="MasterData" open="true">
+		<property name="GUID" type="xs:string"/>
+	</objectType>
+	<objectType name="MDMResponse">
+		<property xmlns:d3p1="mdm" name="Errors" type="d3p1:ErrorData" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="KeyValue">
+		<property name="Key" type="xs:string"/>
+		<property xmlns:d3p1="mdm" name="Value" type="d3p1:SearchValuesTypes"/>
+	</objectType>
+	<objectType xmlns:d2p1="mdm" name="GetMasterDataResponse" base="d2p1:MDMResponse">
+		<property name="DataResponse" type="d2p1:ArrayOfMasterData"/>
+	</objectType>
+	<objectType xmlns:d2p1="mdm" name="GetMasterDataByKeyResponse" base="d2p1:MDMResponse">
+		<property name="DataResponse" type="d2p1:MasterData"/>
+	</objectType>
+	<objectType name="ErrorData">
+		<property xmlns:d3p1="mdm" name="Code" type="d3p1:CodeErrors"/>
+		<property name="Description" nillable="true"/>
+	</objectType>
+	<objectType name="Keys">
+		<property xmlns:d3p1="mdm" name="Key" type="d3p1:KeyValue" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType xmlns:d2p1="mdm" name="GetMasterDataByMethodResponse" base="d2p1:MDMResponse">
+		<property name="DataResponse" type="d2p1:ArrayOfMasterData"/>
+		<property name="AsyncTicket" type="xs:string"/>
+	</objectType>
+</package>
