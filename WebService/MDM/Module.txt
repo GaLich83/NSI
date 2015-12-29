@@ -1,17 +1,18 @@
 ﻿
 Функция GetMasterData(SourceSystem, MasterDataName, SearchParameters)	
-	Ответ = ФабрикаXDTO.Создать(ФабрикаXDTO.Тип("mdm", "GetMasterDataByKeyResponse"));
+	Ответ = ФабрикаXDTO.Создать(ФабрикаXDTO.Тип("mdm", "GetMasterDataResponse"));
 	Ответ.DataResponse = NSI_РаботаСМастерДаннымиПоиск.НайтиДанныеПоУсловиюXDTO(MasterDataName, SearchParameters);
 	Если Не ТипЗнч(Ответ.DataResponse.MasterData) = Тип("СписокXDTO") Тогда
 		NSI_РаботаСМастерДаннымиРаботаСВнешнимиСистемами.ВернутьОшибкуВебСервиса(Ответ.Errors, "DataNotFound", "По данному условию не найдено мастер-данных.");
 	КонецЕсли;
+	Возврат Ответ;
 КонецФункции
 
 Функция GetMasterDataByKey(SourceSystem, MasterDataName, Keys)
 	Ответ = ФабрикаXDTO.Создать(ФабрикаXDTO.Тип("mdm", "GetMasterDataByKeyResponse"));
 	Попытка
 		СоответствиеКлюча = Новый Соответствие;
-		Для Каждого Ключ Из Keys Цикл
+		Для Каждого Ключ Из Keys.Key Цикл
 			СоответствиеКлюча.Вставить(Ключ.Key, Ключ.Value);
 		КонецЦикла;
 		МастерДанные = NSI_РаботаСМастерДаннымиПоиск.НайтиМастерДанныеПоКлючу(СоответствиеКлюча);
@@ -29,8 +30,8 @@
 
 Функция GetMasterDataByMethod(SourceSystem, MethodName, MethodParameters)
 	Параметры = Новый Структура;
-	Для Каждого Параметр Из MethodParameters Цикл
-		Параметры.Вставить(Параметр.Key, Параметры.Value);
+	Для Каждого Параметр Из MethodParameters.Key Цикл
+		Параметры.Вставить(Параметр.Key, Параметр.Value);
 	КонецЦикла;
 	Возврат NSI_РаботаСМастерДаннымиРаботаСВнешнимиСистемами.ВыполнитьВызовМетодаОбработкиДанныхВнешнейСистемы(SourceSystem, MethodName, Параметры);
 КонецФункции

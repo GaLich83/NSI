@@ -78,7 +78,7 @@
 								</v8:item>
 							</Synonym>
 							<Comment/>
-							<XDTOValueType xmlns:d8p1="mdm">d8p1:SearchCondition</XDTOValueType>
+							<XDTOValueType xmlns:d8p1="mdm">d8p1:FindStructure</XDTOValueType>
 							<Nillable>false</Nillable>
 							<TransferDirection>In</TransferDirection>
 						</Properties>
@@ -159,7 +159,7 @@
 						</v8:item>
 					</Synonym>
 					<Comment/>
-					<XDTOReturningValueType xmlns:d6p1="mdm">d6p1:GetMasterDataResponse</XDTOReturningValueType>
+					<XDTOReturningValueType xmlns:d6p1="mdm">d6p1:GetMasterDataByMethodResponse</XDTOReturningValueType>
 					<Nillable>false</Nillable>
 					<Transactioned>false</Transactioned>
 					<ProcedureName>GetMasterDataByMethod</ProcedureName>

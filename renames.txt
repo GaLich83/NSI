@@ -1624,6 +1624,8 @@ CommonModule.NSI_ОбщиеПроцедурыКлиент.Module.txt-->CommonMod
 CommonModule.NSI_ОбщиеПроцедурыКлиент.xml-->CommonModule\NSI_ОбщиеПроцедурыКлиент\NSI_ОбщиеПроцедурыКлиент.xml
 CommonModule.NSI_ОбщиеПроцедурыКлиентСервер.Module.txt-->CommonModule\NSI_ОбщиеПроцедурыКлиентСервер\Module.txt
 CommonModule.NSI_ОбщиеПроцедурыКлиентСервер.xml-->CommonModule\NSI_ОбщиеПроцедурыКлиентСервер\NSI_ОбщиеПроцедурыКлиентСервер.xml
+CommonModule.NSI_Переопределяемый.Module.txt-->CommonModule\NSI_Переопределяемый\Module.txt
+CommonModule.NSI_Переопределяемый.xml-->CommonModule\NSI_Переопределяемый\NSI_Переопределяемый.xml
 CommonModule.NSI_РаботаСXML.Module.txt-->CommonModule\NSI_РаботаСXML\Module.txt
 CommonModule.NSI_РаботаСXML.xml-->CommonModule\NSI_РаботаСXML\NSI_РаботаСXML.xml
 CommonModule.NSI_РаботаСАДО.Module.txt-->CommonModule\NSI_РаботаСАДО\Module.txt

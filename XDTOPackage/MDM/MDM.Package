@@ -53,10 +53,10 @@
 		<property xmlns:d3p1="mdm" name="Value" type="d3p1:SearchValuesTypes"/>
 	</objectType>
 	<objectType xmlns:d2p1="mdm" name="GetMasterDataResponse" base="d2p1:MDMResponse">
-		<property name="DataResponse" type="d2p1:ArrayOfMasterData"/>
+		<property name="DataResponse" type="d2p1:ArrayOfMasterData" lowerBound="0" nillable="true"/>
 	</objectType>
 	<objectType xmlns:d2p1="mdm" name="GetMasterDataByKeyResponse" base="d2p1:MDMResponse">
-		<property name="DataResponse" type="d2p1:MasterData"/>
+		<property name="DataResponse" type="d2p1:MasterData" lowerBound="0" nillable="true"/>
 	</objectType>
 	<objectType name="ErrorData">
 		<property xmlns:d3p1="mdm" name="Code" type="d3p1:CodeErrors"/>
@@ -66,7 +66,7 @@
 		<property xmlns:d3p1="mdm" name="Key" type="d3p1:KeyValue" lowerBound="0" upperBound="-1"/>
 	</objectType>
 	<objectType xmlns:d2p1="mdm" name="GetMasterDataByMethodResponse" base="d2p1:MDMResponse">
-		<property name="DataResponse" type="d2p1:ArrayOfMasterData"/>
-		<property name="AsyncTicket" type="xs:string"/>
+		<property name="DataResponse" type="d2p1:ArrayOfMasterData" lowerBound="0" nillable="true"/>
+		<property name="AsyncTicket" type="xs:string" lowerBound="0" nillable="true"/>
 	</objectType>
 </package>
