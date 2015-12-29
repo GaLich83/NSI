@@ -553,6 +553,7 @@
 			<CommonTemplate>СтруктураПодчиненности</CommonTemplate>
 			<FilterCriterion>СвязанныеДокументы</FilterCriterion>
 			<FilterCriterion>ФайлыВТоме</FilterCriterion>
+			<CommonModule>NSI_БазовыеФункции</CommonModule>
 			<CommonModule>NSI_Задания</CommonModule>
 			<CommonModule>NSI_МодульПовторногоИспользования</CommonModule>
 			<CommonModule>NSI_МодульПовторногоИспользованияКлиент</CommonModule>
@@ -562,6 +563,11 @@
 			<CommonModule>NSI_РаботаСXML</CommonModule>
 			<CommonModule>NSI_РаботаСАДО</CommonModule>
 			<CommonModule>NSI_РаботаСАДОПовторногоИспользования</CommonModule>
+			<CommonModule>NSI_РаботаСМастерДаннымиПоиск</CommonModule>
+			<CommonModule>NSI_РаботаСМастерДаннымиРаботаСВнешнимиСистемами</CommonModule>
+			<CommonModule>NSI_РаботаСМастерДаннымиСервер</CommonModule>
+			<CommonModule>NSI_РаботаСМастерДаннымиСерверПереопределяемый</CommonModule>
+			<CommonModule>NSI_РаботаСМастерДаннымиСерверПовторноеИспользование</CommonModule>
 			<CommonModule>NSI_РаботаСНСИ</CommonModule>
 			<CommonModule>NSI_РаботаСОповещениями</CommonModule>
 			<CommonModule>NSI_РаботаСПереводом</CommonModule>
@@ -938,12 +944,6 @@
 			<CommonModule>ЭлектроннаяПодписьСлужебныйКлиент</CommonModule>
 			<CommonModule>ЭлектроннаяПодписьСлужебныйКлиентСервер</CommonModule>
 			<CommonModule>ЭлектроннаяПодписьСлужебныйПовтИсп</CommonModule>
-			<CommonModule>NSI_РаботаСМастерДаннымиСервер</CommonModule>
-			<CommonModule>NSI_РаботаСМастерДаннымиСерверПовторноеИспользование</CommonModule>
-			<CommonModule>NSI_РаботаСМастерДаннымиПоиск</CommonModule>
-			<CommonModule>NSI_РаботаСМастерДаннымиРаботаСВнешнимиСистемами</CommonModule>
-			<CommonModule>NSI_БазовыеФункции</CommonModule>
-			<CommonModule>NSI_РаботаСМастерДаннымиСерверПереопределяемый</CommonModule>
 			<CommonAttribute>ОбластьДанныхВспомогательныеДанные</CommonAttribute>
 			<CommonAttribute>ОбластьДанныхОсновныеДанные</CommonAttribute>
 			<ExchangePlan>ОбменСообщениями</ExchangePlan>
@@ -1574,9 +1574,10 @@
 			<Report>ПраваДоступа</Report>
 			<Report>ПросроченныеЗадачи</Report>
 			<Report>СведенияОПользователях</Report>
+			<DataProcessor>NSI_ПроверкаВебСервисаIDM</DataProcessor>
 			<DataProcessor>NSI_РаботаСВебСервисом</DataProcessor>
 			<DataProcessor>NSI_РедакторHTML</DataProcessor>
-			<DataProcessor>NSI_ПроверкаВебСервисаIDM</DataProcessor>
+			<DataProcessor>NSI_УправлениеМенеджеромЗаданий</DataProcessor>
 			<DataProcessor>АвтоматическоеИзвлечениеТекстов</DataProcessor>
 			<DataProcessor>АктивныеПользователи</DataProcessor>
 			<DataProcessor>БлокировкаРаботыПользователей</DataProcessor>
@@ -1627,16 +1628,18 @@
 			<DataProcessor>УдалениеПомеченныхОбъектов</DataProcessor>
 			<DataProcessor>УниверсальныйОбменДаннымиXML</DataProcessor>
 			<DataProcessor>УправлениеИтогамиИАгрегатами</DataProcessor>
-			<DataProcessor>NSI_УправлениеМенеджеромЗаданий</DataProcessor>
 			<InformationRegister>NSI_АвтоматическийМаппингОбъектов</InformationRegister>
 			<InformationRegister>NSI_Глоссарий</InformationRegister>
 			<InformationRegister>NSI_Задания</InformationRegister>
 			<InformationRegister>NSI_ИндексИзмененийВнешнихБаз</InformationRegister>
 			<InformationRegister>NSI_НастройкиМетодовОбработчиков</InformationRegister>
+			<InformationRegister>NSI_НепериодическиеПоляМД</InformationRegister>
 			<InformationRegister>NSI_ОповещенияКОтправке</InformationRegister>
+			<InformationRegister>NSI_ПериодическиеПоляМД</InformationRegister>
 			<InformationRegister>NSI_ПодпискиНаСобытия</InformationRegister>
 			<InformationRegister>NSI_РегистрацияСобытийОповещения</InformationRegister>
 			<InformationRegister>NSI_РучнойМаппингОбъектов</InformationRegister>
+			<InformationRegister>NSI_ХэшиКлючейМастерДанных</InformationRegister>
 			<InformationRegister>АдресныеОбъекты</InformationRegister>
 			<InformationRegister>БлокировкиСеансовОбластейДанных</InformationRegister>
 			<InformationRegister>ВерсииОбъектов</InformationRegister>
@@ -1734,9 +1737,6 @@
 			<InformationRegister>УровниСокращенийАдресныхСведений</InformationRegister>
 			<InformationRegister>ФайлыВРабочемКаталоге</InformationRegister>
 			<InformationRegister>ХранимыеФайлыВерсий</InformationRegister>
-			<InformationRegister>NSI_НепериодическиеПоляМД</InformationRegister>
-			<InformationRegister>NSI_ПериодическиеПоляМД</InformationRegister>
-			<InformationRegister>NSI_ХэшиКлючейМастерДанных</InformationRegister>
 			<ChartOfCharacteristicTypes>ВопросыДляАнкетирования</ChartOfCharacteristicTypes>
 			<ChartOfCharacteristicTypes>ДополнительныеРеквизитыИСведения</ChartOfCharacteristicTypes>
 			<ChartOfCharacteristicTypes>ОбъектыАдресацииЗадач</ChartOfCharacteristicTypes>
