@@ -945,6 +945,7 @@
 			<CommonModule>ЭлектроннаяПодписьСлужебныйКлиентСервер</CommonModule>
 			<CommonModule>ЭлектроннаяПодписьСлужебныйПовтИсп</CommonModule>
 			<CommonModule>NSI_Переопределяемый</CommonModule>
+			<CommonModule>NSI_Логирование</CommonModule>
 			<CommonAttribute>ОбластьДанныхВспомогательныеДанные</CommonAttribute>
 			<CommonAttribute>ОбластьДанныхОсновныеДанные</CommonAttribute>
 			<ExchangePlan>ОбменСообщениями</ExchangePlan>
@@ -1048,6 +1049,8 @@
 			<EventSubscription>УстановитьПометкуУдаленияЗаметкамПользователя</EventSubscription>
 			<EventSubscription>УстановитьПометкуУдаленияПрисоединенныхФайлов</EventSubscription>
 			<EventSubscription>УстановитьПометкуУдаленияПрисоединенныхФайловВзаимодействия</EventSubscription>
+			<EventSubscription>NSI_ЗаписьИсходногоСправочника</EventSubscription>
+			<EventSubscription>NSI_ЗаписьРезультирующегоСправочника</EventSubscription>
 			<ScheduledJob>NSI_МенеджерЗаданий</ScheduledJob>
 			<ScheduledJob>NSI_ОтправкаПочтовыхСообщений</ScheduledJob>
 			<ScheduledJob>NSI_РегистрацияОповещений</ScheduledJob>
@@ -1198,6 +1201,7 @@
 			<CommonCommand>УдалитьНастройкуСинхронизации</CommonCommand>
 			<CommonCommand>УстановитьРасширениеРаботыСФайлами</CommonCommand>
 			<CommonCommand>ФайлыВТоме</CommonCommand>
+			<CommonCommand>NSI_ИсторияОбъекта</CommonCommand>
 			<CommandGroup>Взаимодействия</CommandGroup>
 			<CommandGroup>ВыполнениеОбменаДанными</CommandGroup>
 			<CommandGroup>Информация</CommandGroup>
@@ -1393,6 +1397,7 @@
 			<CommonForm>ФормаНастроекОтчета</CommonForm>
 			<CommonForm>ФормаОтчета</CommonForm>
 			<CommonForm>ЭлектроннаяПодпись</CommonForm>
+			<CommonForm>NSI_ФормаИсторииОбъекта</CommonForm>
 			<Catalog>NSI_ВидыМД</Catalog>
 			<Catalog>NSI_ГруппыДоступаВИБ</Catalog>
 			<Catalog>NSI_ГруппыПользователейВИБ</Catalog>
@@ -1738,6 +1743,7 @@
 			<InformationRegister>УровниСокращенийАдресныхСведений</InformationRegister>
 			<InformationRegister>ФайлыВРабочемКаталоге</InformationRegister>
 			<InformationRegister>ХранимыеФайлыВерсий</InformationRegister>
+			<InformationRegister>NSI_ИзмененныеОбъекты</InformationRegister>
 			<ChartOfCharacteristicTypes>ВопросыДляАнкетирования</ChartOfCharacteristicTypes>
 			<ChartOfCharacteristicTypes>ДополнительныеРеквизитыИСведения</ChartOfCharacteristicTypes>
 			<ChartOfCharacteristicTypes>ОбъектыАдресацииЗадач</ChartOfCharacteristicTypes>
