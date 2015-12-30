@@ -71,7 +71,7 @@
 					<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="54"/>
 					<ChildItems>
 						<InputField name="Код" id="1">
-							<DataPath>Объект.Code</DataPath>
+							<DataPath>1/-2</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<ContextMenu name="КодКонтекстноеМеню" id="2"/>
 							<ExtendedTooltip name="КодExtendedTooltip" id="27"/>

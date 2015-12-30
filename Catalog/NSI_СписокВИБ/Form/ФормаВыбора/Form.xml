@@ -82,7 +82,7 @@
 							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="24"/>
 						</LabelField>
 						<LabelField name="Код" id="25">
-							<DataPath>Список.Code</DataPath>
+							<DataPath>1/1</DataPath>
 							<ContextMenu name="КодКонтекстноеМеню" id="26"/>
 							<ExtendedTooltip name="КодРасширеннаяПодсказка" id="27"/>
 						</LabelField>

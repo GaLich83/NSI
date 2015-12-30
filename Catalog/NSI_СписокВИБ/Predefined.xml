@@ -6,4 +6,10 @@
 		<Description>Электронный архив</Description>
 		<IsFolder>false</IsFolder>
 	</Item>
+	<Item id="bc3a48dc-d755-48f8-ab5c-afe97ec710d2">
+		<Name>ЭтаБаза</Name>
+		<Code>100000002</Code>
+		<Description>Эта база</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
 </PredefinedData>
