@@ -36,7 +36,7 @@
 		<property xmlns:d3p1="mdm" name="ConditionStrings" type="d3p1:SearchCondition" lowerBound="0" upperBound="-1" nillable="true"/>
 	</objectType>
 	<objectType name="FindStructure">
-		<property name="DateOfFind" type="xs:dateTime"/>
+		<property name="DateOfFind" type="xs:dateTime" lowerBound="0" nillable="true"/>
 		<property xmlns:d3p1="mdm" name="ConditionsOfSearch" type="d3p1:SearchCondition" lowerBound="0" upperBound="-1"/>
 	</objectType>
 	<objectType name="ArrayOfMasterData">

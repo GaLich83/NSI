@@ -238,7 +238,7 @@
 											<DataPath>ТекстКомментарияКФункциям</DataPath>
 											<TitleLocation>None</TitleLocation>
 											<HorizontalAlign>Left</HorizontalAlign>
-											<Height>2</Height>
+											<Height>3</Height>
 											<VerticalStretch>false</VerticalStretch>
 											<ContextMenu name="ТекстКомментарияКФункциямКонтекстноеМеню" id="146"/>
 											<ExtendedTooltip name="ТекстКомментарияКФункциямРасширеннаяПодсказка" id="147"/>
@@ -283,7 +283,7 @@
 											<DataPath>ТекстКомментарияКФункциям</DataPath>
 											<TitleLocation>None</TitleLocation>
 											<HorizontalAlign>Left</HorizontalAlign>
-											<Height>2</Height>
+											<Height>3</Height>
 											<VerticalStretch>false</VerticalStretch>
 											<ContextMenu name="ТекстКомментарияКФункциям1КонтекстноеМеню" id="149"/>
 											<ExtendedTooltip name="ТекстКомментарияКФункциям1РасширеннаяПодсказка" id="150"/>
@@ -326,10 +326,9 @@
 									<ChildItems>
 										<LabelField name="ТекстКомментарияКФункциям2" id="151">
 											<DataPath>ТекстКомментарияКФункциям</DataPath>
-											<Visible>false</Visible>
 											<TitleLocation>None</TitleLocation>
 											<HorizontalAlign>Left</HorizontalAlign>
-											<Height>2</Height>
+											<Height>3</Height>
 											<VerticalStretch>false</VerticalStretch>
 											<ContextMenu name="ТекстКомментарияКФункциям2КонтекстноеМеню" id="152"/>
 											<ExtendedTooltip name="ТекстКомментарияКФункциям2РасширеннаяПодсказка" id="153"/>
@@ -372,10 +371,9 @@
 									<ChildItems>
 										<LabelField name="ТекстКомментарияКФункциям3" id="154">
 											<DataPath>ТекстКомментарияКФункциям</DataPath>
-											<Visible>false</Visible>
 											<TitleLocation>None</TitleLocation>
 											<HorizontalAlign>Left</HorizontalAlign>
-											<Height>2</Height>
+											<Height>3</Height>
 											<VerticalStretch>false</VerticalStretch>
 											<ContextMenu name="ТекстКомментарияКФункциям3КонтекстноеМеню" id="155"/>
 											<ExtendedTooltip name="ТекстКомментарияКФункциям3РасширеннаяПодсказка" id="156"/>
@@ -421,7 +419,7 @@
 											<DataPath>ТекстКомментарияКФункциям</DataPath>
 											<TitleLocation>None</TitleLocation>
 											<HorizontalAlign>Left</HorizontalAlign>
-											<Height>2</Height>
+											<Height>3</Height>
 											<VerticalStretch>false</VerticalStretch>
 											<ContextMenu name="ТекстКомментарияКФункциям4КонтекстноеМеню" id="158"/>
 											<ExtendedTooltip name="ТекстКомментарияКФункциям4РасширеннаяПодсказка" id="159"/>
