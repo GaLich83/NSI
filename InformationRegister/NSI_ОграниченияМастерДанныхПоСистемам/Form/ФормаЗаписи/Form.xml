@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="ВидМастерДанных" id="1">
+			<DataPath>Запись.ВидМастерДанных</DataPath>
+			<ContextMenu name="ВидМастерДанныхКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ВидМастерДанныхРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="ИсточникЗапросовМД" id="4">
+			<DataPath>Запись.ИсточникЗапросовМД</DataPath>
+			<ContextMenu name="ИсточникЗапросовМДКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ИсточникЗапросовМДРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="ДеревоОграниченийМД" id="7">
+			<DataPath>Запись.ДеревоОграниченийМД</DataPath>
+			<ContextMenu name="ДеревоОграниченийМДКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ДеревоОграниченийМДРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<UsualGroup name="Группа1" id="63">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ChildItemsWidth>LeftNarrow</ChildItemsWidth>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="64"/>
+			<ChildItems>
+				<Table name="ПоляОграничений" id="41">
+					<Representation>List</Representation>
+					<ChangeRowSet>false</ChangeRowSet>
+					<ChangeRowOrder>false</ChangeRowOrder>
+					<Header>false</Header>
+					<HorizontalLines>false</HorizontalLines>
+					<VerticalLines>false</VerticalLines>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<DataPath>ПоляОграничений</DataPath>
+					<RowPictureDataPath>ПоляОграничений.Picture</RowPictureDataPath>
+					<ContextMenu name="ПоляОграниченийКонтекстноеМеню" id="42"/>
+					<AutoCommandBar name="ПоляОграниченийКоманднаяПанель" id="43">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ПоляОграниченийРасширеннаяПодсказка" id="44"/>
+					<SearchStringAddition name="ПоляОграниченийСтрокаПоиска" id="45">
+						<Source>
+							<lf:elementId>41</lf:elementId>
+							<lf:additionId>0</lf:additionId>
+						</Source>
+						<ContextMenu name="ПоляОграниченийСтрокаПоискаКонтекстноеМеню" id="48"/>
+						<ExtendedTooltip name="ПоляОграниченийСтрокаПоискаРасширеннаяПодсказка" id="49"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ПоляОграниченийСостояниеПросмотра" id="50">
+						<Source>
+							<lf:elementId>41</lf:elementId>
+							<lf:additionId>1</lf:additionId>
+						</Source>
+						<ContextMenu name="ПоляОграниченийСостояниеПросмотраКонтекстноеМеню" id="53"/>
+						<ExtendedTooltip name="ПоляОграниченийСостояниеПросмотраРасширеннаяПодсказка" id="54"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ПоляОграниченийУправлениеПоиском" id="55">
+						<Source>
+							<lf:elementId>41</lf:elementId>
+							<lf:additionId>2</lf:additionId>
+						</Source>
+						<ContextMenu name="ПоляОграниченийУправлениеПоискомКонтекстноеМеню" id="58"/>
+						<ExtendedTooltip name="ПоляОграниченийУправлениеПоискомРасширеннаяПодсказка" id="59"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="ПоляОграниченийЗначение" id="60">
+							<DataPath>ПоляОграничений.Value</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ПоляОграниченийЗначениеКонтекстноеМеню" id="61"/>
+							<ExtendedTooltip name="ПоляОграниченийЗначениеРасширеннаяПодсказка" id="62"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<Table name="ДеревоОграничений" id="10">
+					<Representation>Tree</Representation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>ДеревоОграничений</DataPath>
+					<ContextMenu name="ДеревоОграниченийКонтекстноеМеню" id="11"/>
+					<AutoCommandBar name="ДеревоОграниченийКоманднаяПанель" id="12"/>
+					<ExtendedTooltip name="ДеревоОграниченийРасширеннаяПодсказка" id="13"/>
+					<SearchStringAddition name="ДеревоОграниченийСтрокаПоиска" id="14">
+						<Source>
+							<lf:elementId>10</lf:elementId>
+							<lf:additionId>0</lf:additionId>
+						</Source>
+						<ContextMenu name="ДеревоОграниченийСтрокаПоискаКонтекстноеМеню" id="17"/>
+						<ExtendedTooltip name="ДеревоОграниченийСтрокаПоискаРасширеннаяПодсказка" id="18"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ДеревоОграниченийСостояниеПросмотра" id="19">
+						<Source>
+							<lf:elementId>10</lf:elementId>
+							<lf:additionId>1</lf:additionId>
+						</Source>
+						<ContextMenu name="ДеревоОграниченийСостояниеПросмотраКонтекстноеМеню" id="22"/>
+						<ExtendedTooltip name="ДеревоОграниченийСостояниеПросмотраРасширеннаяПодсказка" id="23"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ДеревоОграниченийУправлениеПоиском" id="24">
+						<Source>
+							<lf:elementId>10</lf:elementId>
+							<lf:additionId>2</lf:additionId>
+						</Source>
+						<ContextMenu name="ДеревоОграниченийУправлениеПоискомКонтекстноеМеню" id="27"/>
+						<ExtendedTooltip name="ДеревоОграниченийУправлениеПоискомРасширеннаяПодсказка" id="28"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="ДеревоОграниченийСинонимПоля" id="65">
+							<DataPath>ДеревоОграничений.СинонимПоля</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Поле</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ДеревоОграниченийСинонимПоляКонтекстноеМеню" id="66"/>
+							<ExtendedTooltip name="ДеревоОграниченийСинонимПоляРасширеннаяПодсказка" id="67"/>
+						</InputField>
+						<InputField name="ДеревоОграниченийУсловие" id="32">
+							<DataPath>ДеревоОграничений.Условие</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ДеревоОграниченийУсловиеКонтекстноеМеню" id="33"/>
+							<ExtendedTooltip name="ДеревоОграниченийУсловиеРасширеннаяПодсказка" id="34"/>
+						</InputField>
+						<InputField name="ДеревоОграниченийЗначенияПоиска" id="35">
+							<DataPath>ДеревоОграничений.ЗначенияПоиска</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ДеревоОграниченийЗначенияПоискаКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="ДеревоОграниченийЗначенияПоискаРасширеннаяПодсказка" id="37"/>
+						</InputField>
+						<InputField name="ДеревоОграниченийЭтоГруппа" id="38">
+							<DataPath>ДеревоОграничений.ЭтоГруппа</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ДеревоОграниченийЭтоГруппаКонтекстноеМеню" id="39"/>
+							<ExtendedTooltip name="ДеревоОграниченийЭтоГруппаРасширеннаяПодсказка" id="40"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.NSI_ОграниченияМастерДанныхПоСистемам</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ДеревоОграничений" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево ограничений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Поле" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поле</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Условие" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Условие</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЗначенияПоиска" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значения поиска</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+				<Column name="ЭтоГруппа" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Это группа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СинонимПоля" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Синоним поля</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПредставлениеОграничений" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Представление ограничений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоляОграничений" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поля ограничений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ДобавитьГруппу" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить группу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить группу</v8:content>
+				</v8:item>
+			</ToolTip>
+		</Command>
+	</Commands>
+</Form>

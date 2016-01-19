@@ -553,7 +553,6 @@
 			<CommonTemplate>СтруктураПодчиненности</CommonTemplate>
 			<FilterCriterion>СвязанныеДокументы</FilterCriterion>
 			<FilterCriterion>ФайлыВТоме</FilterCriterion>
-			<CommonModule>NSI_БазовыеФункции</CommonModule>
 			<CommonModule>NSI_Задания</CommonModule>
 			<CommonModule>NSI_МодульПовторногоИспользования</CommonModule>
 			<CommonModule>NSI_МодульПовторногоИспользованияКлиент</CommonModule>
@@ -1744,6 +1743,7 @@
 			<InformationRegister>ФайлыВРабочемКаталоге</InformationRegister>
 			<InformationRegister>ХранимыеФайлыВерсий</InformationRegister>
 			<InformationRegister>NSI_ИзмененныеОбъекты</InformationRegister>
+			<InformationRegister>NSI_ОграниченияМастерДанныхПоСистемам</InformationRegister>
 			<ChartOfCharacteristicTypes>ВопросыДляАнкетирования</ChartOfCharacteristicTypes>
 			<ChartOfCharacteristicTypes>ДополнительныеРеквизитыИСведения</ChartOfCharacteristicTypes>
 			<ChartOfCharacteristicTypes>ОбъектыАдресацииЗадач</ChartOfCharacteristicTypes>

@@ -1615,8 +1615,6 @@ CommonForm.ЭлектроннаяПодпись.Form.xml-->CommonForm\Элект
 CommonForm.ЭлектроннаяПодпись.Help.ru.html-->CommonForm\ЭлектроннаяПодпись\Help\ru.html
 CommonForm.ЭлектроннаяПодпись.Help.xml-->CommonForm\ЭлектроннаяПодпись\Help.xml
 CommonForm.ЭлектроннаяПодпись.xml-->CommonForm\ЭлектроннаяПодпись\ЭлектроннаяПодпись.xml
-CommonModule.NSI_БазовыеФункции.Module.txt-->CommonModule\NSI_БазовыеФункции\Module.txt
-CommonModule.NSI_БазовыеФункции.xml-->CommonModule\NSI_БазовыеФункции\NSI_БазовыеФункции.xml
 CommonModule.NSI_Задания.Module.txt-->CommonModule\NSI_Задания\Module.txt
 CommonModule.NSI_Задания.xml-->CommonModule\NSI_Задания\NSI_Задания.xml
 CommonModule.NSI_Логирование.Module.txt-->CommonModule\NSI_Логирование\Module.txt
@@ -4695,6 +4693,9 @@ InformationRegister.NSI_НастройкиМетодовОбработчиков
 InformationRegister.NSI_НастройкиМетодовОбработчиков.Form.ФормаСписка.xml-->InformationRegister\NSI_НастройкиМетодовОбработчиков\Form\ФормаСписка.xml
 InformationRegister.NSI_НастройкиМетодовОбработчиков.xml-->InformationRegister\NSI_НастройкиМетодовОбработчиков\NSI_НастройкиМетодовОбработчиков.xml
 InformationRegister.NSI_НепериодическиеПоляМД.xml-->InformationRegister\NSI_НепериодическиеПоляМД\NSI_НепериодическиеПоляМД.xml
+InformationRegister.NSI_ОграниченияМастерДанныхПоСистемам.Form.ФормаЗаписи.Form.xml-->InformationRegister\NSI_ОграниченияМастерДанныхПоСистемам\Form\ФормаЗаписи\Form.xml
+InformationRegister.NSI_ОграниченияМастерДанныхПоСистемам.Form.ФормаЗаписи.xml-->InformationRegister\NSI_ОграниченияМастерДанныхПоСистемам\Form\ФормаЗаписи.xml
+InformationRegister.NSI_ОграниченияМастерДанныхПоСистемам.xml-->InformationRegister\NSI_ОграниченияМастерДанныхПоСистемам\NSI_ОграниченияМастерДанныхПоСистемам.xml
 InformationRegister.NSI_ОповещенияКОтправке.Form.ФормаЗаписи.Form.Module.txt-->InformationRegister\NSI_ОповещенияКОтправке\Form\ФормаЗаписи\Form\Module.txt
 InformationRegister.NSI_ОповещенияКОтправке.Form.ФормаЗаписи.Form.xml-->InformationRegister\NSI_ОповещенияКОтправке\Form\ФормаЗаписи\Form.xml
 InformationRegister.NSI_ОповещенияКОтправке.Form.ФормаЗаписи.xml-->InformationRegister\NSI_ОповещенияКОтправке\Form\ФормаЗаписи.xml
