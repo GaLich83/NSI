@@ -47,6 +47,21 @@
 							<TransferDirection>In</TransferDirection>
 						</Properties>
 					</Parameter>
+					<Parameter uuid="7f5a45dc-645c-46dd-9532-58f8653fd450">
+						<Properties>
+							<Name>EventName</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Event name</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
 				</ChildObjects>
 			</Operation>
 		</ChildObjects>
