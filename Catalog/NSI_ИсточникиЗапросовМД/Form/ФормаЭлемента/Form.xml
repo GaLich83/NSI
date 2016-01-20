@@ -101,383 +101,486 @@
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="119"/>
 					<ChildItems>
-						<Pages name="ГруппаОписанияМетодаЗапроса" id="62">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа описания метода запроса</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа описания метода запроса</v8:content>
-								</v8:item>
-							</ToolTip>
-							<ExtendedTooltip name="ГруппаОписанияМетодаЗапросаРасширеннаяПодсказка" id="63"/>
-							<Events>
-								<Event name="OnCurrentPageChange">ГруппаОписанияМетодаЗапросаПриСменеСтраницы</Event>
-							</Events>
+						<Pages name="Группа2" id="163">
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="164"/>
 							<ChildItems>
-								<Page name="Страница_СписокПараметровОжидаемыхОтИсточникаЗапроса" id="64">
+								<Page name="СтраницаОписаниеМетода" id="165">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Настройки параметров запроса</v8:content>
+											<v8:content>Описание метода</v8:content>
 										</v8:item>
 									</Title>
 									<ToolTip>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Страница список параметров ожидаемых от источника запроса</v8:content>
+											<v8:content>Страница описание метода</v8:content>
 										</v8:item>
 									</ToolTip>
-									<ExtendedTooltip name="Страница_СписокПараметровОжидаемыхОтИсточникаЗапросаРасширеннаяПодсказка" id="65"/>
+									<ExtendedTooltip name="СтраницаОписаниеМетодаРасширеннаяПодсказка" id="166"/>
 									<ChildItems>
-										<Table name="СписокПараметровМетода" id="93">
-											<Representation>List</Representation>
+										<Pages name="ГруппаОписанияМетодаЗапроса" id="62">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа описания метода запроса</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа описания метода запроса</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="ГруппаОписанияМетодаЗапросаРасширеннаяПодсказка" id="63"/>
+											<Events>
+												<Event name="OnCurrentPageChange">ГруппаОписанияМетодаЗапросаПриСменеСтраницы</Event>
+											</Events>
+											<ChildItems>
+												<Page name="Страница_СписокПараметровОжидаемыхОтИсточникаЗапроса" id="64">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Настройки параметров запроса</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Страница список параметров ожидаемых от источника запроса</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ExtendedTooltip name="Страница_СписокПараметровОжидаемыхОтИсточникаЗапросаРасширеннаяПодсказка" id="65"/>
+													<ChildItems>
+														<Table name="СписокПараметровМетода" id="93">
+															<Representation>List</Representation>
+															<AutoInsertNewRow>true</AutoInsertNewRow>
+															<EnableStartDrag>true</EnableStartDrag>
+															<EnableDrag>true</EnableDrag>
+															<DataPath>СписокПараметровМетода</DataPath>
+															<RowFilter xsi:nil="true"/>
+															<ContextMenu name="СписокПараметровМетодаКонтекстноеМеню" id="94"/>
+															<AutoCommandBar name="СписокПараметровМетодаКоманднаяПанель" id="95"/>
+															<ExtendedTooltip name="СписокПараметровМетодаРасширеннаяПодсказка" id="96"/>
+															<SearchStringAddition name="СписокПараметровМетодаСтрокаПоиска" id="97">
+																<Source>
+																	<lf:elementId>93</lf:elementId>
+																	<lf:additionId>0</lf:additionId>
+																</Source>
+																<ContextMenu name="СписокПараметровМетодаСтрокаПоискаКонтекстноеМеню" id="100"/>
+																<ExtendedTooltip name="СписокПараметровМетодаСтрокаПоискаРасширеннаяПодсказка" id="101"/>
+															</SearchStringAddition>
+															<ViewStatusAddition name="СписокПараметровМетодаСостояниеПросмотра" id="102">
+																<Source>
+																	<lf:elementId>93</lf:elementId>
+																	<lf:additionId>1</lf:additionId>
+																</Source>
+																<ContextMenu name="СписокПараметровМетодаСостояниеПросмотраКонтекстноеМеню" id="105"/>
+																<ExtendedTooltip name="СписокПараметровМетодаСостояниеПросмотраРасширеннаяПодсказка" id="106"/>
+															</ViewStatusAddition>
+															<SearchControlAddition name="СписокПараметровМетодаУправлениеПоиском" id="107">
+																<Source>
+																	<lf:elementId>93</lf:elementId>
+																	<lf:additionId>2</lf:additionId>
+																</Source>
+																<ContextMenu name="СписокПараметровМетодаУправлениеПоискомКонтекстноеМеню" id="110"/>
+																<ExtendedTooltip name="СписокПараметровМетодаУправлениеПоискомРасширеннаяПодсказка" id="111"/>
+															</SearchControlAddition>
+															<ChildItems>
+																<InputField name="СписокПараметровМетодаИмяРеквизита" id="112">
+																	<DataPath>СписокПараметровМетода.ИмяРеквизита</DataPath>
+																	<EditMode>EnterOnInput</EditMode>
+																	<ContextMenu name="СписокПараметровМетодаИмяРеквизитаКонтекстноеМеню" id="113"/>
+																	<ExtendedTooltip name="СписокПараметровМетодаИмяРеквизитаРасширеннаяПодсказка" id="114"/>
+																</InputField>
+																<InputField name="СписокПараметровМетодаТипРеквизита" id="115">
+																	<DataPath>СписокПараметровМетода.ТипРеквизита</DataPath>
+																	<EditMode>EnterOnInput</EditMode>
+																	<AvailableTypes>
+																		<v8:Type>xs:boolean</v8:Type>
+																		<v8:Type>xs:string</v8:Type>
+																		<v8:Type>xs:dateTime</v8:Type>
+																		<v8:Type>xs:decimal</v8:Type>
+																		<v8:NumberQualifiers>
+																			<v8:Digits>0</v8:Digits>
+																			<v8:FractionDigits>0</v8:FractionDigits>
+																			<v8:AllowedSign>Any</v8:AllowedSign>
+																		</v8:NumberQualifiers>
+																		<v8:StringQualifiers>
+																			<v8:Length>0</v8:Length>
+																			<v8:AllowedLength>Variable</v8:AllowedLength>
+																		</v8:StringQualifiers>
+																		<v8:DateQualifiers>
+																			<v8:DateFractions>DateTime</v8:DateFractions>
+																		</v8:DateQualifiers>
+																	</AvailableTypes>
+																	<ContextMenu name="СписокПараметровМетодаТипРеквизитаКонтекстноеМеню" id="116"/>
+																	<ExtendedTooltip name="СписокПараметровМетодаТипРеквизитаРасширеннаяПодсказка" id="117"/>
+																</InputField>
+																<InputField name="СписокПараметровМетодаДанныеПроверки" id="130">
+																	<DataPath>СписокПараметровМетода.ДанныеПроверки</DataPath>
+																	<EditMode>EnterOnInput</EditMode>
+																	<TypeLink>
+																		<xr:DataPath>Items.СписокПараметровМетода.CurrentData.ТипРеквизита</xr:DataPath>
+																		<xr:LinkItem>0</xr:LinkItem>
+																	</TypeLink>
+																	<ContextMenu name="СписокПараметровМетодаДанныеПроверкиКонтекстноеМеню" id="131"/>
+																	<ExtendedTooltip name="СписокПараметровМетодаДанныеПроверкиРасширеннаяПодсказка" id="132"/>
+																</InputField>
+															</ChildItems>
+														</Table>
+														<InputField name="СписокПараметровОжидаемыхОтИсточникаЗапроса" id="122">
+															<DataPath>СписокПараметровОжидаемыхОтИсточникаЗапроса</DataPath>
+															<Enabled>false</Enabled>
+															<ContextMenu name="СписокПараметровОжидаемыхОтИсточникаЗапросаКонтекстноеМеню" id="123"/>
+															<ExtendedTooltip name="СписокПараметровОжидаемыхОтИсточникаЗапросаРасширеннаяПодсказка" id="124"/>
+														</InputField>
+													</ChildItems>
+												</Page>
+												<Page name="Страница_ПроверкаВалидностиЗапроса" id="68">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Проверка валидности переданных параметров</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Страница проверка валидности запроса</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ExtendedTooltip name="Страница_ПроверкаВалидностиЗапросаРасширеннаяПодсказка" id="69"/>
+													<ChildItems>
+														<LabelField name="ТекстКомментарияКФункциям" id="145">
+															<DataPath>ТекстКомментарияКФункциям</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<HorizontalAlign>Left</HorizontalAlign>
+															<Height>3</Height>
+															<VerticalStretch>false</VerticalStretch>
+															<ContextMenu name="ТекстКомментарияКФункциямКонтекстноеМеню" id="146"/>
+															<ExtendedTooltip name="ТекстКомментарияКФункциямРасширеннаяПодсказка" id="147"/>
+														</LabelField>
+														<InputField name="НастройкиПолученияПроверкаВалидностиЗапроса" id="70">
+															<DataPath>ПроверкаВалидностиЗапроса</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Проверка валидности запроса (Истина - валиден)</v8:content>
+																</v8:item>
+															</Title>
+															<MultiLine>true</MultiLine>
+															<ExtendedEdit>true</ExtendedEdit>
+															<ContextMenu name="НастройкиПолученияПроверкаВалидностиЗапросаКонтекстноеМеню" id="71"/>
+															<ExtendedTooltip name="НастройкиПолученияПроверкаВалидностиЗапросаРасширеннаяПодсказка" id="72"/>
+														</InputField>
+														<Button name="ВыполнитьФункциюСПроверочнымиДанными5" id="143">
+															<Type>UsualButton</Type>
+															<CommandName>Form.Command.ВыполнитьФункциюСПроверочнымиДанными</CommandName>
+															<Parameter xsi:nil="true"/>
+															<ExtendedTooltip name="ВыполнитьФункциюСПроверочнымиДанными5РасширеннаяПодсказка" id="144"/>
+														</Button>
+													</ChildItems>
+												</Page>
+												<Page name="Страница_УсловиеПринятияРешенияОбАсинхроне" id="73">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Принятие решения об асинхроне</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Страница условие принятия решения об асинхроне</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ExtendedTooltip name="Страница_УсловиеПринятияРешенияОбАсинхронеРасширеннаяПодсказка" id="74"/>
+													<ChildItems>
+														<LabelField name="ТекстКомментарияКФункциям1" id="148">
+															<DataPath>ТекстКомментарияКФункциям</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<HorizontalAlign>Left</HorizontalAlign>
+															<Height>3</Height>
+															<VerticalStretch>false</VerticalStretch>
+															<ContextMenu name="ТекстКомментарияКФункциям1КонтекстноеМеню" id="149"/>
+															<ExtendedTooltip name="ТекстКомментарияКФункциям1РасширеннаяПодсказка" id="150"/>
+														</LabelField>
+														<InputField name="НастройкиПолученияУсловиеПринятияРешенияОбАсинхроне" id="75">
+															<DataPath>УсловиеПринятияРешенияОбАсинхроне</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Условие принятия решения об асинхроне (Истина - требуется асинхрон)</v8:content>
+																</v8:item>
+															</Title>
+															<MultiLine>true</MultiLine>
+															<ExtendedEdit>true</ExtendedEdit>
+															<ContextMenu name="НастройкиПолученияУсловиеПринятияРешенияОбАсинхронеКонтекстноеМеню" id="76"/>
+															<ExtendedTooltip name="НастройкиПолученияУсловиеПринятияРешенияОбАсинхронеРасширеннаяПодсказка" id="77"/>
+														</InputField>
+														<Button name="ВыполнитьФункциюСПроверочнымиДанными" id="133">
+															<Type>UsualButton</Type>
+															<CommandName>Form.Command.ВыполнитьФункциюСПроверочнымиДанными</CommandName>
+															<Parameter xsi:nil="true"/>
+															<ExtendedTooltip name="ВыполнитьФункциюСПроверочнымиДаннымиРасширеннаяПодсказка" id="134"/>
+														</Button>
+													</ChildItems>
+												</Page>
+												<Page name="Страница_ОписаниеСинхронногоЗапроса" id="125">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Описание алгоритма синхронного запроса</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Страница описание алгоритма асинхронного запроса</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ExtendedTooltip name="Страница_ОписаниеСинхронногоЗапросаРасширеннаяПодсказка" id="126"/>
+													<ChildItems>
+														<LabelField name="ТекстКомментарияКФункциям2" id="151">
+															<DataPath>ТекстКомментарияКФункциям</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<HorizontalAlign>Left</HorizontalAlign>
+															<Height>3</Height>
+															<VerticalStretch>false</VerticalStretch>
+															<ContextMenu name="ТекстКомментарияКФункциям2КонтекстноеМеню" id="152"/>
+															<ExtendedTooltip name="ТекстКомментарияКФункциям2РасширеннаяПодсказка" id="153"/>
+														</LabelField>
+														<InputField name="НастройкиПолученияОписаниеСинхронногоЗапроса" id="127">
+															<DataPath>ОписаниеСинхронногоЗапроса</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Описание синхронного запроса (Результат - список ссылок мастер-данных)</v8:content>
+																</v8:item>
+															</Title>
+															<MultiLine>true</MultiLine>
+															<ExtendedEdit>true</ExtendedEdit>
+															<ContextMenu name="НастройкиПолученияОписаниеСинхронногоЗапросаКонтекстноеМеню" id="128"/>
+															<ExtendedTooltip name="НастройкиПолученияОписаниеСинхронногоЗапросаРасширеннаяПодсказка" id="129"/>
+														</InputField>
+														<Button name="ВыполнитьФункциюСПроверочнымиДанными1" id="135">
+															<Type>UsualButton</Type>
+															<CommandName>Form.Command.ВыполнитьФункциюСПроверочнымиДанными</CommandName>
+															<Parameter xsi:nil="true"/>
+															<ExtendedTooltip name="ВыполнитьФункциюСПроверочнымиДанными1РасширеннаяПодсказка" id="136"/>
+														</Button>
+													</ChildItems>
+												</Page>
+												<Page name="Страница_ОписаниеАсинхронногоЗапроса" id="78">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Описание алгоритма асинхронного запроса</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Страница описание асинхронного запроса</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ExtendedTooltip name="Страница_ОписаниеАсинхронногоЗапросаРасширеннаяПодсказка" id="79"/>
+													<ChildItems>
+														<LabelField name="ТекстКомментарияКФункциям3" id="154">
+															<DataPath>ТекстКомментарияКФункциям</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<HorizontalAlign>Left</HorizontalAlign>
+															<Height>3</Height>
+															<VerticalStretch>false</VerticalStretch>
+															<ContextMenu name="ТекстКомментарияКФункциям3КонтекстноеМеню" id="155"/>
+															<ExtendedTooltip name="ТекстКомментарияКФункциям3РасширеннаяПодсказка" id="156"/>
+														</LabelField>
+														<InputField name="НастройкиПолученияОписаниеАсинхронногоЗапроса" id="80">
+															<DataPath>ОписаниеАсинхронногоЗапроса</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Описание асинхронного запроса (Результат - список ссылок мастер-данных)</v8:content>
+																</v8:item>
+															</Title>
+															<MultiLine>true</MultiLine>
+															<ExtendedEdit>true</ExtendedEdit>
+															<ContextMenu name="НастройкиПолученияОписаниеАсинхронногоЗапросаКонтекстноеМеню" id="81"/>
+															<ExtendedTooltip name="НастройкиПолученияОписаниеАсинхронногоЗапросаРасширеннаяПодсказка" id="82"/>
+														</InputField>
+														<Button name="ВыполнитьФункциюСПроверочнымиДанными2" id="137">
+															<Type>UsualButton</Type>
+															<CommandName>Form.Command.ВыполнитьФункциюСПроверочнымиДанными</CommandName>
+															<Parameter xsi:nil="true"/>
+															<ExtendedTooltip name="ВыполнитьФункциюСПроверочнымиДанными2РасширеннаяПодсказка" id="138"/>
+														</Button>
+													</ChildItems>
+												</Page>
+												<Page name="Страница_ФункцияПреобразованияВыходныхДанных" id="83">
+													<Visible>false</Visible>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Функция преобразования выходных данных</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Страница функция преобразования выходных данных</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ExtendedTooltip name="Страница_ФункцияПреобразованияВыходныхДанныхРасширеннаяПодсказка" id="84"/>
+													<ChildItems>
+														<LabelField name="ТекстКомментарияКФункциям4" id="157">
+															<DataPath>ТекстКомментарияКФункциям</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<HorizontalAlign>Left</HorizontalAlign>
+															<Height>3</Height>
+															<VerticalStretch>false</VerticalStretch>
+															<ContextMenu name="ТекстКомментарияКФункциям4КонтекстноеМеню" id="158"/>
+															<ExtendedTooltip name="ТекстКомментарияКФункциям4РасширеннаяПодсказка" id="159"/>
+														</LabelField>
+														<InputField name="НастройкиПолученияФункцияПреобразованияВыходныхДанных" id="85">
+															<DataPath>ФункцияПреобразованияВыходныхДанных</DataPath>
+															<VerticalStretch>true</VerticalStretch>
+															<MultiLine>true</MultiLine>
+															<ExtendedEdit>true</ExtendedEdit>
+															<ContextMenu name="НастройкиПолученияФункцияПреобразованияВыходныхДанныхКонтекстноеМеню" id="86"/>
+															<ExtendedTooltip name="НастройкиПолученияФункцияПреобразованияВыходныхДанныхРасширеннаяПодсказка" id="87"/>
+														</InputField>
+														<Button name="ВыполнитьФункциюСПроверочнымиДанными3" id="139">
+															<Type>UsualButton</Type>
+															<CommandName>Form.Command.ВыполнитьФункциюСПроверочнымиДанными</CommandName>
+															<Parameter xsi:nil="true"/>
+															<ExtendedTooltip name="ВыполнитьФункциюСПроверочнымиДанными3РасширеннаяПодсказка" id="140"/>
+														</Button>
+													</ChildItems>
+												</Page>
+												<Page name="Страница_НастройкиПередачиВыходныхДанныхПриАсинхронномОтвете" id="88">
+													<Visible>false</Visible>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Настройка асинхронной передачи выходных данных</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Страница настройки передачи выходных данных при асинхронном ответе</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ExtendedTooltip name="Страница_НастройкиПередачиВыходныхДанныхПриАсинхронномОтветеРасширеннаяПодсказка" id="89"/>
+													<ChildItems>
+														<LabelField name="ТекстКомментарияКФункциям5" id="160">
+															<DataPath>ТекстКомментарияКФункциям</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<HorizontalAlign>Left</HorizontalAlign>
+															<Height>2</Height>
+															<VerticalStretch>false</VerticalStretch>
+															<ContextMenu name="ТекстКомментарияКФункциям5КонтекстноеМеню" id="161"/>
+															<ExtendedTooltip name="ТекстКомментарияКФункциям5РасширеннаяПодсказка" id="162"/>
+														</LabelField>
+														<InputField name="НастройкиПолученияНастройкиПередачиВыходныхДанныхПриАсинхронномОтвете" id="90">
+															<DataPath>НастройкиПередачиВыходныхДанныхПриАсинхронномОтвете</DataPath>
+															<MultiLine>true</MultiLine>
+															<ExtendedEdit>true</ExtendedEdit>
+															<ContextMenu name="НастройкиПолученияНастройкиПередачиВыходныхДанныхПриАсинхронномОтветеКонтекстноеМеню" id="91"/>
+															<ExtendedTooltip name="НастройкиПолученияНастройкиПередачиВыходныхДанныхПриАсинхронномОтветеРасширеннаяПодсказка" id="92"/>
+														</InputField>
+														<Button name="ВыполнитьФункциюСПроверочнымиДанными4" id="141">
+															<Type>UsualButton</Type>
+															<CommandName>Form.Command.ВыполнитьФункциюСПроверочнымиДанными</CommandName>
+															<Parameter xsi:nil="true"/>
+															<ExtendedTooltip name="ВыполнитьФункциюСПроверочнымиДанными4РасширеннаяПодсказка" id="142"/>
+														</Button>
+													</ChildItems>
+												</Page>
+											</ChildItems>
+										</Pages>
+									</ChildItems>
+								</Page>
+								<Page name="СтраницаАлиасов" id="167">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Правила подмены имен элементов</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница алиасов</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="СтраницаАлиасовРасширеннаяПодсказка" id="168"/>
+									<ChildItems>
+										<Table name="НаборПодменыЗаголовковМастерДанных" id="169">
 											<AutoInsertNewRow>true</AutoInsertNewRow>
 											<EnableStartDrag>true</EnableStartDrag>
 											<EnableDrag>true</EnableDrag>
-											<DataPath>СписокПараметровМетода</DataPath>
+											<DataPath>Объект.НаборПодменыЗаголовковМастерДанных</DataPath>
 											<RowFilter xsi:nil="true"/>
-											<ContextMenu name="СписокПараметровМетодаКонтекстноеМеню" id="94"/>
-											<AutoCommandBar name="СписокПараметровМетодаКоманднаяПанель" id="95"/>
-											<ExtendedTooltip name="СписокПараметровМетодаРасширеннаяПодсказка" id="96"/>
-											<SearchStringAddition name="СписокПараметровМетодаСтрокаПоиска" id="97">
+											<ContextMenu name="НаборПодменыЗаголовковМастерДанныхКонтекстноеМеню" id="170"/>
+											<AutoCommandBar name="НаборПодменыЗаголовковМастерДанныхКоманднаяПанель" id="171"/>
+											<ExtendedTooltip name="НаборПодменыЗаголовковМастерДанныхРасширеннаяПодсказка" id="172"/>
+											<SearchStringAddition name="НаборПодменыЗаголовковМастерДанныхСтрокаПоиска" id="173">
 												<Source>
-													<lf:elementId>93</lf:elementId>
+													<lf:elementId>169</lf:elementId>
 													<lf:additionId>0</lf:additionId>
 												</Source>
-												<ContextMenu name="СписокПараметровМетодаСтрокаПоискаКонтекстноеМеню" id="100"/>
-												<ExtendedTooltip name="СписокПараметровМетодаСтрокаПоискаРасширеннаяПодсказка" id="101"/>
+												<ContextMenu name="НаборПодменыЗаголовковМастерДанныхСтрокаПоискаКонтекстноеМеню" id="176"/>
+												<ExtendedTooltip name="НаборПодменыЗаголовковМастерДанныхСтрокаПоискаРасширеннаяПодсказка" id="177"/>
 											</SearchStringAddition>
-											<ViewStatusAddition name="СписокПараметровМетодаСостояниеПросмотра" id="102">
+											<ViewStatusAddition name="НаборПодменыЗаголовковМастерДанныхСостояниеПросмотра" id="178">
 												<Source>
-													<lf:elementId>93</lf:elementId>
+													<lf:elementId>169</lf:elementId>
 													<lf:additionId>1</lf:additionId>
 												</Source>
-												<ContextMenu name="СписокПараметровМетодаСостояниеПросмотраКонтекстноеМеню" id="105"/>
-												<ExtendedTooltip name="СписокПараметровМетодаСостояниеПросмотраРасширеннаяПодсказка" id="106"/>
+												<ContextMenu name="НаборПодменыЗаголовковМастерДанныхСостояниеПросмотраКонтекстноеМеню" id="181"/>
+												<ExtendedTooltip name="НаборПодменыЗаголовковМастерДанныхСостояниеПросмотраРасширеннаяПодсказка" id="182"/>
 											</ViewStatusAddition>
-											<SearchControlAddition name="СписокПараметровМетодаУправлениеПоиском" id="107">
+											<SearchControlAddition name="НаборПодменыЗаголовковМастерДанныхУправлениеПоиском" id="183">
 												<Source>
-													<lf:elementId>93</lf:elementId>
+													<lf:elementId>169</lf:elementId>
 													<lf:additionId>2</lf:additionId>
 												</Source>
-												<ContextMenu name="СписокПараметровМетодаУправлениеПоискомКонтекстноеМеню" id="110"/>
-												<ExtendedTooltip name="СписокПараметровМетодаУправлениеПоискомРасширеннаяПодсказка" id="111"/>
+												<ContextMenu name="НаборПодменыЗаголовковМастерДанныхУправлениеПоискомКонтекстноеМеню" id="186"/>
+												<ExtendedTooltip name="НаборПодменыЗаголовковМастерДанныхУправлениеПоискомРасширеннаяПодсказка" id="187"/>
 											</SearchControlAddition>
 											<ChildItems>
-												<InputField name="СписокПараметровМетодаИмяРеквизита" id="112">
-													<DataPath>СписокПараметровМетода.ИмяРеквизита</DataPath>
+												<LabelField name="НаборПодменыЗаголовковМастерДанныхНомерСтроки" id="188">
+													<DataPath>Объект.НаборПодменыЗаголовковМастерДанных.LineNumber</DataPath>
 													<EditMode>EnterOnInput</EditMode>
-													<ContextMenu name="СписокПараметровМетодаИмяРеквизитаКонтекстноеМеню" id="113"/>
-													<ExtendedTooltip name="СписокПараметровМетодаИмяРеквизитаРасширеннаяПодсказка" id="114"/>
+													<Width>2</Width>
+													<ContextMenu name="НаборПодменыЗаголовковМастерДанныхНомерСтрокиКонтекстноеМеню" id="189"/>
+													<ExtendedTooltip name="НаборПодменыЗаголовковМастерДанныхНомерСтрокиРасширеннаяПодсказка" id="190"/>
+												</LabelField>
+												<InputField name="НаборПодменыЗаголовковМастерДанныхИсходноеИмяЭлемента" id="191">
+													<DataPath>Объект.НаборПодменыЗаголовковМастерДанных.ИсходноеИмяЭлемента</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<Width>20</Width>
+													<ContextMenu name="НаборПодменыЗаголовковМастерДанныхИсходноеИмяЭлементаКонтекстноеМеню" id="192"/>
+													<ExtendedTooltip name="НаборПодменыЗаголовковМастерДанныхИсходноеИмяЭлементаРасширеннаяПодсказка" id="193"/>
 												</InputField>
-												<InputField name="СписокПараметровМетодаТипРеквизита" id="115">
-													<DataPath>СписокПараметровМетода.ТипРеквизита</DataPath>
+												<InputField name="НаборПодменыЗаголовковМастерДанныхИмяИспользуемогоМетода" id="194">
+													<DataPath>Объект.НаборПодменыЗаголовковМастерДанных.ИмяИспользуемогоМетода</DataPath>
 													<EditMode>EnterOnInput</EditMode>
-													<AvailableTypes>
-														<v8:Type>xs:boolean</v8:Type>
-														<v8:Type>xs:string</v8:Type>
-														<v8:Type>xs:dateTime</v8:Type>
-														<v8:Type>xs:decimal</v8:Type>
-														<v8:NumberQualifiers>
-															<v8:Digits>0</v8:Digits>
-															<v8:FractionDigits>0</v8:FractionDigits>
-															<v8:AllowedSign>Any</v8:AllowedSign>
-														</v8:NumberQualifiers>
-														<v8:StringQualifiers>
-															<v8:Length>0</v8:Length>
-															<v8:AllowedLength>Variable</v8:AllowedLength>
-														</v8:StringQualifiers>
-														<v8:DateQualifiers>
-															<v8:DateFractions>DateTime</v8:DateFractions>
-														</v8:DateQualifiers>
-													</AvailableTypes>
-													<ContextMenu name="СписокПараметровМетодаТипРеквизитаКонтекстноеМеню" id="116"/>
-													<ExtendedTooltip name="СписокПараметровМетодаТипРеквизитаРасширеннаяПодсказка" id="117"/>
+													<Width>20</Width>
+													<ContextMenu name="НаборПодменыЗаголовковМастерДанныхИмяИспользуемогоМетодаКонтекстноеМеню" id="195"/>
+													<ExtendedTooltip name="НаборПодменыЗаголовковМастерДанныхИмяИспользуемогоМетодаРасширеннаяПодсказка" id="196"/>
 												</InputField>
-												<InputField name="СписокПараметровМетодаДанныеПроверки" id="130">
-													<DataPath>СписокПараметровМетода.ДанныеПроверки</DataPath>
+												<InputField name="НаборПодменыЗаголовковМастерДанныхРезультирующееИмяЭлемента" id="197">
+													<DataPath>Объект.НаборПодменыЗаголовковМастерДанных.РезультирующееИмяЭлемента</DataPath>
 													<EditMode>EnterOnInput</EditMode>
-													<TypeLink>
-														<xr:DataPath>Items.СписокПараметровМетода.CurrentData.ТипРеквизита</xr:DataPath>
-														<xr:LinkItem>0</xr:LinkItem>
-													</TypeLink>
-													<ContextMenu name="СписокПараметровМетодаДанныеПроверкиКонтекстноеМеню" id="131"/>
-													<ExtendedTooltip name="СписокПараметровМетодаДанныеПроверкиРасширеннаяПодсказка" id="132"/>
+													<Width>20</Width>
+													<ContextMenu name="НаборПодменыЗаголовковМастерДанныхРезультирующееИмяЭлементаКонтекстноеМеню" id="198"/>
+													<ExtendedTooltip name="НаборПодменыЗаголовковМастерДанныхРезультирующееИмяЭлементаРасширеннаяПодсказка" id="199"/>
 												</InputField>
 											</ChildItems>
 										</Table>
-										<InputField name="СписокПараметровОжидаемыхОтИсточникаЗапроса" id="122">
-											<DataPath>СписокПараметровОжидаемыхОтИсточникаЗапроса</DataPath>
-											<Enabled>false</Enabled>
-											<ContextMenu name="СписокПараметровОжидаемыхОтИсточникаЗапросаКонтекстноеМеню" id="123"/>
-											<ExtendedTooltip name="СписокПараметровОжидаемыхОтИсточникаЗапросаРасширеннаяПодсказка" id="124"/>
-										</InputField>
-									</ChildItems>
-								</Page>
-								<Page name="Страница_ПроверкаВалидностиЗапроса" id="68">
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Проверка валидности переданных параметров</v8:content>
-										</v8:item>
-									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Страница проверка валидности запроса</v8:content>
-										</v8:item>
-									</ToolTip>
-									<ExtendedTooltip name="Страница_ПроверкаВалидностиЗапросаРасширеннаяПодсказка" id="69"/>
-									<ChildItems>
-										<LabelField name="ТекстКомментарияКФункциям" id="145">
-											<DataPath>ТекстКомментарияКФункциям</DataPath>
-											<TitleLocation>None</TitleLocation>
-											<HorizontalAlign>Left</HorizontalAlign>
-											<Height>3</Height>
-											<VerticalStretch>false</VerticalStretch>
-											<ContextMenu name="ТекстКомментарияКФункциямКонтекстноеМеню" id="146"/>
-											<ExtendedTooltip name="ТекстКомментарияКФункциямРасширеннаяПодсказка" id="147"/>
-										</LabelField>
-										<InputField name="НастройкиПолученияПроверкаВалидностиЗапроса" id="70">
-											<DataPath>ПроверкаВалидностиЗапроса</DataPath>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Проверка валидности запроса (Истина - валиден)</v8:content>
-												</v8:item>
-											</Title>
-											<MultiLine>true</MultiLine>
-											<ExtendedEdit>true</ExtendedEdit>
-											<ContextMenu name="НастройкиПолученияПроверкаВалидностиЗапросаКонтекстноеМеню" id="71"/>
-											<ExtendedTooltip name="НастройкиПолученияПроверкаВалидностиЗапросаРасширеннаяПодсказка" id="72"/>
-										</InputField>
-										<Button name="ВыполнитьФункциюСПроверочнымиДанными5" id="143">
-											<Type>UsualButton</Type>
-											<CommandName>Form.Command.ВыполнитьФункциюСПроверочнымиДанными</CommandName>
-											<Parameter xsi:nil="true"/>
-											<ExtendedTooltip name="ВыполнитьФункциюСПроверочнымиДанными5РасширеннаяПодсказка" id="144"/>
-										</Button>
-									</ChildItems>
-								</Page>
-								<Page name="Страница_УсловиеПринятияРешенияОбАсинхроне" id="73">
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Принятие решения об асинхроне</v8:content>
-										</v8:item>
-									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Страница условие принятия решения об асинхроне</v8:content>
-										</v8:item>
-									</ToolTip>
-									<ExtendedTooltip name="Страница_УсловиеПринятияРешенияОбАсинхронеРасширеннаяПодсказка" id="74"/>
-									<ChildItems>
-										<LabelField name="ТекстКомментарияКФункциям1" id="148">
-											<DataPath>ТекстКомментарияКФункциям</DataPath>
-											<TitleLocation>None</TitleLocation>
-											<HorizontalAlign>Left</HorizontalAlign>
-											<Height>3</Height>
-											<VerticalStretch>false</VerticalStretch>
-											<ContextMenu name="ТекстКомментарияКФункциям1КонтекстноеМеню" id="149"/>
-											<ExtendedTooltip name="ТекстКомментарияКФункциям1РасширеннаяПодсказка" id="150"/>
-										</LabelField>
-										<InputField name="НастройкиПолученияУсловиеПринятияРешенияОбАсинхроне" id="75">
-											<DataPath>УсловиеПринятияРешенияОбАсинхроне</DataPath>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Условие принятия решения об асинхроне (Истина - требуется асинхрон)</v8:content>
-												</v8:item>
-											</Title>
-											<MultiLine>true</MultiLine>
-											<ExtendedEdit>true</ExtendedEdit>
-											<ContextMenu name="НастройкиПолученияУсловиеПринятияРешенияОбАсинхронеКонтекстноеМеню" id="76"/>
-											<ExtendedTooltip name="НастройкиПолученияУсловиеПринятияРешенияОбАсинхронеРасширеннаяПодсказка" id="77"/>
-										</InputField>
-										<Button name="ВыполнитьФункциюСПроверочнымиДанными" id="133">
-											<Type>UsualButton</Type>
-											<CommandName>Form.Command.ВыполнитьФункциюСПроверочнымиДанными</CommandName>
-											<Parameter xsi:nil="true"/>
-											<ExtendedTooltip name="ВыполнитьФункциюСПроверочнымиДаннымиРасширеннаяПодсказка" id="134"/>
-										</Button>
-									</ChildItems>
-								</Page>
-								<Page name="Страница_ОписаниеСинхронногоЗапроса" id="125">
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Описание алгоритма синхронного запроса</v8:content>
-										</v8:item>
-									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Страница описание алгоритма асинхронного запроса</v8:content>
-										</v8:item>
-									</ToolTip>
-									<ExtendedTooltip name="Страница_ОписаниеСинхронногоЗапросаРасширеннаяПодсказка" id="126"/>
-									<ChildItems>
-										<LabelField name="ТекстКомментарияКФункциям2" id="151">
-											<DataPath>ТекстКомментарияКФункциям</DataPath>
-											<TitleLocation>None</TitleLocation>
-											<HorizontalAlign>Left</HorizontalAlign>
-											<Height>3</Height>
-											<VerticalStretch>false</VerticalStretch>
-											<ContextMenu name="ТекстКомментарияКФункциям2КонтекстноеМеню" id="152"/>
-											<ExtendedTooltip name="ТекстКомментарияКФункциям2РасширеннаяПодсказка" id="153"/>
-										</LabelField>
-										<InputField name="НастройкиПолученияОписаниеСинхронногоЗапроса" id="127">
-											<DataPath>ОписаниеСинхронногоЗапроса</DataPath>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Описание синхронного запроса (Результат - список ссылок мастер-данных)</v8:content>
-												</v8:item>
-											</Title>
-											<MultiLine>true</MultiLine>
-											<ExtendedEdit>true</ExtendedEdit>
-											<ContextMenu name="НастройкиПолученияОписаниеСинхронногоЗапросаКонтекстноеМеню" id="128"/>
-											<ExtendedTooltip name="НастройкиПолученияОписаниеСинхронногоЗапросаРасширеннаяПодсказка" id="129"/>
-										</InputField>
-										<Button name="ВыполнитьФункциюСПроверочнымиДанными1" id="135">
-											<Type>UsualButton</Type>
-											<CommandName>Form.Command.ВыполнитьФункциюСПроверочнымиДанными</CommandName>
-											<Parameter xsi:nil="true"/>
-											<ExtendedTooltip name="ВыполнитьФункциюСПроверочнымиДанными1РасширеннаяПодсказка" id="136"/>
-										</Button>
-									</ChildItems>
-								</Page>
-								<Page name="Страница_ОписаниеАсинхронногоЗапроса" id="78">
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Описание алгоритма асинхронного запроса</v8:content>
-										</v8:item>
-									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Страница описание асинхронного запроса</v8:content>
-										</v8:item>
-									</ToolTip>
-									<ExtendedTooltip name="Страница_ОписаниеАсинхронногоЗапросаРасширеннаяПодсказка" id="79"/>
-									<ChildItems>
-										<LabelField name="ТекстКомментарияКФункциям3" id="154">
-											<DataPath>ТекстКомментарияКФункциям</DataPath>
-											<TitleLocation>None</TitleLocation>
-											<HorizontalAlign>Left</HorizontalAlign>
-											<Height>3</Height>
-											<VerticalStretch>false</VerticalStretch>
-											<ContextMenu name="ТекстКомментарияКФункциям3КонтекстноеМеню" id="155"/>
-											<ExtendedTooltip name="ТекстКомментарияКФункциям3РасширеннаяПодсказка" id="156"/>
-										</LabelField>
-										<InputField name="НастройкиПолученияОписаниеАсинхронногоЗапроса" id="80">
-											<DataPath>ОписаниеАсинхронногоЗапроса</DataPath>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Описание асинхронного запроса (Результат - список ссылок мастер-данных)</v8:content>
-												</v8:item>
-											</Title>
-											<MultiLine>true</MultiLine>
-											<ExtendedEdit>true</ExtendedEdit>
-											<ContextMenu name="НастройкиПолученияОписаниеАсинхронногоЗапросаКонтекстноеМеню" id="81"/>
-											<ExtendedTooltip name="НастройкиПолученияОписаниеАсинхронногоЗапросаРасширеннаяПодсказка" id="82"/>
-										</InputField>
-										<Button name="ВыполнитьФункциюСПроверочнымиДанными2" id="137">
-											<Type>UsualButton</Type>
-											<CommandName>Form.Command.ВыполнитьФункциюСПроверочнымиДанными</CommandName>
-											<Parameter xsi:nil="true"/>
-											<ExtendedTooltip name="ВыполнитьФункциюСПроверочнымиДанными2РасширеннаяПодсказка" id="138"/>
-										</Button>
-									</ChildItems>
-								</Page>
-								<Page name="Страница_ФункцияПреобразованияВыходныхДанных" id="83">
-									<Visible>false</Visible>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Функция преобразования выходных данных</v8:content>
-										</v8:item>
-									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Страница функция преобразования выходных данных</v8:content>
-										</v8:item>
-									</ToolTip>
-									<ExtendedTooltip name="Страница_ФункцияПреобразованияВыходныхДанныхРасширеннаяПодсказка" id="84"/>
-									<ChildItems>
-										<LabelField name="ТекстКомментарияКФункциям4" id="157">
-											<DataPath>ТекстКомментарияКФункциям</DataPath>
-											<TitleLocation>None</TitleLocation>
-											<HorizontalAlign>Left</HorizontalAlign>
-											<Height>3</Height>
-											<VerticalStretch>false</VerticalStretch>
-											<ContextMenu name="ТекстКомментарияКФункциям4КонтекстноеМеню" id="158"/>
-											<ExtendedTooltip name="ТекстКомментарияКФункциям4РасширеннаяПодсказка" id="159"/>
-										</LabelField>
-										<InputField name="НастройкиПолученияФункцияПреобразованияВыходныхДанных" id="85">
-											<DataPath>ФункцияПреобразованияВыходныхДанных</DataPath>
-											<VerticalStretch>true</VerticalStretch>
-											<MultiLine>true</MultiLine>
-											<ExtendedEdit>true</ExtendedEdit>
-											<ContextMenu name="НастройкиПолученияФункцияПреобразованияВыходныхДанныхКонтекстноеМеню" id="86"/>
-											<ExtendedTooltip name="НастройкиПолученияФункцияПреобразованияВыходныхДанныхРасширеннаяПодсказка" id="87"/>
-										</InputField>
-										<Button name="ВыполнитьФункциюСПроверочнымиДанными3" id="139">
-											<Type>UsualButton</Type>
-											<CommandName>Form.Command.ВыполнитьФункциюСПроверочнымиДанными</CommandName>
-											<Parameter xsi:nil="true"/>
-											<ExtendedTooltip name="ВыполнитьФункциюСПроверочнымиДанными3РасширеннаяПодсказка" id="140"/>
-										</Button>
-									</ChildItems>
-								</Page>
-								<Page name="Страница_НастройкиПередачиВыходныхДанныхПриАсинхронномОтвете" id="88">
-									<Visible>false</Visible>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Настройка асинхронной передачи выходных данных</v8:content>
-										</v8:item>
-									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Страница настройки передачи выходных данных при асинхронном ответе</v8:content>
-										</v8:item>
-									</ToolTip>
-									<ExtendedTooltip name="Страница_НастройкиПередачиВыходныхДанныхПриАсинхронномОтветеРасширеннаяПодсказка" id="89"/>
-									<ChildItems>
-										<LabelField name="ТекстКомментарияКФункциям5" id="160">
-											<DataPath>ТекстКомментарияКФункциям</DataPath>
-											<TitleLocation>None</TitleLocation>
-											<HorizontalAlign>Left</HorizontalAlign>
-											<Height>2</Height>
-											<VerticalStretch>false</VerticalStretch>
-											<ContextMenu name="ТекстКомментарияКФункциям5КонтекстноеМеню" id="161"/>
-											<ExtendedTooltip name="ТекстКомментарияКФункциям5РасширеннаяПодсказка" id="162"/>
-										</LabelField>
-										<InputField name="НастройкиПолученияНастройкиПередачиВыходныхДанныхПриАсинхронномОтвете" id="90">
-											<DataPath>НастройкиПередачиВыходныхДанныхПриАсинхронномОтвете</DataPath>
-											<MultiLine>true</MultiLine>
-											<ExtendedEdit>true</ExtendedEdit>
-											<ContextMenu name="НастройкиПолученияНастройкиПередачиВыходныхДанныхПриАсинхронномОтветеКонтекстноеМеню" id="91"/>
-											<ExtendedTooltip name="НастройкиПолученияНастройкиПередачиВыходныхДанныхПриАсинхронномОтветеРасширеннаяПодсказка" id="92"/>
-										</InputField>
-										<Button name="ВыполнитьФункциюСПроверочнымиДанными4" id="141">
-											<Type>UsualButton</Type>
-											<CommandName>Form.Command.ВыполнитьФункциюСПроверочнымиДанными</CommandName>
-											<Parameter xsi:nil="true"/>
-											<ExtendedTooltip name="ВыполнитьФункциюСПроверочнымиДанными4РасширеннаяПодсказка" id="142"/>
-										</Button>
 									</ChildItems>
 								</Page>
 							</ChildItems>
