@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<HTTPService uuid="2a8ab629-89cc-479f-bafe-8486f4847f6c">
+		<Properties>
+			<Name>MDM</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>MDM</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<RootURL>MDM</RootURL>
+		</Properties>
+		<ChildObjects>
+			<URLTemplate uuid="3e4c87be-1213-4186-964a-7e5221e9fca3">
+				<Properties>
+					<Name>GetBigDataByToken</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get big data by token</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/{SourceSystem}/GetDataByToken/{Token}</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="61836559-f70c-41bb-9b8b-742d005cdf6f">
+						<Properties>
+							<Name>GET</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>GET</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>GetDataByTokenGET</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="cd94b5de-f44b-426b-bb27-d8006a2e492c">
+				<Properties>
+					<Name>GetMasterData</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get master data</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/{SourceSystem}/GetMasterData/{MasterDataName}</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="b8b1b5d9-d9a5-4c48-b80a-c61bc845335f">
+						<Properties>
+							<Name>GET</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>GET</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>GetMasterDataGET</Handler>
+						</Properties>
+					</Method>
+					<Method uuid="d28cdb71-7516-45fa-8374-852f62818a4c">
+						<Properties>
+							<Name>POST</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>POST</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>POST</HTTPMethod>
+							<Handler>GetMasterDataPOST</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="bc5b3eee-e5bc-473a-b8ea-9b5faef9e73b">
+				<Properties>
+					<Name>GetMasterDataByKey</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get master data by key</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/{SourceSystem}/GetMasterDataByKey/{MasterDataName}</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="bf7f84b0-c1fd-43a1-9b8d-9eb67b37a696">
+						<Properties>
+							<Name>POST</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>POST</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>POST</HTTPMethod>
+							<Handler>GetMasterDataByKeyPOST</Handler>
+						</Properties>
+					</Method>
+					<Method uuid="7ddfe5a1-cbe0-4657-b39a-24f86492fc68">
+						<Properties>
+							<Name>GET</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>GET</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>GetMasterDataByKeyGET</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="dca35e4e-26e3-4c53-8ebc-2cd096f8ad25">
+				<Properties>
+					<Name>GetMasterDataByMethod</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get master data by method</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/{SourceSystem}/GetMasterDataByMethod/{MethodName}</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="13d4d177-9a1b-4506-baac-30ef4db994ca">
+						<Properties>
+							<Name>POST</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>POST</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>POST</HTTPMethod>
+							<Handler>GetMasterDataByMethodPOST</Handler>
+						</Properties>
+					</Method>
+					<Method uuid="5fadcf5a-59c8-4b59-84b2-8c950ff2de5f">
+						<Properties>
+							<Name>GET</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>GET</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>GetMasterDataByMethodGET</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="2772ee8d-3d15-4f55-990f-a5e867050387">
+				<Properties>
+					<Name>GetMasterDataByGUID</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get master data by GUID</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/{SourceSystem}/GetMasterDataByGUID/{GUID}</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="08f2fb4e-16c2-4823-88b7-6cd8830427a9">
+						<Properties>
+							<Name>GET</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>GET</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>GetMasterDataByGUIDGET</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+		</ChildObjects>
+	</HTTPService>
+</MetaDataObject>

@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Enum uuid="147bd0cf-abbc-4acc-9433-3042dbb8761d">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.NSI_ВидыВнешнихСервисов" category="Ref">
+				<xr:TypeId>dba360b7-4be7-49c8-9b1a-095a1d149d1c</xr:TypeId>
+				<xr:ValueId>6ca0b267-5ccd-4004-9733-6a09ccf6d84d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.NSI_ВидыВнешнихСервисов" category="Manager">
+				<xr:TypeId>835fd729-4d0c-4ed6-b49b-cf7d6a1913fa</xr:TypeId>
+				<xr:ValueId>40743e71-3f4b-4031-9f2a-791b447be1cb</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.NSI_ВидыВнешнихСервисов" category="List">
+				<xr:TypeId>8b15fa1d-ca7a-4a4a-923a-6b1f13c1be82</xr:TypeId>
+				<xr:ValueId>6d0b3549-0c6b-4a2e-9105-f9d0fc7ee428</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>NSI_ВидыВнешнихСервисов</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>NSI виды внешних сервисов</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="f4580b7e-f5d8-486a-a90a-840a0a746f7b">
+				<Properties>
+					<Name>WebService</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Web service</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="beeac669-d288-4305-bcdc-92ac6ac332d5">
+				<Properties>
+					<Name>HTTPService</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>HTTP Service</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="0561c920-5089-4cc3-a01e-b430dee7c94c">
+				<Properties>
+					<Name>COMConnector_1C</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>COM 1C</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="851b25c9-5050-421c-b997-f9e2ce081250">
+				<Properties>
+					<Name>Application_1C</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Application 1C</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="78698203-ba57-47eb-8645-0a1600cab433">
+				<Properties>
+					<Name>DB_Oracle</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DB Оracle</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="d79b5897-729c-417b-ba4a-79d97658f7d9">
+				<Properties>
+					<Name>DB_MSSQL</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DB MSSQL</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="46eb4507-5eee-4dad-8b51-498073ec343b">
+				<Properties>
+					<Name>Excel</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Excel</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

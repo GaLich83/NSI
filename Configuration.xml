@@ -989,6 +989,7 @@
 			<WebService>MessageExchange</WebService>
 			<WebService>MessageExchange_2_0_1_6</WebService>
 			<WebService>MDM</WebService>
+			<HTTPService>MDM</HTTPService>
 			<EventSubscription>ВариантыОтветовАнкетЗаполнитьЗначениеРеквизитаУпорядочивания</EventSubscription>
 			<EventSubscription>ВариантыОтветовАнкетСброситьЗначениеРеквизитаУпорядочивания</EventSubscription>
 			<EventSubscription>ВариантыОтчетовПередУдалениемИдентификатораОбъектаМетаданных</EventSubscription>
@@ -1474,6 +1475,8 @@
 			<Catalog>ШаблоныЗаданийОчереди</Catalog>
 			<Catalog>ЭлектронноеПисьмоВходящееПрисоединенныеФайлы</Catalog>
 			<Catalog>ЭлектронноеПисьмоИсходящееПрисоединенныеФайлы</Catalog>
+			<Catalog>NSI_СписокВнешнихСервисов</Catalog>
+			<Catalog>NSI_БольшиеДанныеДляПередачи</Catalog>
 			<Document>Анкета</Document>
 			<Document>Встреча</Document>
 			<Document>ЗапланированноеВзаимодействие</Document>
@@ -1563,6 +1566,7 @@
 			<Enum>ФорматыХраненияОдностраничныхФайлов</Enum>
 			<Enum>ЦветаЗаметок</Enum>
 			<Enum>ЦветностиИзображения</Enum>
+			<Enum>NSI_ВидыВнешнихСервисов</Enum>
 			<Report>АнализВерсийОбъектов</Report>
 			<Report>АнализЖурналаРегистрации</Report>
 			<Report>АнализОпроса</Report>

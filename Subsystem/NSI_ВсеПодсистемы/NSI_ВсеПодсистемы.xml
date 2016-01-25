@@ -66,11 +66,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.NSI_РедакторHTML</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.NSI_РаботаСПользователями</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.NSI_ОбщиеПроцедурыКлиентСервер</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">f8eac200-71cc-4094-b063-3f4e21aee64a</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">b9e2dbbd-3508-4ecb-9e6c-1015d20304e4</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">f10503c4-93da-4880-9926-7dfb0989c523</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">863634c4-ae1f-4792-91fd-4581090aca3c</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">f7d4fd64-dc61-4770-b2cc-19e214895da3</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.NSI_ПрефиксДоменнойАвторизации</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.NSI_ОбработкиДляВнешнихБаз</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.NSI_ОбработкиДляВнешнихБазПрисоединенныеФайлы</xr:Item>
@@ -83,6 +78,9 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.NSI_ОповещенияКОтправке</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.NSI_ПодпискиНаСобытия</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.NSI_РучнойМаппингОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.NSI_ВидыВнешнихСервисов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.NSI_СписокВнешнихСервисов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">HTTPService.MDM</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

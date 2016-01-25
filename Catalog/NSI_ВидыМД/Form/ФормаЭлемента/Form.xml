@@ -21,6 +21,11 @@
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
 					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
 				</InputField>
+				<InputField name="ПорядокВыводаВидаМД" id="129">
+					<DataPath>Объект.ПорядокВыводаВидаМД</DataPath>
+					<ContextMenu name="ПорядокВыводаВидаМДКонтекстноеМеню" id="130"/>
+					<ExtendedTooltip name="ПорядокВыводаВидаМДРасширеннаяПодсказка" id="131"/>
+				</InputField>
 				<InputField name="Код" id="1">
 					<DataPath>Объект.Code</DataPath>
 					<EditMode>EnterOnInput</EditMode>

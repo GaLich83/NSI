@@ -47,6 +47,7 @@
 	</objectType>
 	<objectType name="MDMResponse">
 		<property xmlns:d3p1="mdm" name="Errors" type="d3p1:ErrorData" lowerBound="0" upperBound="-1" nillable="true"/>
+		<property name="BigDataToken" type="xs:string" lowerBound="0" nillable="true"/>
 	</objectType>
 	<objectType name="KeyValue">
 		<property name="Key" type="xs:string"/>
@@ -68,5 +69,13 @@
 	<objectType xmlns:d2p1="mdm" name="GetMasterDataByMethodResponse" base="d2p1:MDMResponse">
 		<property name="DataResponse" type="d2p1:ArrayOfMasterData" lowerBound="0" nillable="true"/>
 		<property name="AsyncTicket" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="ArrayOfBigData">
+		<property xmlns:d3p1="mdm" name="BigData" type="d3p1:BigDataType" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="BigDataType">
+		<property name="Description" type="xs:string" nillable="true"/>
+		<property name="BinaryData" type="xs:base64Binary" nillable="true"/>
+		<property name="XMLData" type="xs:base64Binary" nillable="true"/>
 	</objectType>
 </package>

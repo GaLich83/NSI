@@ -36,6 +36,9 @@
 				<xr:Item xsi:type="xr:MDObjectRef">WebService.MDM</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.NSI_РаботаСМастерДаннымиСерверПереопределяемый</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.NSI_ОграниченияМастерДанныхПоСистемам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.NSI_БольшиеДанныеДляПередачи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">HTTPService.MDM</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.NSI_ВидыВнешнихСервисов</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
