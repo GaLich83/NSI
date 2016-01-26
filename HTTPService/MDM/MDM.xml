@@ -40,6 +40,20 @@
 							<Handler>GetDataByTokenGET</Handler>
 						</Properties>
 					</Method>
+					<Method uuid="a5cc3a99-b9db-4ab6-9701-68ab8ef4ceb0">
+						<Properties>
+							<Name>POST</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>POST</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>POST</HTTPMethod>
+							<Handler>GetBigDataByTokenPOST</Handler>
+						</Properties>
+					</Method>
 				</ChildObjects>
 			</URLTemplate>
 			<URLTemplate uuid="cd94b5de-f44b-426b-bb27-d8006a2e492c">
@@ -196,6 +210,20 @@
 							<Comment/>
 							<HTTPMethod>GET</HTTPMethod>
 							<Handler>GetMasterDataByGUIDGET</Handler>
+						</Properties>
+					</Method>
+					<Method uuid="2353b737-77bd-49cc-ba99-ab457e282096">
+						<Properties>
+							<Name>POST</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>POST</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>POST</HTTPMethod>
+							<Handler>GetMasterDataByGUIDPOST</Handler>
 						</Properties>
 					</Method>
 				</ChildObjects>
