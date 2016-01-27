@@ -228,6 +228,35 @@
 					</Method>
 				</ChildObjects>
 			</URLTemplate>
+			<URLTemplate uuid="c7ee81c3-bcdf-4469-adfa-b0dbb420d845">
+				<Properties>
+					<Name>Help</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Help</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/help</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="285199c9-8a3e-4041-9db7-277b3bb6377f">
+						<Properties>
+							<Name>GET</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>GET</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>HelpGET</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
 		</ChildObjects>
 	</HTTPService>
 </MetaDataObject>

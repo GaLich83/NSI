@@ -544,6 +544,7 @@
 			<Role>ЧтениеОтветовНаВопросыАнкет</Role>
 			<Role>NSI_ДобавлениеИзменениеОбработокДляВнешнихБаз</Role>
 			<Role>NSI_ЧтениеОбработокДляВнешнихБаз</Role>
+			<Role>NSI_ТолькоСервисПомощи</Role>
 			<CommonTemplate>ИнструкцияКакВыполнитьУстановкуОбновленияВручную</CommonTemplate>
 			<CommonTemplate>ИнструкцияПоПроверкеКонтрагентов</CommonTemplate>
 			<CommonTemplate>КомпонентаTWAIN</CommonTemplate>

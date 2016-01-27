@@ -234,3 +234,19 @@
 	Возврат ОтветСервиса;
 КонецФункции
 
+
+Функция HelpGET(Запрос)
+	ТекстОтвета = "
+	|<HTML>
+	|  <HEAD>
+	|  	<META HTTP-EQUIV=""REFRESH"" CONTENT=""1; URL=http://1cmsfo/mdm_helponline/spetsifikatsiya_rest_servisa_mdm.html"">
+	|  </HEAD>
+	|  <BODY>
+	|  </BODY>
+	|</HTML>";
+	ОтветСервиса = Новый HTTPСервисОтвет(200);
+	ОтветСервиса.УстановитьТелоИзСтроки(ТекстОтвета);
+	ОтветСервиса.Заголовки.Вставить("Content-Type: text/html;");
+	Возврат ОтветСервиса;
+КонецФункции
+
