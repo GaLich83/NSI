@@ -21,6 +21,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.NSI_СписокВИБ</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.NSI_ВидыБД</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.NSI_ИзмененныеОбъекты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.NSI_СписокВнешнихСервисов</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

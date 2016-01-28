@@ -118,8 +118,6 @@ Catalog.NSI_СписокВИБ.Form.ФормаЭлемента.Form.xml-->Catalo
 Catalog.NSI_СписокВИБ.Form.ФормаЭлемента.xml-->Catalog\NSI_СписокВИБ\Form\ФормаЭлемента.xml
 Catalog.NSI_СписокВИБ.Predefined.xml-->Catalog\NSI_СписокВИБ\Predefined.xml
 Catalog.NSI_СписокВИБ.xml-->Catalog\NSI_СписокВИБ\NSI_СписокВИБ.xml
-Catalog.NSI_СписокВнешнихСервисов.Form.ФормаДобавленияФайла.Form.xml-->Catalog\NSI_СписокВнешнихСервисов\Form\ФормаДобавленияФайла\Form.xml
-Catalog.NSI_СписокВнешнихСервисов.Form.ФормаДобавленияФайла.xml-->Catalog\NSI_СписокВнешнихСервисов\Form\ФормаДобавленияФайла.xml
 Catalog.NSI_СписокВнешнихСервисов.Form.ФормаЭлемента.Form.Module.txt-->Catalog\NSI_СписокВнешнихСервисов\Form\ФормаЭлемента\Form\Module.txt
 Catalog.NSI_СписокВнешнихСервисов.Form.ФормаЭлемента.Form.xml-->Catalog\NSI_СписокВнешнихСервисов\Form\ФормаЭлемента\Form.xml
 Catalog.NSI_СписокВнешнихСервисов.Form.ФормаЭлемента.xml-->Catalog\NSI_СписокВнешнихСервисов\Form\ФормаЭлемента.xml

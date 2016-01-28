@@ -471,7 +471,6 @@
 				</ChildObjects>
 			</TabularSection>
 			<Form>ФормаЭлемента</Form>
-			<Form>ФормаДобавленияФайла</Form>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>
