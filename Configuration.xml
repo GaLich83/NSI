@@ -1399,6 +1399,7 @@
 			<CommonForm>ФормаОтчета</CommonForm>
 			<CommonForm>ЭлектроннаяПодпись</CommonForm>
 			<CommonForm>NSI_ФормаИсторииОбъекта</CommonForm>
+			<Catalog>NSI_БольшиеДанныеДляПередачи</Catalog>
 			<Catalog>NSI_ВидыМД</Catalog>
 			<Catalog>NSI_ГруппыДоступаВИБ</Catalog>
 			<Catalog>NSI_ГруппыПользователейВИБ</Catalog>
@@ -1419,6 +1420,7 @@
 			<Catalog>NSI_СобытияКОтправке</Catalog>
 			<Catalog>NSI_СобытияОповещений</Catalog>
 			<Catalog>NSI_СписокВИБ</Catalog>
+			<Catalog>NSI_СписокВнешнихСервисов</Catalog>
 			<Catalog>NSI_ТикетыАсинхроннойПередачи</Catalog>
 			<Catalog>NSI_УЗIDM</Catalog>
 			<Catalog>NSI_УЗВИБ</Catalog>
@@ -1476,8 +1478,6 @@
 			<Catalog>ШаблоныЗаданийОчереди</Catalog>
 			<Catalog>ЭлектронноеПисьмоВходящееПрисоединенныеФайлы</Catalog>
 			<Catalog>ЭлектронноеПисьмоИсходящееПрисоединенныеФайлы</Catalog>
-			<Catalog>NSI_СписокВнешнихСервисов</Catalog>
-			<Catalog>NSI_БольшиеДанныеДляПередачи</Catalog>
 			<Document>Анкета</Document>
 			<Document>Встреча</Document>
 			<Document>ЗапланированноеВзаимодействие</Document>
