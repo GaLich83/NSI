@@ -1411,7 +1411,7 @@
 							</Synonym>
 							<Comment/>
 							<XDTOValueType>xs:string</XDTOValueType>
-							<Nillable>false</Nillable>
+							<Nillable>true</Nillable>
 							<TransferDirection>In</TransferDirection>
 						</Properties>
 					</Parameter>
