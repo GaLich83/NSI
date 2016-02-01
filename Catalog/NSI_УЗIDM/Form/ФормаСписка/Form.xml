@@ -4,6 +4,7 @@
 		<ChildItems>
 			<Button name="ФормаПолучитьПоФИОДанныеИзСМП" id="58">
 				<Type>CommandBarButton</Type>
+				<Visible>false</Visible>
 				<CommandName>Form.Command.ПолучитьПоФИОДанныеИзСМП</CommandName>
 				<Parameter xsi:nil="true"/>
 				<ExtendedTooltip name="ФормаПолучитьПоФИОДанныеИзСМПРасширеннаяПодсказка" id="59"/>
