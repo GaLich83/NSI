@@ -71,6 +71,7 @@
 			<ChildItems>
 				<LabelField name="ИмяРоли" id="25">
 					<DataPath>Список.ИмяРоли</DataPath>
+					<Width>40</Width>
 					<ContextMenu name="ИмяРолиКонтекстноеМеню" id="26"/>
 					<ExtendedTooltip name="ИмяРолиРасширеннаяПодсказка" id="27"/>
 				</LabelField>
