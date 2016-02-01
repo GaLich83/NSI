@@ -72,6 +72,22 @@
 						<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="21"/>
 					</SearchControlAddition>
 					<ChildItems>
+						<LabelField name="Владелец" id="102">
+							<DataPath>Список.Owner</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>База</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ВладелецКонтекстноеМеню" id="103"/>
+							<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="104"/>
+						</LabelField>
+						<LabelField name="ПолноеИмя" id="105">
+							<DataPath>Список.ПолноеИмя</DataPath>
+							<ContextMenu name="ПолноеИмяКонтекстноеМеню" id="106"/>
+							<ExtendedTooltip name="ПолноеИмяРасширеннаяПодсказка" id="107"/>
+						</LabelField>
 						<LabelField name="Ссылка" id="99">
 							<DataPath>Список.Ref</DataPath>
 							<ContextMenu name="СсылкаКонтекстноеМеню" id="100"/>
