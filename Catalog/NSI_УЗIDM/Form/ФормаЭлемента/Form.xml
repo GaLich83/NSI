@@ -25,6 +25,7 @@
 	</AutoCommandBar>
 	<Events>
 		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
 		<UsualGroup name="Группа3" id="69">
@@ -249,6 +250,13 @@
 							<ContextMenu name="РолиIDMКонтекстноеМеню" id="94"/>
 							<AutoCommandBar name="РолиIDMКоманднаяПанель" id="95">
 								<ChildItems>
+									<Button name="РолиIDMПодбор" id="130">
+										<Type>CommandBarButton</Type>
+										<OnlyInAllActions>true</OnlyInAllActions>
+										<CommandName>Form.Command.Подбор</CommandName>
+										<Parameter xsi:nil="true"/>
+										<ExtendedTooltip name="РолиIDMПодборРасширеннаяПодсказка" id="131"/>
+									</Button>
 									<Button name="РолиIDMПолучитьРолиIDM" id="122">
 										<Type>CommandBarButton</Type>
 										<CommandName>Form.Command.ПолучитьРолиIDM</CommandName>
@@ -282,6 +290,9 @@
 								<ContextMenu name="РолиIDMУправлениеПоискомКонтекстноеМеню" id="110"/>
 								<ExtendedTooltip name="РолиIDMУправлениеПоискомРасширеннаяПодсказка" id="111"/>
 							</SearchControlAddition>
+							<Events>
+								<Event name="ChoiceProcessing">РолиIDMОбработкаВыбора</Event>
+							</Events>
 							<ChildItems>
 								<LabelField name="РолиIDMНомерСтроки" id="112">
 									<DataPath>Объект.РолиIDM.LineNumber</DataPath>
@@ -398,6 +409,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ПолучитьРолиIDM</Action>
+		</Command>
+		<Command name="Подбор" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Подбор</Action>
 		</Command>
 	</Commands>
 </Form>
