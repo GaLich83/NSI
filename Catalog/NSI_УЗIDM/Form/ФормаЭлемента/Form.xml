@@ -162,6 +162,18 @@
 							<ContextMenu name="УЗВИБУЗВИБКонтекстноеМеню" id="63"/>
 							<ExtendedTooltip name="УЗВИБУЗВИБРасширеннаяПодсказка" id="64"/>
 						</InputField>
+						<LabelField name="УЗВИБУЗВИБВладелец" id="124">
+							<DataPath>Объект.УЗВИБ.УЗВИБ.Owner</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>База</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="УЗВИБУЗВИБВладелецКонтекстноеМеню" id="125"/>
+							<ExtendedTooltip name="УЗВИБУЗВИБВладелецРасширеннаяПодсказка" id="126"/>
+						</LabelField>
 					</ChildItems>
 				</Table>
 				<UsualGroup name="Группа6" id="79">
@@ -283,6 +295,18 @@
 									<ContextMenu name="РолиIDMРольIDMКонтекстноеМеню" id="116"/>
 									<ExtendedTooltip name="РолиIDMРольIDMРасширеннаяПодсказка" id="117"/>
 								</InputField>
+								<LabelField name="РолиIDMРольIDMОсновнаяИБ" id="127">
+									<DataPath>Объект.РолиIDM.РольIDM.ОсновнаяИБ</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>База</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="РолиIDMРольIDMОсновнаяИБКонтекстноеМеню" id="128"/>
+									<ExtendedTooltip name="РолиIDMРольIDMОсновнаяИБРасширеннаяПодсказка" id="129"/>
+								</LabelField>
 							</ChildItems>
 						</Table>
 					</ChildItems>
