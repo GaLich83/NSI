@@ -84,6 +84,8 @@ Catalog.NSI_ПравилаМаппинга.Form.ФормаЭлемента.xml--
 Catalog.NSI_ПравилаМаппинга.ObjectModule.txt-->Catalog\NSI_ПравилаМаппинга\ObjectModule.txt
 Catalog.NSI_ПравилаМаппинга.xml-->Catalog\NSI_ПравилаМаппинга\NSI_ПравилаМаппинга.xml
 Catalog.NSI_ПрофилиГруппДоступаВИБ.xml-->Catalog\NSI_ПрофилиГруппДоступаВИБ\NSI_ПрофилиГруппДоступаВИБ.xml
+Catalog.NSI_РолиIDM.Form.ФормаВыбора.Form.xml-->Catalog\NSI_РолиIDM\Form\ФормаВыбора\Form.xml
+Catalog.NSI_РолиIDM.Form.ФормаВыбора.xml-->Catalog\NSI_РолиIDM\Form\ФормаВыбора.xml
 Catalog.NSI_РолиIDM.Form.ФормаЭлемента.Form.xml-->Catalog\NSI_РолиIDM\Form\ФормаЭлемента\Form.xml
 Catalog.NSI_РолиIDM.Form.ФормаЭлемента.xml-->Catalog\NSI_РолиIDM\Form\ФормаЭлемента.xml
 Catalog.NSI_РолиIDM.ObjectModule.txt-->Catalog\NSI_РолиIDM\ObjectModule.txt
