@@ -28,7 +28,7 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Присоединенные файлы (Обработки для внешних баз)</v8:content>
+					<v8:content>(NSI) Присоединенные файлы (Обработки для внешних баз)</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -313,7 +313,12 @@
 				</v8:item>
 			</ObjectPresentation>
 			<ExtendedObjectPresentation/>
-			<ListPresentation/>
+			<ListPresentation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Присоединенные файлы (Обработки для внешних баз)</v8:content>
+				</v8:item>
+			</ListPresentation>
 			<ExtendedListPresentation/>
 			<Explanation/>
 			<CreateOnInput>DontUse</CreateOnInput>

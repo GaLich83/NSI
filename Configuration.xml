@@ -479,6 +479,7 @@
 			<SessionParameter>ТекущийПользователь</SessionParameter>
 			<SessionParameter>ТипыВладельцевНастроекПрав</SessionParameter>
 			<SessionParameter>ТипыЗначенийДоступаСГруппами</SessionParameter>
+			<SessionParameter>NSI_ТипВыбораМастерДанныхИзСписка</SessionParameter>
 			<Role>АдминистраторСистемы</Role>
 			<Role>Администрирование</Role>
 			<Role>БазовыеПрава</Role>
@@ -1324,6 +1325,8 @@
 			<Constant>ЭтоАвтономноеРабочееМесто</Constant>
 			<Constant>NSI_ГлубинаХраненияИстории</Constant>
 			<Constant>NSI_ОграничениеНаКоличествоИсполнителей</Constant>
+			<CommonForm>NSI_ФормаИсторииОбъекта</CommonForm>
+			<CommonForm>NSI_ФормаОписанияУсловийОтбораМастерДанных</CommonForm>
 			<CommonForm>АвторизацияНаСайтеПоддержкиПользователей</CommonForm>
 			<CommonForm>АдреснаяКнига</CommonForm>
 			<CommonForm>АутентификацияВСервисе</CommonForm>
@@ -1398,7 +1401,6 @@
 			<CommonForm>ФормаНастроекОтчета</CommonForm>
 			<CommonForm>ФормаОтчета</CommonForm>
 			<CommonForm>ЭлектроннаяПодпись</CommonForm>
-			<CommonForm>NSI_ФормаИсторииОбъекта</CommonForm>
 			<Catalog>NSI_БольшиеДанныеДляПередачи</Catalog>
 			<Catalog>NSI_ВидыМД</Catalog>
 			<Catalog>NSI_ГруппыДоступаВИБ</Catalog>
@@ -1408,6 +1410,7 @@
 			<Catalog>NSI_ИсточникиЗапросовМД</Catalog>
 			<Catalog>NSI_ЛогированиеФормированияОтчетов</Catalog>
 			<Catalog>NSI_МастерДанные</Catalog>
+			<Catalog>NSI_НастройкиАвтоматическихОповещенийОбИзмененииМД</Catalog>
 			<Catalog>NSI_НастройкиПочтовыхРассылокПоИзменениям</Catalog>
 			<Catalog>NSI_ОбработкиДляВнешнихБаз</Catalog>
 			<Catalog>NSI_ОбработкиДляВнешнихБазПрисоединенныеФайлы</Catalog>
@@ -1424,6 +1427,7 @@
 			<Catalog>NSI_ТикетыАсинхроннойПередачи</Catalog>
 			<Catalog>NSI_УЗIDM</Catalog>
 			<Catalog>NSI_УЗВИБ</Catalog>
+			<Catalog>NSI_ХранилищаВИБ</Catalog>
 			<Catalog>NSI_ШаблоныОповещений</Catalog>
 			<Catalog>Валюты</Catalog>
 			<Catalog>ВариантыОтветовАнкет</Catalog>
@@ -1641,9 +1645,11 @@
 			<InformationRegister>NSI_АвтоматическийМаппингОбъектов</InformationRegister>
 			<InformationRegister>NSI_Глоссарий</InformationRegister>
 			<InformationRegister>NSI_Задания</InformationRegister>
+			<InformationRegister>NSI_ИзмененныеОбъекты</InformationRegister>
 			<InformationRegister>NSI_ИндексИзмененийВнешнихБаз</InformationRegister>
 			<InformationRegister>NSI_НастройкиМетодовОбработчиков</InformationRegister>
 			<InformationRegister>NSI_НепериодическиеПоляМД</InformationRegister>
+			<InformationRegister>NSI_ОграниченияМастерДанныхПоСистемам</InformationRegister>
 			<InformationRegister>NSI_ОповещенияКОтправке</InformationRegister>
 			<InformationRegister>NSI_ПериодическиеПоляМД</InformationRegister>
 			<InformationRegister>NSI_ПодпискиНаСобытия</InformationRegister>
@@ -1747,8 +1753,6 @@
 			<InformationRegister>УровниСокращенийАдресныхСведений</InformationRegister>
 			<InformationRegister>ФайлыВРабочемКаталоге</InformationRegister>
 			<InformationRegister>ХранимыеФайлыВерсий</InformationRegister>
-			<InformationRegister>NSI_ИзмененныеОбъекты</InformationRegister>
-			<InformationRegister>NSI_ОграниченияМастерДанныхПоСистемам</InformationRegister>
 			<ChartOfCharacteristicTypes>ВопросыДляАнкетирования</ChartOfCharacteristicTypes>
 			<ChartOfCharacteristicTypes>ДополнительныеРеквизитыИСведения</ChartOfCharacteristicTypes>
 			<ChartOfCharacteristicTypes>ОбъектыАдресацииЗадач</ChartOfCharacteristicTypes>

@@ -36,7 +36,7 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Индекс изменений внешних баз</v8:content>
+					<v8:content>(NSI) Индекс изменений внешних баз</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -56,7 +56,12 @@
 			<EnableTotalsSliceLast>false</EnableTotalsSliceLast>
 			<RecordPresentation/>
 			<ExtendedRecordPresentation/>
-			<ListPresentation/>
+			<ListPresentation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Индекс изменений внешних баз</v8:content>
+				</v8:item>
+			</ListPresentation>
 			<ExtendedListPresentation/>
 			<Explanation/>
 		</Properties>

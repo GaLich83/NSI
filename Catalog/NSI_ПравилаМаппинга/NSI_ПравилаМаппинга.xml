@@ -28,7 +28,7 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Правила маппинга</v8:content>
+					<v8:content>(NSI) Правила маппинга</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -304,7 +304,12 @@
 			<FullTextSearch>Use</FullTextSearch>
 			<ObjectPresentation/>
 			<ExtendedObjectPresentation/>
-			<ListPresentation/>
+			<ListPresentation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Правила маппинга</v8:content>
+				</v8:item>
+			</ListPresentation>
 			<ExtendedListPresentation/>
 			<Explanation/>
 			<CreateOnInput>Use</CreateOnInput>

@@ -36,7 +36,7 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Глоссарий</v8:content>
+					<v8:content>(NSI) Глоссарий</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -158,7 +158,12 @@
 			<EnableTotalsSliceLast>false</EnableTotalsSliceLast>
 			<RecordPresentation/>
 			<ExtendedRecordPresentation/>
-			<ListPresentation/>
+			<ListPresentation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Глоссарий</v8:content>
+				</v8:item>
+			</ListPresentation>
 			<ExtendedListPresentation/>
 			<Explanation/>
 		</Properties>

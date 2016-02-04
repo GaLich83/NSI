@@ -138,6 +138,11 @@
 							<ContextMenu name="ИмяХранилищаКонтекстноеМеню" id="6"/>
 							<ExtendedTooltip name="ИмяХранилищаExtendedTooltip" id="29"/>
 						</InputField>
+						<InputField name="ХранилищеВИБ" id="119">
+							<DataPath>Объект.ХранилищеВИБ</DataPath>
+							<ContextMenu name="ХранилищеВИБКонтекстноеМеню" id="120"/>
+							<ExtendedTooltip name="ХранилищеВИБРасширеннаяПодсказка" id="121"/>
+						</InputField>
 						<RadioButtonField name="ВидБД" id="98">
 							<DataPath>Объект.ВидБД</DataPath>
 							<RadioButtonType>Auto</RadioButtonType>

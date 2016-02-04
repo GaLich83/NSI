@@ -28,7 +28,7 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Тикеты асинхронной передачи</v8:content>
+					<v8:content>(NSI) Тикеты асинхронной передачи</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -305,11 +305,16 @@
 			<ObjectPresentation>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Тикет</v8:content>
+					<v8:content>Тикет асинхронной передачи</v8:content>
 				</v8:item>
 			</ObjectPresentation>
 			<ExtendedObjectPresentation/>
-			<ListPresentation/>
+			<ListPresentation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тикеты асинхронной передачи</v8:content>
+				</v8:item>
+			</ListPresentation>
 			<ExtendedListPresentation/>
 			<Explanation/>
 			<CreateOnInput>Use</CreateOnInput>

@@ -300,7 +300,7 @@
 			<DefaultObjectForm>Catalog.NSI_МастерДанные.Form.ФормаЭлемента</DefaultObjectForm>
 			<DefaultFolderForm>Catalog.NSI_МастерДанные.Form.ФормаЭлемента</DefaultFolderForm>
 			<DefaultListForm>Catalog.NSI_МастерДанные.Form.ФормаСписка</DefaultListForm>
-			<DefaultChoiceForm/>
+			<DefaultChoiceForm>Catalog.NSI_МастерДанные.Form.ФормаВыбора</DefaultChoiceForm>
 			<DefaultFolderChoiceForm/>
 			<AuxiliaryObjectForm/>
 			<AuxiliaryFolderForm/>
@@ -314,7 +314,12 @@
 			<FullTextSearch>Use</FullTextSearch>
 			<ObjectPresentation/>
 			<ExtendedObjectPresentation/>
-			<ListPresentation/>
+			<ListPresentation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Мастер-данные</v8:content>
+				</v8:item>
+			</ListPresentation>
 			<ExtendedListPresentation/>
 			<Explanation/>
 			<CreateOnInput>Use</CreateOnInput>
@@ -363,6 +368,7 @@
 			<Form>ФормаЭлемента</Form>
 			<Form>ФормаСписка</Form>
 			<Form>ФормаИсторииПериодическогоРеквизита</Form>
+			<Form>ФормаВыбора</Form>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>
