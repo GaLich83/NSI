@@ -51,7 +51,7 @@
 	</objectType>
 	<objectType name="KeyValue">
 		<property name="Key" type="xs:string"/>
-		<property xmlns:d3p1="mdm" name="Value" type="d3p1:SearchValuesTypes"/>
+		<property xmlns:d3p1="mdm" name="Value" type="d3p1:SearchValuesTypes" lowerBound="0" nillable="true"/>
 	</objectType>
 	<objectType xmlns:d2p1="mdm" name="GetMasterDataResponse" base="d2p1:MDMResponse">
 		<property name="DataResponse" type="d2p1:ArrayOfMasterData" lowerBound="0" nillable="true"/>
