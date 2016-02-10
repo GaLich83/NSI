@@ -523,6 +523,7 @@
 						</LabelDecoration>
 						<SpreadSheetDocumentField name="МакетЗаполненияДанных" id="134">
 							<DataPath>МакетЗаполненияДанных</DataPath>
+							<ShowHeaders>true</ShowHeaders>
 							<Edit>true</Edit>
 							<ContextMenu name="МакетЗаполненияДанныхКонтекстноеМеню" id="135"/>
 							<ExtendedTooltip name="МакетЗаполненияДанныхРасширеннаяПодсказка" id="136"/>
