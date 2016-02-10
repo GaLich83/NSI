@@ -2,7 +2,21 @@
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<ButtonGroup name="ФормаГруппа1" id="139">
+				<ExtendedTooltip name="ФормаГруппа1РасширеннаяПодсказка" id="140"/>
+				<ChildItems>
+					<Button name="ФормаВыгрузитьНастройкуВидаМД" id="137">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ВыгрузитьНастройкуВидаМД</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="ФормаВыгрузитьНастройкуВидаМДРасширеннаяПодсказка" id="138"/>
+					</Button>
+				</ChildItems>
+			</ButtonGroup>
+		</ChildItems>
+	</AutoCommandBar>
 	<Events>
 		<Event name="BeforeClose">ПередЗакрытием</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
@@ -472,6 +486,49 @@
 						</UsualGroup>
 					</ChildItems>
 				</Page>
+				<Page name="СтраницаМакетЗаполненияДанных" id="132">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Макет заполнения данных</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница макет заполнения данных</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаМакетЗаполненияДанныхРасширеннаяПодсказка" id="133"/>
+					<ChildItems>
+						<Button name="ЗагрузитьДанныеИзМакета" id="144">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗагрузитьДанныеИзМакета</CommandName>
+							<Parameter xsi:nil="true"/>
+							<ExtendedTooltip name="ЗагрузитьДанныеИзМакетаРасширеннаяПодсказка" id="145"/>
+						</Button>
+						<LabelDecoration name="Декорация1" id="141">
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>&lt;b&gt;Правила создания макета для заполнения:&lt;/&gt;
+В первой колонке должны идти заголовки, соответствующие символьному имени реквизита.
+Вторая и последующие колонки содержат данные.
+Пустых строк в макете быть не должно.
+</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация1КонтекстноеМеню" id="142"/>
+							<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="143"/>
+						</LabelDecoration>
+						<SpreadSheetDocumentField name="МакетЗаполненияДанных" id="134">
+							<DataPath>МакетЗаполненияДанных</DataPath>
+							<Edit>true</Edit>
+							<ContextMenu name="МакетЗаполненияДанныхКонтекстноеМеню" id="135"/>
+							<ExtendedTooltip name="МакетЗаполненияДанныхРасширеннаяПодсказка" id="136"/>
+						</SpreadSheetDocumentField>
+					</ChildItems>
+				</Page>
 			</ChildItems>
 		</Pages>
 	</ChildItems>
@@ -670,6 +727,17 @@
 				</Column>
 			</Columns>
 		</Attribute>
+		<Attribute name="МакетЗаполненияДанных" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Макет заполнения данных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ПроверитьМакетЭлемента" id="1">
@@ -716,6 +784,35 @@
 				</v8:item>
 			</ToolTip>
 			<Action>КомандаЗаписатьИЗакрыть</Action>
+		</Command>
+		<Command name="ВыгрузитьНастройкуВидаМД" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить настройку вида мастер-данных в файл</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить настройку вида МД</v8:content>
+				</v8:item>
+			</ToolTip>
+		</Command>
+		<Command name="ЗагрузитьДанныеИзМакета" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить данные из макета</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить данные из макета</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьДанныеИзМакета</Action>
 		</Command>
 	</Commands>
 </Form>
