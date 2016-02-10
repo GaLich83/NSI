@@ -1482,7 +1482,6 @@
 			<Catalog>ШаблоныЗаданийОчереди</Catalog>
 			<Catalog>ЭлектронноеПисьмоВходящееПрисоединенныеФайлы</Catalog>
 			<Catalog>ЭлектронноеПисьмоИсходящееПрисоединенныеФайлы</Catalog>
-			<Catalog>NSI_СправочникОКОПФ</Catalog>
 			<Document>Анкета</Document>
 			<Document>Встреча</Document>
 			<Document>ЗапланированноеВзаимодействие</Document>
@@ -1657,6 +1656,7 @@
 			<InformationRegister>NSI_РегистрацияСобытийОповещения</InformationRegister>
 			<InformationRegister>NSI_РучнойМаппингОбъектов</InformationRegister>
 			<InformationRegister>NSI_ХэшиКлючейМастерДанных</InformationRegister>
+			<InformationRegister>NSI_ХэшиМастерДанных</InformationRegister>
 			<InformationRegister>АдресныеОбъекты</InformationRegister>
 			<InformationRegister>БлокировкиСеансовОбластейДанных</InformationRegister>
 			<InformationRegister>ВерсииОбъектов</InformationRegister>

@@ -132,13 +132,6 @@ Catalog.NSI_СписокВнешнихСервисов.Form.ФормаЭлеме
 Catalog.NSI_СписокВнешнихСервисов.Form.ФормаЭлемента.xml-->Catalog\NSI_СписокВнешнихСервисов\Form\ФормаЭлемента.xml
 Catalog.NSI_СписокВнешнихСервисов.ManagerModule.txt-->Catalog\NSI_СписокВнешнихСервисов\ManagerModule.txt
 Catalog.NSI_СписокВнешнихСервисов.xml-->Catalog\NSI_СписокВнешнихСервисов\NSI_СписокВнешнихСервисов.xml
-Catalog.NSI_СправочникОКОПФ.Form.ФормаСписка.Form.Module.txt-->Catalog\NSI_СправочникОКОПФ\Form\ФормаСписка\Form\Module.txt
-Catalog.NSI_СправочникОКОПФ.Form.ФормаСписка.Form.xml-->Catalog\NSI_СправочникОКОПФ\Form\ФормаСписка\Form.xml
-Catalog.NSI_СправочникОКОПФ.Form.ФормаСписка.xml-->Catalog\NSI_СправочникОКОПФ\Form\ФормаСписка.xml
-Catalog.NSI_СправочникОКОПФ.ManagerModule.txt-->Catalog\NSI_СправочникОКОПФ\ManagerModule.txt
-Catalog.NSI_СправочникОКОПФ.Template.ОКОПФ.Template.xml-->Catalog\NSI_СправочникОКОПФ\Template\ОКОПФ\Template.xml
-Catalog.NSI_СправочникОКОПФ.Template.ОКОПФ.xml-->Catalog\NSI_СправочникОКОПФ\Template\ОКОПФ.xml
-Catalog.NSI_СправочникОКОПФ.xml-->Catalog\NSI_СправочникОКОПФ\NSI_СправочникОКОПФ.xml
 Catalog.NSI_ТикетыАсинхроннойПередачи.Form.ФормаСписка.Form.Module.txt-->Catalog\NSI_ТикетыАсинхроннойПередачи\Form\ФормаСписка\Form\Module.txt
 Catalog.NSI_ТикетыАсинхроннойПередачи.Form.ФормаСписка.Form.xml-->Catalog\NSI_ТикетыАсинхроннойПередачи\Form\ФормаСписка\Form.xml
 Catalog.NSI_ТикетыАсинхроннойПередачи.Form.ФормаСписка.xml-->Catalog\NSI_ТикетыАсинхроннойПередачи\Form\ФормаСписка.xml
@@ -4749,6 +4742,8 @@ InformationRegister.NSI_РучнойМаппингОбъектов.Form.Форм
 InformationRegister.NSI_РучнойМаппингОбъектов.xml-->InformationRegister\NSI_РучнойМаппингОбъектов\NSI_РучнойМаппингОбъектов.xml
 InformationRegister.NSI_ХэшиКлючейМастерДанных.RecordSetModule.txt-->InformationRegister\NSI_ХэшиКлючейМастерДанных\RecordSetModule.txt
 InformationRegister.NSI_ХэшиКлючейМастерДанных.xml-->InformationRegister\NSI_ХэшиКлючейМастерДанных\NSI_ХэшиКлючейМастерДанных.xml
+InformationRegister.NSI_ХэшиМастерДанных.RecordSetModule.txt-->InformationRegister\NSI_ХэшиМастерДанных\RecordSetModule.txt
+InformationRegister.NSI_ХэшиМастерДанных.xml-->InformationRegister\NSI_ХэшиМастерДанных\NSI_ХэшиМастерДанных.xml
 InformationRegister.АдресныеОбъекты.Command.АвторизацияНаСайтеПоддержкиПользователей.CommandModule.txt-->InformationRegister\АдресныеОбъекты\Command\АвторизацияНаСайтеПоддержкиПользователей\CommandModule.txt
 InformationRegister.АдресныеОбъекты.Command.ЗагрузитьАдресныйКлассификатор.CommandModule.txt-->InformationRegister\АдресныеОбъекты\Command\ЗагрузитьАдресныйКлассификатор\CommandModule.txt
 InformationRegister.АдресныеОбъекты.Command.ОчиститьАдресныйКлассификатор.CommandModule.txt-->InformationRegister\АдресныеОбъекты\Command\ОчиститьАдресныйКлассификатор\CommandModule.txt
