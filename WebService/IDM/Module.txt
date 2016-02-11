@@ -22,6 +22,7 @@
 	Справочник.ID_SMP = Account.ID_SMP;
 	Справочник.LoginAD = Account.LoginAD;
 	Справочник.Техническая = Account.Technical;
+	Справочник.Наименование = Account.AccountName;
 	Попытка
 		Справочник.Записать();
 		Account.UserID = Справочник.UserID;
@@ -45,6 +46,7 @@
 		Справочник.ID_SMP = Account.ID_SMP;
 		Справочник.LoginAD = Account.LoginAD;
 		Справочник.Техническая = Account.Technical;
+		Справочник.Наименование = Account.AccountName;
 		Попытка
 			Справочник.Записать();
 			Возврат Истина;
@@ -204,6 +206,7 @@
 	Account.Position = УЗ.Должность;
 	Account.Division = УЗ.Подразделение;
 	Account.DateOfChange = УЗ.ДатаПоследнегоИзменения;
+	Account.AccountName = УЗ.Наименование;
 	Account.Status = ?(УЗ.Статус=Перечисления.NSI_СтатусыУЗ.Активна, "Active", "Inactive");
 	УЗID_SMP = УЗ.ID_SMP;
 	Пока СтрДлина(УЗID_SMP)<9 Цикл

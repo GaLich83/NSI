@@ -83,9 +83,9 @@
 				<xr:Item xsi:type="xr:MDObjectRef">HTTPService.MDM</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.NSI_ФормаОписанияУсловийОтбораМастерДанных</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.NSI_ОграниченияМастерДанныхПоСистемам</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">27987f76-2784-4356-a455-3f8472d61a77</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.NSI_ХранилищаВИБ</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.NSI_НастройкиАвтоматическихОповещенийОбИзмененииМД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.NSI_ХэшиМастерДанных</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

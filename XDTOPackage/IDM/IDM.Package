@@ -8,7 +8,7 @@
 		<enumeration xsi:type="xs:string">DeleteRole</enumeration>
 		<enumeration xsi:type="xs:string">Other</enumeration>
 	</valueType>
-	<valueType name="StatusAccount" base="xs:string" itemType="xs:string">
+	<valueType name="StatusAccount" base="xs:string" variety="Atomic" itemType="xs:string" maxLength="10">
 		<enumeration xsi:type="xs:string">Active</enumeration>
 		<enumeration xsi:type="xs:string">Inactive</enumeration>
 	</valueType>
@@ -21,7 +21,7 @@
 		<enumeration xsi:type="xs:string">Add</enumeration>
 		<enumeration xsi:type="xs:string">Remove</enumeration>
 	</valueType>
-	<objectType name="Account" open="true">
+	<objectType name="Account" open="true" ordered="false">
 		<property name="UserID" type="xs:string" lowerBound="0" nillable="true"/>
 		<property name="Family" type="xs:string"/>
 		<property name="Name" type="xs:string"/>
@@ -30,9 +30,10 @@
 		<property name="Division" type="xs:string" lowerBound="0" nillable="true"/>
 		<property name="DateOfChange" type="xs:dateTime" lowerBound="0" nillable="true"/>
 		<property xmlns:d3p1="idm" name="Status" type="d3p1:StatusAccount" lowerBound="0" nillable="true"/>
-		<property name="ID_SMP" type="xs:string"/>
-		<property name="LoginAD"/>
-		<property name="Technical" type="xs:boolean"/>
+		<property name="ID_SMP" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="LoginAD" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Technical" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="AccountName" type="xs:string" lowerBound="0" nillable="true"/>
 	</objectType>
 	<objectType name="Role">
 		<property name="RoleID"/>

@@ -25,6 +25,7 @@
 		Account.Position = AccountPosition;
 		Account.Division = AccountDivision;
 		Account.DateOfChange = AccountDateOfChange;
+		Account.AccountName = AccountAccountName;
 		МассивСтатус = Новый Массив;
 		МассивСтатус.Добавить(?(AccountStatus = Перечисления.NSI_СтатусыУЗ.Активна, "Active", "Inactive"));
 		Account.Status = Новый ФиксированныйМассив(МассивСтатус);
