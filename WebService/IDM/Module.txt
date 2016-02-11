@@ -42,7 +42,7 @@
 		Справочник.Отчество = Account.Otchestvo;
 		Справочник.Должность = Account.Position;
 		Справочник.Подразделение = Account.Division;
-		Справочник.Статус = ?(Account.Status[0]="Active", Перечисления.NSI_СтатусыУЗ.Активна, Перечисления.NSI_СтатусыУЗ.Неактивна);
+		Справочник.Статус = ?(Account.Status="Active", Перечисления.NSI_СтатусыУЗ.Активна, Перечисления.NSI_СтатусыУЗ.Неактивна);
 		Справочник.ID_SMP = Account.ID_SMP;
 		Справочник.LoginAD = Account.LoginAD;
 		Справочник.Техническая = Account.Technical;

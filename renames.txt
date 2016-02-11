@@ -5678,6 +5678,8 @@ StyleItem.ЦветФонаТестовогоРежимаСервисаФНС.xml
 Subsystem.NSI_IDM.Subsystem.IDM.xml-->Subsystem\NSI_IDM\Subsystem\IDM.xml
 Subsystem.NSI_IDM.Subsystem.ВИБ.xml-->Subsystem\NSI_IDM\Subsystem\ВИБ.xml
 Subsystem.NSI_IDM.xml-->Subsystem\NSI_IDM\NSI_IDM.xml
+Subsystem.NSI_MDM.Subsystem.NSI_MDM_Вспомогательные.xml-->Subsystem\NSI_MDM\Subsystem\NSI_MDM_Вспомогательные.xml
+Subsystem.NSI_MDM.Subsystem.NSI_MDM_Настройки.xml-->Subsystem\NSI_MDM\Subsystem\NSI_MDM_Настройки.xml
 Subsystem.NSI_MDM.xml-->Subsystem\NSI_MDM\NSI_MDM.xml
 Subsystem.NSI_БазыИОбщиеМеханизмы.xml-->Subsystem\NSI_БазыИОбщиеМеханизмы\NSI_БазыИОбщиеМеханизмы.xml
 Subsystem.NSI_ВсеПодсистемы.xml-->Subsystem\NSI_ВсеПодсистемы\NSI_ВсеПодсистемы.xml

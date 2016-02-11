@@ -18,12 +18,8 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Content>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.NSI_ВидыМД</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.NSI_МастерДанные</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.NSI_НепериодическиеПоляМД</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.NSI_ПериодическиеПоляМД</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.NSI_РаботаСМастерДаннымиСервер</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.NSI_ХэшиКлючейМастерДанных</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.NSI_РаботаСМастерДаннымиСерверПовторноеИспользование</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.NSI_ПериодическийРеквизит</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.NSI_КлючевойРеквизит</xr:Item>
@@ -31,20 +27,17 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.NSI_РаботаСМастерДаннымиПоиск</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">XDTOPackage.MDM</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.NSI_РаботаСМастерДаннымиРаботаСВнешнимиСистемами</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.NSI_ИсточникиЗапросовМД</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.NSI_ИспользованиеПоляМД</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">WebService.MDM</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.NSI_РаботаСМастерДаннымиСерверПереопределяемый</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.NSI_ОграниченияМастерДанныхПоСистемам</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.NSI_БольшиеДанныеДляПередачи</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">HTTPService.MDM</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.NSI_ВидыВнешнихСервисов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.NSI_ФормаОписанияУсловийОтбораМастерДанных</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.NSI_СписокВнешнихСервисов</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.NSI_НастройкиАвтоматическихОповещенийОбИзмененииМД</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.NSI_ХэшиМастерДанных</xr:Item>
 			</Content>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<Subsystem>NSI_MDM_Настройки</Subsystem>
+			<Subsystem>NSI_MDM_Вспомогательные</Subsystem>
+		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>
